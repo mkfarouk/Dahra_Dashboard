@@ -17,19 +17,18 @@ export const CropModel = (() => {
     const agri = DataSource.getAgri();
 
     if (state.selectedCrop === 'all') {
-      // Monthly totals across all crops (match oo.html behavior)
-      const months = 12;
-      const totalProduction = new Array(months).fill(0);
-      const totalAmount = new Array(months).fill(0);
-      Object.values(agri).forEach(c => {
-        (c.productionData || []).forEach((v,i)=>{ totalProduction[i] += v; });
-        (c.amountData || []).forEach((v,i)=>{ totalAmount[i] += v; });
-      });
+      // Average production line + total amount column (same as your inline code)
+      const avgData = Object.values(agri).map(c =>
+        c.productionData.reduce((s,v)=>s+v,0) / c.productionData.length
+      );
+      const amountData = Object.values(agri).map(c =>
+        c.amountData.reduce((s,v)=>s+v,0)
+      );
       return {
         labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
         series: [
-          { name: 'Total Production', type: 'line',   data: sliceByPeriod(totalProduction, state.period) },
-          { name: 'Total Amount',     type: 'column', data: sliceByPeriod(totalAmount, state.period), yAxisIndex: 1 }
+          { name: 'Average Production', type: 'line',   data: sliceByPeriod(avgData, state.period) },
+          { name: 'Total Amount',       type: 'column', data: sliceByPeriod(amountData, state.period), yAxisIndex: 1 }
         ]
       };
     }
