@@ -1,0 +1,30 @@
+/* Production chart */
+.chart-container {
+  background: var(--white); border-radius: var(--border-radius); padding: 1.5rem;
+  box-shadow: var(--shadow-light); margin-bottom: 2rem;
+}
+.chart-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem; }
+.chart-title { font-size: 1.1rem; font-weight: 600; color: var(--dark-gray); display: flex; align-items: center; gap: 0.5rem; }
+.chart-controls { display: flex; gap: 0.5rem; }
+.chart-btn {
+  padding: 0.4rem 0.8rem; border: 2px solid var(--medium-green); background: var(--white);
+  border-radius: 6px; cursor: pointer; font-weight: 500; transition: var(--transition); font-size: 0.8rem;
+}
+.chart-btn.active, .chart-btn:hover { border-color: var(--primary-green); background: var(--primary-green); color: var(--white); }
+#productionChart { height: 400px; }
+
+/* Comparison section */
+.comparison-section {
+  background: var(--white); border-radius: var(--border-radius); padding: 1.5rem;
+  box-shadow: var(--shadow-light); margin-bottom: 2rem;
+}
+.comparison-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem; }
+.location-tabs { display: flex; gap: 0.5rem; }
+.location-tab {
+  padding: 0.4rem 0.8rem; border: 2px solid var(--medium-green); background: var(--white);
+  border-radius: 6px; cursor: pointer; font-weight: 500; transition: var(--transition); font-size: 0.8rem;
+}
+.location-tab.active, .location-tab:hover { border-color: var(--primary-green); background: var(--primary-green); color: var(--white); }
+.location-tab.toshka.active { border-color: var(--toshka-color); background: var(--toshka-color); }
+.location-tab.eastowinat.active { border-color: var(--eastowinat-color); background: var(--eastowinat-color); }
+#comparisonChart { height: 400px; }

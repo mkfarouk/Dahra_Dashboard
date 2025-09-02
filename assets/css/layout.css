@@ -1,0 +1,48 @@
+/* Header */
+.header {
+  background: var(--white);
+  padding: 1rem 2rem;
+  box-shadow: var(--shadow-light);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid var(--primary-green);
+}
+.header-content {
+  display: flex; justify-content: space-between; align-items: center;
+  max-width: 1400px; margin: 0 auto; flex-wrap: wrap; gap: 1rem;
+}
+.logo-section { display: flex; align-items: center; gap: 1rem; margin-right: auto; }
+.company-logo { height: 80px; width: auto; object-fit: contain; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; }
+.company-info { display: flex; flex-direction: column; }
+.company-name {
+  font-size: 1.5rem; font-weight: 700; color: var(--primary-green);
+  letter-spacing: -0.5px; line-height: 1.2; display: flex; align-items: center; gap: 0.5rem;
+}
+.company-subtitle { font-size: 0.9rem; color: var(--medium-gray); font-weight: 400; }
+
+.header-controls { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.control-buttons { display: flex; align-items: center; gap: 0.5rem; }
+
+.dark-mode-toggle {
+  background: var(--primary-green); color: var(--white); border: none;
+  padding: 0.75rem; border-radius: var(--border-radius); cursor: pointer; transition: var(--transition);
+  width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; font-size: 1rem;
+}
+.dark-mode-toggle:hover { background: var(--secondary-green); transform: scale(1.05); }
+
+.modern-select, .date-input {
+  padding: 0.75rem 1rem; border: 2px solid var(--medium-green); border-radius: var(--border-radius);
+  background: var(--white); font-size: 0.9rem; font-weight: 500; color: var(--dark-gray); transition: var(--transition); min-width: 150px;
+}
+.modern-select:focus, .date-input:focus {
+  outline: none; border-color: var(--primary-green); box-shadow: 0 0 0 3px rgba(112, 133, 115, 0.1);
+}
+
+/* Main layout */
+.main-content {
+  max-width: 1400px; margin: 0 auto; padding: 2rem;
+  display: grid; grid-template-columns: 1fr 350px; gap: 2rem;
+}
+.left-content { display: flex; flex-direction: column; gap: 2rem; }
+.right-sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
