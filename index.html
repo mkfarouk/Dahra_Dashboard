@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldahra Agricultural Company - Enhanced Dashboard</title>
+    
+    <!-- External Libraries -->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/theme-dark.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+
+    <link rel="stylesheet" href="assets/css/components-crop-cards.css" />
+    <link rel="stylesheet" href="assets/css/components-varieties.css" />
+    <link rel="stylesheet" href="assets/css/components-charts.css" />
+    <link rel="stylesheet" href="assets/css/components-sidebar.css" />
+    <link rel="stylesheet" href="assets/css/components-loading.css" />
+
+    <link rel="stylesheet" href="assets/css/utilities.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <script type="module" src="assets/js/mock/mockData.js"></script>
+
+
+
+    
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <div class="spinning">
+                <i class="fas fa-leaf"></i>
+            </div>
+            <p>Loading Enhanced Agricultural Dashboard...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <!-- Aldahra Logo -->
+                <img src="https://images.wuzzuf-data.net/files/company_logo/Al-Dahra-Agriculture-Egypt-53315-1594802755-og.png" alt="Aldahra Logo" class="company-logo">
+            </div>
+            
+            <div class="header-controls">
+                <div class="control-buttons">
+                    <button class="dark-mode-toggle" id="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    
+                    <select id="cropSelector" class="modern-select">
+                        <option value="all">All Crops</option>
+                        <option value="barley">🌾 Barley</option>
+                        <option value="bean">🫘 Bean</option>
+                        <option value="corn">🌽 Corn</option>
+                        <option value="potatoes">🥔 Potatoes</option>
+                        <option value="soybean">🌱 Soybean</option>
+                        <option value="sugarbeet">🟣 Sugar Beet</option>
+                        <option value="wheat">🌾 Wheat</option>
+                        <option value="alfalfa">🌿 Alfalfa</option>
+                    </select>
+                    
+                    <select id="locationSelector" class="modern-select">
+                        <option value="all">All Locations</option>
+                        <option value="toshka">📍 Toshka</option>
+                        <option value="eastowinat">📍 East Oweinat</option>
+                    </select>
+                    
+                    <input type="text" id="datePicker" placeholder="Select date range" class="date-input" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="left-content">
+            <!-- Crop Selection Section -->
+            <section class="crop-selection-section">
+                <h2 class="section-title">
+                    <i class="fas fa-leaf"></i>
+                    Crop Management Overview
+                </h2>
+                
+                <div class="crop-cards-container" id="cropCards">
+                    <!-- Crop cards will be dynamically generated -->
+                </div>
+            </section>
+
+            <!-- Crop Varieties Section -->
+            <section class="crop-varieties" id="cropVarieties">
+                <h3 class="section-title">
+                    <i class="fas fa-seedling"></i>
+                    <span id="selectedCropName">Crop</span> Varieties
+                </h3>
+                <div class="varieties-content">
+                    <div class="varieties-list" id="varietiesGrid">
+                        <!-- Varieties will be dynamically generated -->
+                    </div>
+                    <div class="varieties-map">
+                        <div id="varietiesMapContainer"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Production Chart -->
+            <section class="chart-container">
+                <div class="chart-header">
+                    <h3 class="chart-title">
+                        <i class="fas fa-chart-area"></i>
+                        Production Trends Analysis
+                    </h3>
+                    <div class="chart-controls">
+                        <button class="chart-btn active" data-period="6m">6M</button>
+                        <button class="chart-btn" data-period="1y">1Y</button>
+                        <button class="chart-btn" data-period="2y">2Y</button>
+                    </div>
+                </div>
+                <div id="productionChart"></div>
+            </section>
+
+            <!-- Comparison Chart Section -->
+            <section class="comparison-section">
+                <div class="comparison-header">
+                    <h3 class="chart-title">
+                        <i class="fas fa-chart-line"></i>
+                        Location Comparison
+                    </h3>
+                    <div class="location-tabs">
+                        <button class="location-tab active" data-location="both">Both</button>
+                        <button class="location-tab toshka" data-location="toshka">Toshka</button>
+                        <button class="location-tab eastowinat" data-location="eastowinat">East Oweinat</button>
+                    </div>
+                </div>
+                <div id="comparisonChart"></div>
+            </section>
+        </div>
+
+        <div class="right-sidebar">
+            <!-- Weather Widget -->
+            <section class="sidebar-section">
+                <h3 class="sidebar-title">
+                    <i class="fas fa-cloud-sun"></i>
+                    Weather Information
+                </h3>
+                <div class="weather-widget">
+                    <div class="weather-current">
+                        <div class="weather-temp" id="sidebarTemp">25°C</div>
+                        <div class="weather-condition" id="sidebarCondition">Partly Cloudy</div>
+                    </div>
+                    <div class="weather-details-grid">
+                        <div class="weather-detail-item">
+                            <div class="weather-detail-value" id="sidebarWind">12 km/h</div>
+                            <div class="weather-detail-label">Wind Speed</div>
+                        </div>
+                        <div class="weather-detail-item">
+                            <div class="weather-detail-value" id="sidebarHumidity">65%</div>
+                            <div class="weather-detail-label">Humidity</div>
+                        </div>
+                        <div class="weather-detail-item">
+                            <div class="weather-detail-value" id="sidebarPressure">1013 hPa</div>
+                            <div class="weather-detail-label">Pressure</div>
+                        </div>
+                        <div class="weather-detail-item">
+                            <div class="weather-detail-value" id="sidebarVisibility">10 km</div>
+                            <div class="weather-detail-label">Visibility</div>
+                        </div>
+                    </div>
+                    <div class="weather-forecast">
+                        <div class="forecast-item">
+                            <span class="forecast-day">Tomorrow</span>
+                            <span class="forecast-temp">27°C</span>
+                        </div>
+                        <div class="forecast-item">
+                            <span class="forecast-day">Day After</span>
+                            <span class="forecast-temp">24°C</span>
+                        </div>
+                        <div class="forecast-item">
+                            <span class="forecast-day">3 Days</span>
+                            <span class="forecast-temp">26°C</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Overall Crops Map -->
+            <section class="sidebar-section crops-map-section">
+                <h3 class="sidebar-title">
+                    <i class="fas fa-map-marked-alt"></i>
+                    Crops Location Map
+                </h3>
+                <div class="crops-map-container">
+                    <div id="cropsMapContainer"></div>
+                </div>
+            </section>
+
+            <!-- Enhanced Key Metrics -->
+            <section class="sidebar-section key-metrics">
+                <h3 class="sidebar-title">
+                    <i class="fas fa-tachometer-alt"></i>
+                    Key Metrics
+                </h3>
+                <div class="metrics-grid" id="metricsGrid">
+                    <!-- Metrics will be dynamically generated -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+

@@ -1,4 +1,4 @@
-window.agriculturalData = {
+export const agriculturalData = {
             barley: {
                 name: "Barley",
                 icon: "🌾",
@@ -335,9 +335,16 @@ window.agriculturalData = {
                 ]
             }
         };
+// Provide legacy globals for any leftover inline scripts
+try {
+  if (typeof window !== 'undefined') {
+    window.agriculturalData = agriculturalData;
+    window.locationData = locationData;
+  }
+} catch (_) {}
 
         // Location-specific data for comparison with monthly data
-window.locationData = {
+export const locationData = {
             toshka: {
                 name: "Toshka",
                 coordinates: [24.0889, 32.8998],
