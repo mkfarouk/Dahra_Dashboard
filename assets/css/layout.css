@@ -45,4 +45,4 @@
   display: grid; grid-template-columns: 1fr 350px; gap: 2rem;
 }
 .left-content { display: flex; flex-direction: column; gap: 2rem; }
-.right-sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+.right-sidebar { display: grid; grid-template-rows: auto auto auto 1fr; gap: 1.5rem; align-content: start; }

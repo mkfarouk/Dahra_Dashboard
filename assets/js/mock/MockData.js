@@ -335,6 +335,13 @@ export const agriculturalData = {
                 ]
             }
         };
+
+// Quarterly weather data for Weather Trends chart
+export const weatherQuarterData = {
+    quarters: ['Q1','Q2','Q3','Q4'],
+    temperature: [22, 28, 35, 25],
+    wind: [15, 12, 8, 18]
+};
 // Provide legacy globals for any leftover inline scripts
 try {
   if (typeof window !== 'undefined') {

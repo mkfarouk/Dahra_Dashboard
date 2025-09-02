@@ -5,6 +5,7 @@ import { CropCardsView } from '../view/CropCardsView.js';
 import { SidebarView } from '../view/SidebarView.js';
 import { MapsView } from '../view/MapsView.js';
 import { ChartsView } from '../view/ChartsView.js';
+import { WeatherAnalysisView } from '../view/WeatherAnalysisView.js';
 
 export const AppController = {
   init() {
@@ -18,6 +19,7 @@ export const AppController = {
     ChartsView.initProduction();
     ChartsView.initComparison();
     MapsView.renderCrops();
+    WeatherAnalysisView.init();
 
     CropCardsView.render(document.getElementById('cropCards'), (key) => {
       CropModel.set('selectedCrop', key);
