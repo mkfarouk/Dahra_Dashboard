@@ -15,18 +15,97 @@ export const ChartsView = {
       chart: {
         height: 400,
         type: 'line',
-        toolbar: { show: true, tools: { download: true, selection: false, zoom: true, zoomin: true, zoomout: true, pan: false, reset: true } },
+        toolbar: {
+          show: true,
+          tools: {
+            download: true,
+            selection: false,
+            zoom: true,
+            zoomin: true,
+            zoomout: true,
+            pan: false,
+            reset: true
+          }
+        },
         animations: { enabled: true, easing: 'easeinout', speed: 800 }
       },
       colors,
       dataLabels: { enabled: false },
       stroke: { curve: 'smooth', width: [3, 0] },
-      markers: { size: 5, colors, strokeColors: '#fff', strokeWidth: 2, hover: { size: 7 } },
-      xaxis: { categories: data.labels },
-      yaxis: [{ tickAmount: 8 }, { opposite: true, tickAmount: 8 }],
-      legend: { position: 'top' },
-      grid: { borderColor: '#66bb6a', row: { colors: ['#e8f5e8', 'transparent'], opacity: 0.3 } },
-      tooltip: { shared: true, intersect: false }
+      markers: {
+        size: 5,
+        colors,
+        strokeColors: '#fff',
+        strokeWidth: 2,
+        hover: { size: 7 }
+      },
+      xaxis: {
+        categories: data.labels,
+        title: {
+          text: 'Month',
+          style: { color: '#1b5e20', fontSize: '12px', fontFamily: 'Inter, sans-serif' }
+        },
+        labels: { style: { colors: '#1b5e20', fontSize: '10px' } }
+      },
+      yaxis: [
+        {
+          title: {
+            text: 'Production (tons)',
+            style: { color: '#1b5e20', fontSize: '12px', fontFamily: 'Inter, sans-serif' }
+          },
+          labels: {
+            style: { colors: '#1b5e20', fontSize: '10px' },
+            formatter: function (value) {
+              if (value >= 1000000) return (value / 1000000).toFixed(1) + 'M';
+              if (value >= 1000) return (value / 1000).toFixed(1) + 'K';
+              return value.toFixed(0);
+            }
+          },
+          tickAmount: 8
+        },
+        {
+          opposite: true,
+          title: {
+            text: 'Amount',
+            style: { color: '#1b5e20', fontSize: '12px', fontFamily: 'Inter, sans-serif' }
+          },
+          labels: {
+            style: { colors: '#1b5e20', fontSize: '10px' },
+            formatter: function (value) {
+              if (value >= 1000000) return (value / 1000000).toFixed(1) + 'M';
+              if (value >= 1000) return (value / 1000).toFixed(1) + 'K';
+              return value.toFixed(0);
+            }
+          },
+          tickAmount: 8
+        }
+      ],
+      legend: {
+        position: 'top',
+        labels: { colors: '#1b5e20', useSeriesColors: false }
+      },
+      grid: {
+        borderColor: '#66bb6a',
+        row: { colors: ['#e8f5e8', 'transparent'], opacity: 0.3 },
+        xaxis: { lines: { show: true, color: '#e8f5e8', opacity: 0.5 } },
+        yaxis: { lines: { show: true, color: '#e8f5e8', opacity: 0.5 } },
+        padding: { top: 10, right: 10, bottom: 10, left: 10 }
+      },
+      tooltip: {
+        theme: 'light',
+        style: { fontSize: '11px' },
+        x: { show: true, format: 'MMM yyyy' },
+        y: {
+          formatter: function (value) {
+            if (value >= 1000000) return (value / 1000000).toFixed(2) + 'M tons';
+            if (value >= 1000) return (value / 1000).toFixed(1) + 'K tons';
+            return value.toFixed(0) + ' tons';
+          }
+        },
+        marker: { show: true },
+        shared: true,
+        intersect: false
+      }
     };
 
     productionChart = new window.ApexCharts(document.querySelector('#productionChart'), options);
@@ -38,7 +117,64 @@ export const ChartsView = {
     const data = CropModel.getProductionSeries();
     const colors = this._getProductionColors();
     productionChart.updateSeries(data.series);
-    productionChart.updateOptions({ colors, xaxis: { categories: data.labels } });
+    productionChart.updateOptions({
+      colors,
+      xaxis: {
+        categories: data.labels,
+        title: { text: 'Month', style: { color: '#1b5e20', fontSize: '12px', fontFamily: 'Inter, sans-serif' } },
+        labels: { style: { colors: '#1b5e20', fontSize: '10px' } }
+      },
+      yaxis: [
+        {
+          title: { text: 'Production (tons)', style: { color: '#1b5e20', fontSize: '12px', fontFamily: 'Inter, sans-serif' } },
+          labels: {
+            style: { colors: '#1b5e20', fontSize: '10px' },
+            formatter: function (value) {
+              if (value >= 1000000) return (value / 1000000).toFixed(1) + 'M';
+              if (value >= 1000) return (value / 1000).toFixed(1) + 'K';
+              return value.toFixed(0);
+            }
+          },
+          tickAmount: 8
+        },
+        {
+          opposite: true,
+          title: { text: 'Amount', style: { color: '#1b5e20', fontSize: '12px', fontFamily: 'Inter, sans-serif' } },
+          labels: {
+            style: { colors: '#1b5e20', fontSize: '10px' },
+            formatter: function (value) {
+              if (value >= 1000000) return (value / 1000000).toFixed(1) + 'M';
+              if (value >= 1000) return (value / 1000).toFixed(1) + 'K';
+              return value.toFixed(0);
+            }
+          },
+          tickAmount: 8
+        }
+      ],
+      legend: { position: 'top', labels: { colors: '#1b5e20', useSeriesColors: false } },
+      grid: {
+        borderColor: '#66bb6a',
+        row: { colors: ['#e8f5e8', 'transparent'], opacity: 0.3 },
+        xaxis: { lines: { show: true, color: '#e8f5e8', opacity: 0.5 } },
+        yaxis: { lines: { show: true, color: '#e8f5e8', opacity: 0.5 } },
+        padding: { top: 10, right: 10, bottom: 10, left: 10 }
+      },
+      tooltip: {
+        theme: 'light',
+        style: { fontSize: '11px' },
+        x: { show: true, format: 'MMM yyyy' },
+        y: {
+          formatter: function (value) {
+            if (value >= 1000000) return (value / 1000000).toFixed(2) + 'M tons';
+            if (value >= 1000) return (value / 1000).toFixed(1) + 'K tons';
+            return value.toFixed(0) + ' tons';
+          }
+        },
+        marker: { show: true },
+        shared: true,
+        intersect: false
+      }
+    });
   },
 
   initComparison() {
