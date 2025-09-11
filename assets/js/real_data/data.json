@@ -1,0 +1,118 @@
+[
+    {
+        "crop_name": "Corn",
+        "crop_id": 2399,
+        "field_id": 74190,
+        "variety": "FINE SEEDS",
+        "harvesting_date": null,
+        "harvested_weight": null,
+        "till_area": 50.00104424,
+        "lat": 22.664135271899994,
+        "long": 31.307649712052594,
+        "field_name": "201 A",
+        "field_group_id": 2822
+    },
+    {
+        "crop_name": "Potatoes",
+        "crop_id": 2401,
+        "field_id": 74536,
+        "variety": "Rent",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "crop_name": "Palm",
+        "crop_id": 2868,
+        "field_id": 75130,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "crop_name": "Wheat",
+        "crop_id": 2869,
+        "field_id": 74221,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-23",
+        "harvested_weight": 208.52,
+        "till_area": 27.00182389,
+        "lat": 22.678845791099995,
+        "long": 31.338007331580386,
+        "field_name": "105 A",
+        "field_group_id": 2823
+    },
+    {
+        "crop_name": "AlfaAlfa",
+        "crop_id": 2873,
+        "field_id": 75054,
+        "variety": "SW10",
+        "harvesting_date": "2025-03-12",
+        "harvested_weight": 17.0
+    },
+    {
+        "crop_name": "Pomegranate",
+        "crop_id": 2897,
+        "field_id": 74753,
+        "variety": "Wonderful",
+        "harvesting_date": "2024-12-25",
+        "harvested_weight": 198.9
+    },
+    {
+        "crop_name": "Soybean",
+        "crop_id": 2905,
+        "field_id": 74193,
+        "variety": "soybean",
+        "harvesting_date": null,
+        "harvested_weight": null,
+        "till_area": 50.2505,
+        "lat": 22.674524171,
+        "long": 31.30589555891418,
+        "field_name": "210 C",
+        "field_group_id": 2822
+    },
+    {
+        "crop_name": "Sugar Beet",
+        "crop_id": 2907,
+        "field_id": 74224,
+        "variety": "Salama",
+        "harvesting_date": null,
+        "harvested_weight": null,
+        "till_area": 50.00104424,
+        "lat": 22.6354923457,
+        "long": 31.30426466014625,
+        "field_name": "112 B",
+        "field_group_id": 2823
+    },
+    {
+        "crop_name": "Sunflower",
+        "crop_id": 2909,
+        "field_id": 75580,
+        "variety": "N4H470",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "crop_name": "Barley",
+        "crop_id": 2912,
+        "field_id": 75167,
+        "variety": "local",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "crop_name": "Bean",
+        "crop_id": 2914,
+        "field_id": 75129,
+        "variety": "Soya been",
+        "harvesting_date": null,
+        "harvested_weight": 116.38
+    },
+    {
+        "crop_name": "Citrus",
+        "crop_id": 2927,
+        "field_id": 74673,
+        "variety": "Valencia",
+        "harvesting_date": "2025-02-04",
+        "harvested_weight": 46.13
+    }
+]
