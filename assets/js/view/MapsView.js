@@ -74,5 +74,25 @@ export const MapsView = {
       try { varietiesMap.fitBounds(group.getBounds().pad(0.1)); } catch(_){}
       setTimeout(()=>{ try{ varietiesMap.invalidateSize(); }catch(_){} }, 100);
     }
+  },
+
+  async renderCropsMap(mapContainerId) {
+    const response = await fetch('./assets/js/real_data/data.json');
+    const data = await response.json();
+    const crops = data.filter(crop => crop.lat && crop.long);
+    const mapDiv = document.getElementById(mapContainerId);
+    mapDiv.innerHTML = '';
+    if (!window.L) return;
+    const map = L.map(mapDiv).setView([crops[0].lat, crops[0].long], 8);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+    crops.forEach(crop => {
+      const marker = L.marker([crop.lat, crop.long]).addTo(map);
+      marker.bindPopup(`<strong>${crop.crop_name}</strong>`);
+    });
+    // Fit map to all markers
+    const bounds = L.latLngBounds(crops.map(crop => [crop.lat, crop.long]));
+    map.fitBounds(bounds.pad(0.1));
   }
 };
