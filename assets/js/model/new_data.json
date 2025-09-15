@@ -1,0 +1,4013 @@
+[
+    {
+        "field_id": 74673,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-02-04",
+        "harvested_weight": 46.13
+    },
+    {
+        "field_id": 75130,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74820,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74817,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74822,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74819,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74818,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74821,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74675,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75139,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75054,
+        "crop_id": 2873,
+        "variety": "SW10",
+        "harvesting_date": "2025-03-12",
+        "harvested_weight": 17.0
+    },
+    {
+        "field_id": 75053,
+        "crop_id": 2873,
+        "variety": "Pegasis",
+        "harvesting_date": "2025-03-12",
+        "harvested_weight": 11.0
+    },
+    {
+        "field_id": 75052,
+        "crop_id": 2873,
+        "variety": "Pegasis",
+        "harvesting_date": "2025-03-11",
+        "harvested_weight": 13.0
+    },
+    {
+        "field_id": 75051,
+        "crop_id": 2873,
+        "variety": "Pegasis",
+        "harvesting_date": "2025-03-11",
+        "harvested_weight": 7.0
+    },
+    {
+        "field_id": 75050,
+        "crop_id": 2873,
+        "variety": "Pegasis",
+        "harvesting_date": "2025-03-11",
+        "harvested_weight": 10.0
+    },
+    {
+        "field_id": 74221,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-23",
+        "harvested_weight": 208.52
+    },
+    {
+        "field_id": 74211,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-23",
+        "harvested_weight": 358.3
+    },
+    {
+        "field_id": 74218,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-20",
+        "harvested_weight": 350.0
+    },
+    {
+        "field_id": 74216,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-18",
+        "harvested_weight": 385.0
+    },
+    {
+        "field_id": 74214,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-19",
+        "harvested_weight": 364.44
+    },
+    {
+        "field_id": 74753,
+        "crop_id": 2897,
+        "variety": "Wonderful",
+        "harvesting_date": "2024-12-25",
+        "harvested_weight": 198.9
+    },
+    {
+        "field_id": 74698,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-04-09",
+        "harvested_weight": 495.71
+    },
+    {
+        "field_id": 75140,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74754,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-02-28",
+        "harvested_weight": 645.16
+    },
+    {
+        "field_id": 75119,
+        "crop_id": 2927,
+        "variety": "Early Navel",
+        "harvesting_date": "2024-12-25",
+        "harvested_weight": 713.06
+    },
+    {
+        "field_id": 74213,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-17",
+        "harvested_weight": 358.24
+    },
+    {
+        "field_id": 74224,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74222,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-17",
+        "harvested_weight": 420.26
+    },
+    {
+        "field_id": 74223,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-17",
+        "harvested_weight": 380.48
+    },
+    {
+        "field_id": 74212,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74215,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-19",
+        "harvested_weight": 145.0
+    },
+    {
+        "field_id": 74217,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-21",
+        "harvested_weight": 361.12
+    },
+    {
+        "field_id": 74219,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-23",
+        "harvested_weight": 362.04
+    },
+    {
+        "field_id": 74220,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-22",
+        "harvested_weight": 357.8
+    },
+    {
+        "field_id": 74683,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-03-01",
+        "harvested_weight": 393.66
+    },
+    {
+        "field_id": 75141,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75115,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-03-01",
+        "harvested_weight": 603.12
+    },
+    {
+        "field_id": 75117,
+        "crop_id": 2927,
+        "variety": "Leta navel",
+        "harvesting_date": "2024-12-25",
+        "harvested_weight": 182.66
+    },
+    {
+        "field_id": 74685,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-02-12",
+        "harvested_weight": 1104.42
+    },
+    {
+        "field_id": 75142,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74686,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-02-05",
+        "harvested_weight": 1312.35
+    },
+    {
+        "field_id": 75143,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74687,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-03-01",
+        "harvested_weight": 1200.19
+    },
+    {
+        "field_id": 75144,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74688,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-04-09",
+        "harvested_weight": 1099.38
+    },
+    {
+        "field_id": 75145,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74689,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-03-01",
+        "harvested_weight": 648.75
+    },
+    {
+        "field_id": 75146,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74756,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-03-01",
+        "harvested_weight": 403.93
+    },
+    {
+        "field_id": 75118,
+        "crop_id": 2927,
+        "variety": "EurekaLemon",
+        "harvesting_date": "2025-01-24",
+        "harvested_weight": 78.28
+    },
+    {
+        "field_id": 74694,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-03-01",
+        "harvested_weight": 306.77
+    },
+    {
+        "field_id": 75147,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74757,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-03-01",
+        "harvested_weight": 567.3
+    },
+    {
+        "field_id": 75120,
+        "crop_id": 2927,
+        "variety": "EurekaLemon",
+        "harvesting_date": "2025-01-28",
+        "harvested_weight": 99.79
+    },
+    {
+        "field_id": 74696,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75148,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74758,
+        "crop_id": 2897,
+        "variety": "wander ful",
+        "harvesting_date": "2024-12-25",
+        "harvested_weight": 300.0
+    },
+    {
+        "field_id": 74719,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-02-14",
+        "harvested_weight": 965.96
+    },
+    {
+        "field_id": 75131,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74700,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75149,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74190,
+        "crop_id": 2399,
+        "variety": "FINE SEEDS",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74192,
+        "crop_id": 2399,
+        "variety": "FINE SEEDS",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74194,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-14",
+        "harvested_weight": 163.0
+    },
+    {
+        "field_id": 74196,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-09",
+        "harvested_weight": 151.0
+    },
+    {
+        "field_id": 74198,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-09",
+        "harvested_weight": 126.0
+    },
+    {
+        "field_id": 74199,
+        "crop_id": 2399,
+        "variety": "P3444",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74210,
+        "crop_id": 2873,
+        "variety": "SIRIVER",
+        "harvesting_date": "2025-03-09",
+        "harvested_weight": 122.0
+    },
+    {
+        "field_id": 74197,
+        "crop_id": 2399,
+        "variety": "P3444",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74195,
+        "crop_id": 2399,
+        "variety": "P3444",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74701,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75150,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74191,
+        "crop_id": 2873,
+        "variety": "Saltana\t",
+        "harvesting_date": "2025-03-06",
+        "harvested_weight": 129.0
+    },
+    {
+        "field_id": 74200,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-07",
+        "harvested_weight": 157.0
+    },
+    {
+        "field_id": 74205,
+        "crop_id": 2399,
+        "variety": "P3444",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74204,
+        "crop_id": 2399,
+        "variety": "P2105",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74202,
+        "crop_id": 2399,
+        "variety": "P3444",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74206,
+        "crop_id": 2399,
+        "variety": "P3444",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74208,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-08",
+        "harvested_weight": 108.0
+    },
+    {
+        "field_id": 74203,
+        "crop_id": 2399,
+        "variety": "P3444",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74207,
+        "crop_id": 2873,
+        "variety": "SIRIVER",
+        "harvesting_date": "2025-03-14",
+        "harvested_weight": 81.0
+    },
+    {
+        "field_id": 74702,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74201,
+        "crop_id": 2873,
+        "variety": "SIRIVER",
+        "harvesting_date": "2025-03-14",
+        "harvested_weight": 56.0
+    },
+    {
+        "field_id": 74209,
+        "crop_id": 2399,
+        "variety": "P3444",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74703,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74746,
+        "crop_id": 2927,
+        "variety": "Early Navel",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74707,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74708,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2024-04-09",
+        "harvested_weight": 630.2
+    },
+    {
+        "field_id": 74747,
+        "crop_id": 2927,
+        "variety": "Grapefruit",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74712,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-04-09",
+        "harvested_weight": 789.36
+    },
+    {
+        "field_id": 74748,
+        "crop_id": 2927,
+        "variety": "Formont Mandarin",
+        "harvesting_date": "2024-12-24",
+        "harvested_weight": 374.76
+    },
+    {
+        "field_id": 74716,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74717,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-04-09",
+        "harvested_weight": 856.82
+    },
+    {
+        "field_id": 74718,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74745,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-02-14",
+        "harvested_weight": 531.13
+    },
+    {
+        "field_id": 74722,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-01-28",
+        "harvested_weight": 336.06
+    },
+    {
+        "field_id": 75132,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74723,
+        "crop_id": 2927,
+        "variety": "Morcut Mandarin",
+        "harvesting_date": "2025-04-09",
+        "harvested_weight": 30.89
+    },
+    {
+        "field_id": 74244,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": null,
+        "harvested_weight": 2098.0
+    },
+    {
+        "field_id": 74245,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-06-13",
+        "harvested_weight": 7750.0
+    },
+    {
+        "field_id": 74247,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-24",
+        "harvested_weight": 371.4
+    },
+    {
+        "field_id": 74230,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-24",
+        "harvested_weight": 387.5
+    },
+    {
+        "field_id": 74233,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-29",
+        "harvested_weight": 369.64
+    },
+    {
+        "field_id": 74235,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-30",
+        "harvested_weight": 377.52
+    },
+    {
+        "field_id": 74242,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-02",
+        "harvested_weight": 208.44
+    },
+    {
+        "field_id": 74240,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-02",
+        "harvested_weight": 205.16
+    },
+    {
+        "field_id": 74241,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-03",
+        "harvested_weight": 192.86
+    },
+    {
+        "field_id": 74724,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74749,
+        "crop_id": 2927,
+        "variety": "Leta navel",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74237,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-02",
+        "harvested_weight": 381.1
+    },
+    {
+        "field_id": 74236,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-01",
+        "harvested_weight": 396.66
+    },
+    {
+        "field_id": 74234,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-30",
+        "harvested_weight": 377.2
+    },
+    {
+        "field_id": 74231,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-03",
+        "harvested_weight": 363.14
+    },
+    {
+        "field_id": 74243,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-04",
+        "harvested_weight": 333.6
+    },
+    {
+        "field_id": 74227,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-26",
+        "harvested_weight": 367.78
+    },
+    {
+        "field_id": 74228,
+        "crop_id": 2907,
+        "variety": "salama",
+        "harvesting_date": "2025-06-13",
+        "harvested_weight": 6032.26
+    },
+    {
+        "field_id": 74229,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-06-08",
+        "harvested_weight": 7369.4
+    },
+    {
+        "field_id": 74232,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-05-25",
+        "harvested_weight": 7179.5
+    },
+    {
+        "field_id": 74225,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-29",
+        "harvested_weight": 355.52
+    },
+    {
+        "field_id": 74728,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74226,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-27",
+        "harvested_weight": 372.18
+    },
+    {
+        "field_id": 74238,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-28",
+        "harvested_weight": 373.52
+    },
+    {
+        "field_id": 74239,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-28",
+        "harvested_weight": 216.22
+    },
+    {
+        "field_id": 74246,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-26",
+        "harvested_weight": 272.56
+    },
+    {
+        "field_id": 74729,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74730,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74731,
+        "crop_id": 2927,
+        "variety": "Mandarin Morcut",
+        "harvesting_date": "2025-03-01",
+        "harvested_weight": 82.06
+    },
+    {
+        "field_id": 74732,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74750,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74735,
+        "crop_id": 2927,
+        "variety": "Mandarin Morcut",
+        "harvesting_date": "2025-03-01",
+        "harvested_weight": 137.52
+    },
+    {
+        "field_id": 74736,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-02-26",
+        "harvested_weight": 1102.33
+    },
+    {
+        "field_id": 75133,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74250,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-26",
+        "harvested_weight": 171.0
+    },
+    {
+        "field_id": 74251,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-25",
+        "harvested_weight": 90.0
+    },
+    {
+        "field_id": 74253,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-25",
+        "harvested_weight": 113.0
+    },
+    {
+        "field_id": 74256,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-26",
+        "harvested_weight": 98.0
+    },
+    {
+        "field_id": 74268,
+        "crop_id": 2873,
+        "variety": "Catalina",
+        "harvesting_date": "2025-03-21",
+        "harvested_weight": 200.0
+    },
+    {
+        "field_id": 74267,
+        "crop_id": 2873,
+        "variety": "Catalina\t",
+        "harvesting_date": "2025-03-22",
+        "harvested_weight": 177.0
+    },
+    {
+        "field_id": 74266,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-22",
+        "harvested_weight": 138.0
+    },
+    {
+        "field_id": 74254,
+        "crop_id": 2873,
+        "variety": "Catalina",
+        "harvesting_date": "2025-03-19",
+        "harvested_weight": 187.0
+    },
+    {
+        "field_id": 74249,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-19",
+        "harvested_weight": 242.0
+    },
+    {
+        "field_id": 74252,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-27",
+        "harvested_weight": 46.0
+    },
+    {
+        "field_id": 74248,
+        "crop_id": 2873,
+        "variety": "Pegasis",
+        "harvesting_date": "2025-03-20",
+        "harvested_weight": 107.0
+    },
+    {
+        "field_id": 74265,
+        "crop_id": 2873,
+        "variety": "Catalina\t",
+        "harvesting_date": "2025-03-22",
+        "harvested_weight": 187.0
+    },
+    {
+        "field_id": 74257,
+        "crop_id": 2873,
+        "variety": "Pegasis",
+        "harvesting_date": "2025-03-20",
+        "harvested_weight": 134.0
+    },
+    {
+        "field_id": 74259,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-28",
+        "harvested_weight": 61.0
+    },
+    {
+        "field_id": 74261,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-18",
+        "harvested_weight": 166.0
+    },
+    {
+        "field_id": 74255,
+        "crop_id": 2873,
+        "variety": "Saltana",
+        "harvesting_date": "2025-03-17",
+        "harvested_weight": 177.0
+    },
+    {
+        "field_id": 74262,
+        "crop_id": 2873,
+        "variety": "Pegasis",
+        "harvesting_date": "2025-03-23",
+        "harvested_weight": 76.0
+    },
+    {
+        "field_id": 74260,
+        "crop_id": 2873,
+        "variety": "Pegasis",
+        "harvesting_date": "2025-03-23",
+        "harvested_weight": 104.0
+    },
+    {
+        "field_id": 74258,
+        "crop_id": 2873,
+        "variety": "Pegasis",
+        "harvesting_date": "2025-03-18",
+        "harvested_weight": 181.0
+    },
+    {
+        "field_id": 74264,
+        "crop_id": 2873,
+        "variety": "Pegasis",
+        "harvesting_date": "2025-03-18",
+        "harvested_weight": 109.0
+    },
+    {
+        "field_id": 74263,
+        "crop_id": 2873,
+        "variety": "Pegasis",
+        "harvesting_date": "2025-03-18",
+        "harvested_weight": 96.0
+    },
+    {
+        "field_id": 74737,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-02-16",
+        "harvested_weight": 1207.02
+    },
+    {
+        "field_id": 75134,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74738,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-02-19",
+        "harvested_weight": 363.61
+    },
+    {
+        "field_id": 75135,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74272,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-12",
+        "harvested_weight": 297.4
+    },
+    {
+        "field_id": 74273,
+        "crop_id": 2907,
+        "variety": "Elmo",
+        "harvesting_date": "2025-04-23",
+        "harvested_weight": 4858.5
+    },
+    {
+        "field_id": 74274,
+        "crop_id": 2907,
+        "variety": "Elmo",
+        "harvesting_date": "2025-04-22",
+        "harvested_weight": 5210.36
+    },
+    {
+        "field_id": 74275,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-10",
+        "harvested_weight": 310.84
+    },
+    {
+        "field_id": 74276,
+        "crop_id": 2399,
+        "variety": "P2105",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74277,
+        "crop_id": 2399,
+        "variety": "Pioneer 30N11",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74283,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-09",
+        "harvested_weight": 241.26
+    },
+    {
+        "field_id": 74282,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-05-03",
+        "harvested_weight": 5648.0
+    },
+    {
+        "field_id": 74279,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-25",
+        "harvested_weight": 278.14
+    },
+    {
+        "field_id": 74278,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-10",
+        "harvested_weight": 304.74
+    },
+    {
+        "field_id": 74271,
+        "crop_id": 2399,
+        "variety": "Pioneer 30N11",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74270,
+        "crop_id": 2399,
+        "variety": "Pioneer 30N11",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74269,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-12",
+        "harvested_weight": 262.68
+    },
+    {
+        "field_id": 74281,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-05-03",
+        "harvested_weight": 5840.7
+    },
+    {
+        "field_id": 74280,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": null,
+        "harvested_weight": 5811.1
+    },
+    {
+        "field_id": 75129,
+        "crop_id": 2914,
+        "variety": "Soya been",
+        "harvesting_date": null,
+        "harvested_weight": 116.38
+    },
+    {
+        "field_id": 74288,
+        "crop_id": 2399,
+        "variety": "Pioneer 30N11",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74284,
+        "crop_id": 2399,
+        "variety": "Dkc6919",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74285,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 366.94
+    },
+    {
+        "field_id": 74286,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-10",
+        "harvested_weight": 317.96
+    },
+    {
+        "field_id": 74287,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-10",
+        "harvested_weight": 246.22
+    },
+    {
+        "field_id": 74292,
+        "crop_id": 2907,
+        "variety": "Elmo",
+        "harvesting_date": "2025-05-06",
+        "harvested_weight": 5841.0
+    },
+    {
+        "field_id": 74290,
+        "crop_id": 2399,
+        "variety": "32D99 & P2105",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74289,
+        "crop_id": 2399,
+        "variety": "P3444",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74291,
+        "crop_id": 2399,
+        "variety": "32D99",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74751,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-02-20",
+        "harvested_weight": 968.88
+    },
+    {
+        "field_id": 74742,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-01-31",
+        "harvested_weight": 590.4
+    },
+    {
+        "field_id": 75136,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74308,
+        "crop_id": 2399,
+        "variety": "FINE SEEDS",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74309,
+        "crop_id": 2399,
+        "variety": "Tiger",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74310,
+        "crop_id": 2399,
+        "variety": "FINE SEEDS",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74311,
+        "crop_id": 2914,
+        "variety": "Nebraska ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74312,
+        "crop_id": 2907,
+        "variety": "Elmo",
+        "harvesting_date": "2025-05-08",
+        "harvested_weight": 6525.5
+    },
+    {
+        "field_id": 74313,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 74315,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-11",
+        "harvested_weight": 316.9
+    },
+    {
+        "field_id": 74300,
+        "crop_id": 2399,
+        "variety": "32D99",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74299,
+        "crop_id": 2907,
+        "variety": "Elmo",
+        "harvesting_date": "2025-04-13",
+        "harvested_weight": 5276.26
+    },
+    {
+        "field_id": 74298,
+        "crop_id": 2907,
+        "variety": "Elmo",
+        "harvesting_date": "2025-04-10",
+        "harvested_weight": 5092.24
+    },
+    {
+        "field_id": 74297,
+        "crop_id": 2907,
+        "variety": "Smart Djerba",
+        "harvesting_date": "2025-06-15",
+        "harvested_weight": 5943.18
+    },
+    {
+        "field_id": 74296,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-12",
+        "harvested_weight": 309.46
+    },
+    {
+        "field_id": 74293,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-12",
+        "harvested_weight": 239.3
+    },
+    {
+        "field_id": 74294,
+        "crop_id": 2399,
+        "variety": "32D99",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74295,
+        "crop_id": 2399,
+        "variety": "P3444&32D99",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74304,
+        "crop_id": 2399,
+        "variety": "P3444",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74306,
+        "crop_id": 2399,
+        "variety": "P3444",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74314,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-11",
+        "harvested_weight": 338.08
+    },
+    {
+        "field_id": 74316,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-12",
+        "harvested_weight": 244.58
+    },
+    {
+        "field_id": 74307,
+        "crop_id": 2399,
+        "variety": "32D99",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74305,
+        "crop_id": 2399,
+        "variety": "32D99",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74303,
+        "crop_id": 2399,
+        "variety": "32D99",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74302,
+        "crop_id": 2399,
+        "variety": "Pioneer 30N11",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74301,
+        "crop_id": 2399,
+        "variety": "FINE SEEDS",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74752,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": "2025-01-30",
+        "harvested_weight": 451.88
+    },
+    {
+        "field_id": 75137,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74768,
+        "crop_id": 2399,
+        "variety": "P3444",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74769,
+        "crop_id": 2399,
+        "variety": "FINE SEEDS",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74761,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-13",
+        "harvested_weight": 213.44
+    },
+    {
+        "field_id": 74771,
+        "crop_id": 2399,
+        "variety": "32D99",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74764,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-14",
+        "harvested_weight": 186.46
+    },
+    {
+        "field_id": 74774,
+        "crop_id": 2399,
+        "variety": "P3444",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74773,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-14",
+        "harvested_weight": 284.42
+    },
+    {
+        "field_id": 74777,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-14",
+        "harvested_weight": 264.0
+    },
+    {
+        "field_id": 74784,
+        "crop_id": 2399,
+        "variety": "32D99",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74778,
+        "crop_id": 2399,
+        "variety": "32D99",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74767,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-13",
+        "harvested_weight": 177.44
+    },
+    {
+        "field_id": 74762,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-13",
+        "harvested_weight": 336.24
+    },
+    {
+        "field_id": 74766,
+        "crop_id": 2399,
+        "variety": "Pioneer 30N11",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74770,
+        "crop_id": 2399,
+        "variety": "32D99",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74781,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-16",
+        "harvested_weight": 285.88
+    },
+    {
+        "field_id": 74783,
+        "crop_id": 2399,
+        "variety": "Pioneer 30N11",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74785,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-16",
+        "harvested_weight": 287.08
+    },
+    {
+        "field_id": 74775,
+        "crop_id": 2399,
+        "variety": "FINE SEEDS",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74780,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-15",
+        "harvested_weight": 138.04
+    },
+    {
+        "field_id": 74759,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-14",
+        "harvested_weight": 259.32
+    },
+    {
+        "field_id": 74782,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-28",
+        "harvested_weight": 286.9
+    },
+    {
+        "field_id": 74779,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-16",
+        "harvested_weight": 328.92
+    },
+    {
+        "field_id": 74776,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-16",
+        "harvested_weight": 129.54
+    },
+    {
+        "field_id": 74772,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-22",
+        "harvested_weight": 181.54
+    },
+    {
+        "field_id": 74765,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-28",
+        "harvested_weight": 229.52
+    },
+    {
+        "field_id": 74763,
+        "crop_id": 2869,
+        "variety": "Dkc6919",
+        "harvesting_date": "2025-05-17",
+        "harvested_weight": 162.24
+    },
+    {
+        "field_id": 74760,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-13",
+        "harvested_weight": 173.28
+    },
+    {
+        "field_id": 74744,
+        "crop_id": 2927,
+        "variety": "Valencia",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75138,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74801,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 74802,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 74806,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 74808,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 74807,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 74809,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 74805,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 74804,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 74796,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 74803,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 74810,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 74800,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 74797,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 74799,
+        "crop_id": 2399,
+        "variety": "Pioneer 30N11",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74798,
+        "crop_id": 2399,
+        "variety": "Pioneer 30N11",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74791,
+        "crop_id": 2399,
+        "variety": "P3444",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74792,
+        "crop_id": 2399,
+        "variety": "HT2031",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74789,
+        "crop_id": 2399,
+        "variety": "Pioneer 30N11",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74795,
+        "crop_id": 2399,
+        "variety": "32D99",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74794,
+        "crop_id": 2914,
+        "variety": "Cowpea",
+        "harvesting_date": null,
+        "harvested_weight": 251.8
+    },
+    {
+        "field_id": 74788,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-07",
+        "harvested_weight": 333.04
+    },
+    {
+        "field_id": 74786,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-05",
+        "harvested_weight": 332.88
+    },
+    {
+        "field_id": 74787,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-05",
+        "harvested_weight": 298.22
+    },
+    {
+        "field_id": 74793,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-06",
+        "harvested_weight": 171.22
+    },
+    {
+        "field_id": 74790,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-09",
+        "harvested_weight": 245.88
+    },
+    {
+        "field_id": 74535,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74584,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74534,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74536,
+        "crop_id": 2401,
+        "variety": "Rent",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74585,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-04-22",
+        "harvested_weight": 1518.13
+    },
+    {
+        "field_id": 74537,
+        "crop_id": 2401,
+        "variety": "Rent",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74586,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-06-10",
+        "harvested_weight": 3408.66
+    },
+    {
+        "field_id": 74538,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74587,
+        "crop_id": 2907,
+        "variety": "Elmo",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74539,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74588,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-04-10",
+        "harvested_weight": 3696.88
+    },
+    {
+        "field_id": 74540,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74589,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74541,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-14",
+        "harvested_weight": 188.67
+    },
+    {
+        "field_id": 74590,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74542,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74591,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74543,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74592,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-06-26",
+        "harvested_weight": 5276.57
+    },
+    {
+        "field_id": 75047,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74545,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74594,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": null,
+        "harvested_weight": 2793.86
+    },
+    {
+        "field_id": 74544,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74593,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74546,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74595,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-09",
+        "harvested_weight": 309.69
+    },
+    {
+        "field_id": 74547,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74596,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-04-28",
+        "harvested_weight": 1985.58
+    },
+    {
+        "field_id": 74548,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74597,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-06-04",
+        "harvested_weight": 3367.89
+    },
+    {
+        "field_id": 74549,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74598,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-20",
+        "harvested_weight": 383.25
+    },
+    {
+        "field_id": 74550,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74599,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-05-26",
+        "harvested_weight": 2863.15
+    },
+    {
+        "field_id": 74551,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74600,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74552,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-12",
+        "harvested_weight": 96.005
+    },
+    {
+        "field_id": 74601,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74553,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74602,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-04",
+        "harvested_weight": 314.09
+    },
+    {
+        "field_id": 74555,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74604,
+        "crop_id": 2907,
+        "variety": "Smart Djerba",
+        "harvesting_date": "2025-04-16",
+        "harvested_weight": 1347.58
+    },
+    {
+        "field_id": 74554,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-04",
+        "harvested_weight": 387.94
+    },
+    {
+        "field_id": 74603,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-03",
+        "harvested_weight": 348.71
+    },
+    {
+        "field_id": 74556,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74605,
+        "crop_id": 2907,
+        "variety": "Smart Djerba",
+        "harvesting_date": "2025-04-08",
+        "harvested_weight": 1853.2
+    },
+    {
+        "field_id": 74557,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74606,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-06-08",
+        "harvested_weight": 3754.86
+    },
+    {
+        "field_id": 74558,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74607,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-06-27",
+        "harvested_weight": 7377.6
+    },
+    {
+        "field_id": 74559,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74608,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74560,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74609,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-05-17",
+        "harvested_weight": 3090.5
+    },
+    {
+        "field_id": 74561,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74610,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-05-14",
+        "harvested_weight": 3067.39
+    },
+    {
+        "field_id": 74562,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-14",
+        "harvested_weight": 108.605
+    },
+    {
+        "field_id": 74611,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-24",
+        "harvested_weight": 351.42
+    },
+    {
+        "field_id": 74563,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74612,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-23",
+        "harvested_weight": 371.86
+    },
+    {
+        "field_id": 74565,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74614,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": null,
+        "harvested_weight": 1373.74
+    },
+    {
+        "field_id": 74564,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-14",
+        "harvested_weight": 206.74
+    },
+    {
+        "field_id": 74613,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-05-22",
+        "harvested_weight": 3657.25
+    },
+    {
+        "field_id": 74566,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74615,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-04-14",
+        "harvested_weight": 1910.55
+    },
+    {
+        "field_id": 74567,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-07",
+        "harvested_weight": 188.94
+    },
+    {
+        "field_id": 74616,
+        "crop_id": 2869,
+        "variety": "wheat \ud83c\udf3e Trail",
+        "harvesting_date": "2025-05-09",
+        "harvested_weight": 267.4
+    },
+    {
+        "field_id": 74568,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74617,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-06-15",
+        "harvested_weight": 6772.02
+    },
+    {
+        "field_id": 74569,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74618,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-06-24",
+        "harvested_weight": 3382.35
+    },
+    {
+        "field_id": 74570,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74619,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74571,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74620,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74572,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-11",
+        "harvested_weight": 261.625
+    },
+    {
+        "field_id": 74621,
+        "crop_id": 2907,
+        "variety": "Gustav",
+        "harvesting_date": "2025-04-22",
+        "harvested_weight": 1758.84
+    },
+    {
+        "field_id": 74573,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74622,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-21",
+        "harvested_weight": 375.71
+    },
+    {
+        "field_id": 74575,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74624,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-02",
+        "harvested_weight": 299.6
+    },
+    {
+        "field_id": 74574,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74623,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-05-02",
+        "harvested_weight": 2668.83
+    },
+    {
+        "field_id": 74576,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74625,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-04-17",
+        "harvested_weight": 2328.27
+    },
+    {
+        "field_id": 74577,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-08",
+        "harvested_weight": 107.36
+    },
+    {
+        "field_id": 74626,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74578,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-03",
+        "harvested_weight": 200.69
+    },
+    {
+        "field_id": 74627,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-05-10",
+        "harvested_weight": 3776.28
+    },
+    {
+        "field_id": 74579,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74628,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74580,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74629,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-04",
+        "harvested_weight": 335.64
+    },
+    {
+        "field_id": 74581,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-17",
+        "harvested_weight": 192.94
+    },
+    {
+        "field_id": 74630,
+        "crop_id": 2869,
+        "variety": "Wheat \ud83c\udf3e Trial ",
+        "harvesting_date": "2025-05-12",
+        "harvested_weight": 292.17
+    },
+    {
+        "field_id": 74582,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-14",
+        "harvested_weight": 90.0
+    },
+    {
+        "field_id": 74631,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74583,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74632,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-22",
+        "harvested_weight": 343.0
+    },
+    {
+        "field_id": 74634,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-05-10",
+        "harvested_weight": 907.95
+    },
+    {
+        "field_id": 74633,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-07-09",
+        "harvested_weight": 4322.581
+    },
+    {
+        "field_id": 74635,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-07-22",
+        "harvested_weight": 3449.43
+    },
+    {
+        "field_id": 74636,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74637,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-04-26",
+        "harvested_weight": 1889.98
+    },
+    {
+        "field_id": 74638,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-05-11",
+        "harvested_weight": 2657.1
+    },
+    {
+        "field_id": 74639,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-01",
+        "harvested_weight": 290.77
+    },
+    {
+        "field_id": 74640,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-07-13",
+        "harvested_weight": 4217.51
+    },
+    {
+        "field_id": 74641,
+        "crop_id": 2869,
+        "variety": "MIWOK",
+        "harvesting_date": "2025-05-24",
+        "harvested_weight": 189.5
+    },
+    {
+        "field_id": 74642,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-07-21",
+        "harvested_weight": 2759.96
+    },
+    {
+        "field_id": 74644,
+        "crop_id": 2907,
+        "variety": "Smart Djerba",
+        "harvesting_date": "2025-04-13",
+        "harvested_weight": 1600.65
+    },
+    {
+        "field_id": 74643,
+        "crop_id": 2907,
+        "variety": "Elmo",
+        "harvesting_date": "2025-07-20",
+        "harvested_weight": 3491.29
+    },
+    {
+        "field_id": 74645,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-06-22",
+        "harvested_weight": 7016.41
+    },
+    {
+        "field_id": 74646,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-04-27",
+        "harvested_weight": 1976.31
+    },
+    {
+        "field_id": 74647,
+        "crop_id": 2869,
+        "variety": "Misr1",
+        "harvesting_date": "2025-04-29",
+        "harvested_weight": 395.33
+    },
+    {
+        "field_id": 74648,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-07-13",
+        "harvested_weight": 3746.699
+    },
+    {
+        "field_id": 74649,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-30",
+        "harvested_weight": 353.47
+    },
+    {
+        "field_id": 74650,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-04-24",
+        "harvested_weight": 2507.94
+    },
+    {
+        "field_id": 74651,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": null,
+        "harvested_weight": 4674.46
+    },
+    {
+        "field_id": 74652,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-05-23",
+        "harvested_weight": 6412.71
+    },
+    {
+        "field_id": 74654,
+        "crop_id": 2907,
+        "variety": "Smart Djerba",
+        "harvesting_date": "2025-04-27",
+        "harvested_weight": 1125.18
+    },
+    {
+        "field_id": 74653,
+        "crop_id": 2907,
+        "variety": "Concretia ",
+        "harvesting_date": "2025-07-19",
+        "harvested_weight": 3243.07
+    },
+    {
+        "field_id": 74655,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-06",
+        "harvested_weight": 318.0
+    },
+    {
+        "field_id": 74656,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-06",
+        "harvested_weight": 318.0
+    },
+    {
+        "field_id": 74657,
+        "crop_id": 2907,
+        "variety": "Scotta",
+        "harvesting_date": "2025-07-01",
+        "harvested_weight": 3131.92
+    },
+    {
+        "field_id": 74658,
+        "crop_id": 2869,
+        "variety": "MIWOK",
+        "harvesting_date": "2025-05-20",
+        "harvested_weight": 266.47
+    },
+    {
+        "field_id": 74659,
+        "crop_id": 2907,
+        "variety": "Amelie",
+        "harvesting_date": "2025-07-02",
+        "harvested_weight": 3536.62
+    },
+    {
+        "field_id": 74660,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74661,
+        "crop_id": 2907,
+        "variety": "Smart Djerba",
+        "harvesting_date": "2025-06-18",
+        "harvested_weight": 7004.56
+    },
+    {
+        "field_id": 74662,
+        "crop_id": 2907,
+        "variety": "Elmo",
+        "harvesting_date": "2025-07-03",
+        "harvested_weight": 3168.49
+    },
+    {
+        "field_id": 74664,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-28",
+        "harvested_weight": 276.67
+    },
+    {
+        "field_id": 74663,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-07",
+        "harvested_weight": 294.45
+    },
+    {
+        "field_id": 74665,
+        "crop_id": 2907,
+        "variety": "Elmo",
+        "harvesting_date": "2025-05-05",
+        "harvested_weight": 3524.76
+    },
+    {
+        "field_id": 74666,
+        "crop_id": 2907,
+        "variety": "Salama",
+        "harvesting_date": "2025-06-20",
+        "harvested_weight": 7125.91
+    },
+    {
+        "field_id": 74667,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-16",
+        "harvested_weight": 349.8
+    },
+    {
+        "field_id": 74668,
+        "crop_id": 2907,
+        "variety": "Allanya",
+        "harvesting_date": "2025-06-16",
+        "harvested_weight": 3203.51
+    },
+    {
+        "field_id": 74669,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-28",
+        "harvested_weight": 311.41
+    },
+    {
+        "field_id": 74670,
+        "crop_id": 2907,
+        "variety": "Jocko",
+        "harvesting_date": "2025-05-06",
+        "harvested_weight": 3022.11
+    },
+    {
+        "field_id": 74671,
+        "crop_id": 2907,
+        "variety": "Allanya",
+        "harvesting_date": "2025-05-13",
+        "harvested_weight": 3433.8
+    },
+    {
+        "field_id": 74672,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75126,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74193,
+        "crop_id": 2905,
+        "variety": "soybean",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75151,
+        "crop_id": 2868,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74676,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74674,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74677,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74678,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74679,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74680,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74681,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74682,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74684,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74690,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74691,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74692,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74693,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74695,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74697,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74699,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75048,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74704,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74705,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74706,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74709,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74710,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74711,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74713,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74714,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74715,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74720,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74721,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74725,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74726,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74727,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74733,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74734,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74739,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74740,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74741,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74743,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 74755,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75172,
+        "crop_id": 2873,
+        "variety": "Egypt Clover",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75175,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-10",
+        "harvested_weight": 98.42
+    },
+    {
+        "field_id": 75173,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75158,
+        "crop_id": 2873,
+        "variety": "AFX 1060\t",
+        "harvesting_date": "2025-03-10",
+        "harvested_weight": 26.0
+    },
+    {
+        "field_id": 75157,
+        "crop_id": 2873,
+        "variety": "Alfa master 10",
+        "harvesting_date": "2025-03-30",
+        "harvested_weight": 48.0
+    },
+    {
+        "field_id": 75155,
+        "crop_id": 2873,
+        "variety": "SW10",
+        "harvesting_date": "2025-03-30",
+        "harvested_weight": 25.0
+    },
+    {
+        "field_id": 75156,
+        "crop_id": 2873,
+        "variety": "Alfa master 10\t",
+        "harvesting_date": "2025-03-10",
+        "harvested_weight": 17.0
+    },
+    {
+        "field_id": 75154,
+        "crop_id": 2873,
+        "variety": "Alfa master 10",
+        "harvesting_date": "2025-03-10",
+        "harvested_weight": 6.0
+    },
+    {
+        "field_id": 75153,
+        "crop_id": 2873,
+        "variety": "Alfa master 10",
+        "harvesting_date": "2025-03-10",
+        "harvested_weight": 9.0
+    },
+    {
+        "field_id": 75159,
+        "crop_id": 2873,
+        "variety": "Alfa master 10",
+        "harvesting_date": "2025-03-10",
+        "harvested_weight": 18.0
+    },
+    {
+        "field_id": 75161,
+        "crop_id": 2873,
+        "variety": "AFX 1060",
+        "harvesting_date": "2025-03-31",
+        "harvested_weight": 78.0
+    },
+    {
+        "field_id": 75163,
+        "crop_id": 2873,
+        "variety": "AFX 1060",
+        "harvesting_date": "2025-03-30",
+        "harvested_weight": 102.0
+    },
+    {
+        "field_id": 75162,
+        "crop_id": 2873,
+        "variety": "Alfa master 10",
+        "harvesting_date": "2025-03-10",
+        "harvested_weight": 36.0
+    },
+    {
+        "field_id": 75160,
+        "crop_id": 2873,
+        "variety": "Alfa master 10",
+        "harvesting_date": "2025-03-10",
+        "harvested_weight": 16.0
+    },
+    {
+        "field_id": 75164,
+        "crop_id": 2873,
+        "variety": "SW10",
+        "harvesting_date": "2025-03-04",
+        "harvested_weight": 44.0
+    },
+    {
+        "field_id": 75167,
+        "crop_id": 2912,
+        "variety": "local",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75170,
+        "crop_id": 2873,
+        "variety": "Alfa master 10",
+        "harvesting_date": "2025-03-15",
+        "harvested_weight": 37.0
+    },
+    {
+        "field_id": 75171,
+        "crop_id": 2873,
+        "variety": "AFX 1060",
+        "harvesting_date": "2025-03-11",
+        "harvested_weight": 7.0
+    },
+    {
+        "field_id": 75169,
+        "crop_id": 2873,
+        "variety": "Alfa master 10",
+        "harvesting_date": "2025-03-15",
+        "harvested_weight": 26.0
+    },
+    {
+        "field_id": 75168,
+        "crop_id": 2873,
+        "variety": "SW10",
+        "harvesting_date": "2025-03-04",
+        "harvested_weight": 37.0
+    },
+    {
+        "field_id": 75166,
+        "crop_id": 2873,
+        "variety": "SW10",
+        "harvesting_date": "2025-03-11",
+        "harvested_weight": 9.0
+    },
+    {
+        "field_id": 75165,
+        "crop_id": 2873,
+        "variety": "SW10",
+        "harvesting_date": "2025-03-10",
+        "harvested_weight": 4.0
+    },
+    {
+        "field_id": 75176,
+        "crop_id": 2914,
+        "variety": "Cowpea",
+        "harvesting_date": null,
+        "harvested_weight": 107.56
+    },
+    {
+        "field_id": 75178,
+        "crop_id": 2912,
+        "variety": "local",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75177,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": null,
+        "harvested_weight": 0.0
+    },
+    {
+        "field_id": 75462,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75463,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75467,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75509,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75510,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75511,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75512,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75513,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75514,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75515,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75516,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75517,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75518,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75519,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75520,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75521,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75522,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75526,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75527,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75528,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75529,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75530,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75531,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75532,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75533,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75535,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75536,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75538,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75539,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75540,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75541,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75542,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75543,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75545,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75546,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75547,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75548,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75549,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75550,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75551,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75552,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75553,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75554,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75555,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75556,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75557,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75559,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75560,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75561,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75563,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75564,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75565,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75572,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75580,
+        "crop_id": 2909,
+        "variety": "N4H470",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75582,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75583,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75584,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-18",
+        "harvested_weight": 204.82
+    },
+    {
+        "field_id": 75586,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-17",
+        "harvested_weight": 162.78
+    },
+    {
+        "field_id": 75587,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-16",
+        "harvested_weight": 180.2
+    },
+    {
+        "field_id": 75588,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-16",
+        "harvested_weight": 185.5
+    },
+    {
+        "field_id": 75589,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-20",
+        "harvested_weight": 156.09
+    },
+    {
+        "field_id": 75590,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-17",
+        "harvested_weight": 180.26
+    },
+    {
+        "field_id": 75591,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-05",
+        "harvested_weight": 169.0
+    },
+    {
+        "field_id": 75592,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-11",
+        "harvested_weight": 170.93
+    },
+    {
+        "field_id": 75593,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-24",
+        "harvested_weight": 171.19
+    },
+    {
+        "field_id": 75594,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-09",
+        "harvested_weight": 139.12
+    },
+    {
+        "field_id": 75595,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-26",
+        "harvested_weight": 163.06
+    },
+    {
+        "field_id": 75596,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-24",
+        "harvested_weight": 162.98
+    },
+    {
+        "field_id": 75597,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-19",
+        "harvested_weight": 221.46
+    },
+    {
+        "field_id": 75598,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-10",
+        "harvested_weight": 160.89
+    },
+    {
+        "field_id": 75599,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-19",
+        "harvested_weight": 186.31
+    },
+    {
+        "field_id": 75600,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-19",
+        "harvested_weight": 181.89
+    },
+    {
+        "field_id": 75601,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-10",
+        "harvested_weight": 186.12
+    },
+    {
+        "field_id": 75602,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-26",
+        "harvested_weight": 175.19
+    },
+    {
+        "field_id": 75603,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-05",
+        "harvested_weight": 167.62
+    },
+    {
+        "field_id": 75604,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-30",
+        "harvested_weight": 164.3
+    },
+    {
+        "field_id": 75605,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-30",
+        "harvested_weight": 164.28
+    },
+    {
+        "field_id": 75606,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-30",
+        "harvested_weight": 145.52
+    },
+    {
+        "field_id": 75607,
+        "crop_id": 2869,
+        "variety": "MIWOK",
+        "harvesting_date": "2025-05-26",
+        "harvested_weight": 85.0
+    },
+    {
+        "field_id": 75608,
+        "crop_id": 2869,
+        "variety": "MIWOK",
+        "harvesting_date": "2025-05-29",
+        "harvested_weight": 138.8
+    },
+    {
+        "field_id": 75609,
+        "crop_id": 2869,
+        "variety": "MIWOK",
+        "harvesting_date": "2025-05-24",
+        "harvested_weight": 119.0
+    },
+    {
+        "field_id": 75610,
+        "crop_id": 2869,
+        "variety": "MIWOK",
+        "harvesting_date": "2025-05-25",
+        "harvested_weight": 116.3
+    },
+    {
+        "field_id": 75611,
+        "crop_id": 2869,
+        "variety": "MIWOK",
+        "harvesting_date": "2025-05-24",
+        "harvested_weight": 90.1
+    },
+    {
+        "field_id": 75612,
+        "crop_id": 2869,
+        "variety": "MIWOK",
+        "harvesting_date": "2025-05-19",
+        "harvested_weight": 138.0
+    },
+    {
+        "field_id": 75613,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-28",
+        "harvested_weight": 179.12
+    },
+    {
+        "field_id": 75614,
+        "crop_id": 2869,
+        "variety": "MIWOK",
+        "harvesting_date": "2025-05-25",
+        "harvested_weight": 122.5
+    },
+    {
+        "field_id": 75615,
+        "crop_id": 2869,
+        "variety": "MIWOK",
+        "harvesting_date": "2025-05-26",
+        "harvested_weight": 137.3
+    },
+    {
+        "field_id": 75616,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-04-28",
+        "harvested_weight": 171.89
+    },
+    {
+        "field_id": 75617,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-15",
+        "harvested_weight": 164.3
+    },
+    {
+        "field_id": 75618,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-07",
+        "harvested_weight": 168.49
+    },
+    {
+        "field_id": 75619,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-10",
+        "harvested_weight": 163.79
+    },
+    {
+        "field_id": 75620,
+        "crop_id": 2869,
+        "variety": "MIWOK",
+        "harvesting_date": "2025-05-27",
+        "harvested_weight": 132.5
+    },
+    {
+        "field_id": 75621,
+        "crop_id": null,
+        "variety": null,
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75622,
+        "crop_id": 2869,
+        "variety": "Misr1",
+        "harvesting_date": "2025-04-27",
+        "harvested_weight": 170.77
+    },
+    {
+        "field_id": 75623,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-02",
+        "harvested_weight": 156.59
+    },
+    {
+        "field_id": 75624,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-13",
+        "harvested_weight": 144.43
+    },
+    {
+        "field_id": 75625,
+        "crop_id": 2907,
+        "variety": "Elmo",
+        "harvesting_date": "2025-07-16",
+        "harvested_weight": 3390.85
+    },
+    {
+        "field_id": 75626,
+        "crop_id": 2869,
+        "variety": "Misr 1",
+        "harvesting_date": "2025-05-07",
+        "harvested_weight": 155.9
+    },
+    {
+        "field_id": 75627,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75628,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75629,
+        "crop_id": 2401,
+        "variety": "Rent ",
+        "harvesting_date": null,
+        "harvested_weight": null
+    },
+    {
+        "field_id": 75630,
+        "crop_id": 2905,
+        "variety": "Soya been",
+        "harvesting_date": null,
+        "harvested_weight": null
+    }
+]

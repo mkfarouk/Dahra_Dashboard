@@ -1,0 +1,61 @@
+{
+  "crop_name": "Bean",
+  "totals": {
+    "total_production": 475.74,
+    "total_area": 0,
+    "avg_efficiency": 0
+  },
+  "records": [
+    {
+      "crop_id": 2914,
+      "field_id": 75129,
+      "harvesting_date": null,
+      "harvested_weight": 116.38,
+      "variety": "Soya been",
+      "crop_name": "Bean",
+      "seed_name": "Beans",
+      "seed_id": 971,
+      "field_name": "616 A",
+      "field_group_id": 2826,
+      "lat": 22.613658045238896,
+      "long": 31.26319417926758,
+      "group_field_name": "Pump station 6",
+      "group_folder_id": 435,
+      "group_folder_name": "Toshka project"
+    },
+    {
+      "crop_id": 2914,
+      "field_id": 74794,
+      "harvesting_date": null,
+      "harvested_weight": 251.8,
+      "variety": "Cowpea",
+      "crop_name": "Bean",
+      "seed_name": "Beans",
+      "seed_id": 971,
+      "field_name": "920 C",
+      "field_group_id": 2837,
+      "lat": 22.598301513000003,
+      "long": 31.27902508829783,
+      "group_field_name": "Pump station 9",
+      "group_folder_id": 435,
+      "group_folder_name": "Toshka project"
+    },
+    {
+      "crop_id": 2914,
+      "field_id": 75176,
+      "harvesting_date": null,
+      "harvested_weight": 107.56,
+      "variety": "Cowpea",
+      "crop_name": "Bean",
+      "seed_name": "Beans",
+      "seed_id": 971,
+      "field_name": "628 C",
+      "field_group_id": 2826,
+      "lat": 22.63008010300004,
+      "long": 31.20851592438894,
+      "group_field_name": "Pump station 6",
+      "group_folder_id": 435,
+      "group_folder_name": "Toshka project"
+    }
+  ]
+}

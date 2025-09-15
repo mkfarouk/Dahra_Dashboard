@@ -1,0 +1,56 @@
+{
+  "AlfaAlfa": [
+    {
+      "variety": "Pegasis",
+      "total_production": 848.0,
+      "total_area": 315.00867871047046,
+      "avg_efficiency": 2.6919893238224413
+    },
+    {
+      "variety": "Saltana",
+      "total_production": 2136.0,
+      "total_area": 765.01807687,
+      "avg_efficiency": 2.792090885929447
+    },
+    {
+      "variety": "SIRIVER",
+      "total_production": 259.0,
+      "total_area": 138.0037221,
+      "avg_efficiency": 1.8767609746954788
+    },
+    {
+      "variety": "Catalina",
+      "total_production": 751.0,
+      "total_area": 188.00476634,
+      "avg_efficiency": 3.9945795769977606
+    }
+  ],
+  "Wheat": [
+    {
+      "variety": "Misr 1",
+      "total_production": 19289.38,
+      "total_area": 1769.04576521,
+      "avg_efficiency": 10.903833229950497
+    }
+  ],
+  "Sugar Beet": [
+    {
+      "variety": "Salama",
+      "total_production": 30429.16,
+      "total_area": 250.0052212,
+      "avg_efficiency": 121.71409802540556
+    },
+    {
+      "variety": "Elmo",
+      "total_production": 32803.86,
+      "total_area": 100.00208848,
+      "avg_efficiency": 328.0317491225259
+    },
+    {
+      "variety": "Gustav",
+      "total_production": 17299.8,
+      "total_area": 150.00313272,
+      "avg_efficiency": 115.32959136455027
+    }
+  ]
+}

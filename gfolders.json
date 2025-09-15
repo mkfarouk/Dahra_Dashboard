@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "id": 435,
+            "parent_id": null,
+            "name": "Toshka project",
+            "created_at": "2016-03-14T14:41:38.031+02:00",
+            "updated_at": "2016-08-04T13:20:55.382+02:00",
+            "external_id": null
+        },
+        {
+            "id": 438,
+            "parent_id": null,
+            "name": "East Oweinat Project",
+            "created_at": "2016-11-24T10:46:51.761+02:00",
+            "updated_at": "2016-11-24T10:46:51.761+02:00",
+            "external_id": null
+        },
+        {
+            "id": 439,
+            "parent_id": null,
+            "name": "Salheya Project",
+            "created_at": "2016-12-14T11:16:39.663+02:00",
+            "updated_at": "2016-12-14T11:16:39.663+02:00",
+            "external_id": null
+        }
+    ],
+    "meta": {
+        "request": {
+            "from_id": 0,
+            "limit": null,
+            "server_time": "2025-09-14T18:35:47.300+03:00"
+        },
+        "response": {
+            "limit": 1000,
+            "obtained_records": 3,
+            "first_record_id": 435,
+            "last_record_id": 439
+        }
+    }
+}

@@ -1,0 +1,10 @@
+/* Color utility classes */
+.text-success { color: var(--success-green); }
+.text-warning { color: var(--warning-green); }
+.text-danger  { color: var(--danger-green); }
+.text-info    { color: var(--info-green); }
+
+.bg-success { background-color: var(--success-green); }
+.bg-warning { background-color: var(--warning-green); }
+.bg-danger  { background-color: var(--danger-green); }
+.bg-info    { background-color: var(--info-green); }
