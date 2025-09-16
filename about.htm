@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Interns Team</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+  :root {
+    --primary: #4A9F50; /* green from Aldahra */
+    --accent: #A3C940;  /* lighter green accent */
+    --muted: #6b7280;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --container: 1200px;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: #0f172a;
+    line-height: 1.5;
+  }
+
+  .wrap {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 28px;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo .mark {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--primary), #2d6f33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  nav a {
+    margin-left: 18px;
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: var(--primary);
+  }
+
+  nav a.cta {
+    background: var(--primary);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+
+  nav a.cta:hover {
+    background: #2d6f33;
+  }
+
+  /* Hero */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 32px;
+    align-items: center;
+    padding: 36px 0;
+  }
+
+  .hero-card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 36px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+  }
+
+  .eyebrow {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 700;
+    background: rgba(74,159,80,0.08);
+    color: var(--primary);
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-size: 34px;
+    margin: 8px 0 12px;
+  }
+
+  p.lead {
+    color: var(--muted);
+    margin: 0 0 20px;
+  }
+
+  .metrics {
+    display: flex;
+    gap: 20px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+
+  .metric {
+    background: var(--card);
+    padding: 14px;
+    border-radius: 12px;
+    min-width: 110px;
+    box-shadow: 0 4px 18px rgba(12,17,23,0.06);
+    text-align: center;
+    flex: 1;
+  }
+
+  .metric b {
+    display: block;
+    font-size: 18px;
+  }
+
+  .hero-visual {
+    background: linear-gradient(135deg,#fff 0%, rgba(74,159,80,0.04) 100%);
+    border-radius: 14px;
+    padding: 22px;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-visual .scene {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(74,159,80,0.03), rgba(255,255,255,0.6));
+  }
+
+  /* Team */
+  .team {
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  .team h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: var(--primary);
+  }
+
+  .team p {
+    color: var(--muted);
+    margin-bottom: 28px;
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 22px;
+  }
+@media (max-width: 620px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    width: 100%; /* one card per row */
+  }
+
+  .member {
+    width: 100%;      /* card fills full width */
+    max-width: 100%;  /* remove any limit */
+    margin: 0;        /* no auto margin */
+    border-radius: 0; /* optional: makes them look flush with screen edges */
+  }
+}
+
+
+
+  .member {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .member:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--primary), #2d6f33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  .m-info {
+    text-align: left;
+  }
+
+  .m-info h5 {
+    margin: 0 0 6px;
+    font-size: 17px;
+    color: #0f172a;
+  }
+
+  .m-info p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .socials {
+    margin-top: 10px;
+  }
+
+  .socials a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+
+  .socials a:hover {
+    color: #2d6f33;
+  }
+
+  /* CTA */
+  .cta-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 14px;
+    background: linear-gradient(90deg, rgba(74,159,80,0.04), rgba(163,201,64,0.03));
+    box-shadow: 0 8px 30px rgba(12,17,23,0.04);
+    margin: 28px 0;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .btn {
+    background: var(--primary);
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .btn:hover {
+    background: #2d6f33;
+  }
+
+  footer {
+    padding: 28px 0;
+    color: var(--muted);
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Responsive */
+  @media (max-width: 980px) {
+    .hero {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 620px) {
+    h1 {
+      font-size: 24px;
+    }
+    .member {
+      padding: 14px;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+    .avatar {
+      margin-bottom: 10px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+      
+        <div>
+          <div style="font-weight:800">AlDahra</div>
+      
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-card">
+        <span class="eyebrow">WHO WE ARE</span>
+        <h1>Meet the Interns Powering Our Website</h1>
+        <p class="lead">This platform is designed and built by our dedicated interns who bring fresh ideas, energy, and creativity. Get to know the talented people behind the project.</p>
+
+        <div class="metrics">
+          <div class="metric"><b>6+</b><span style="color:var(--muted);font-size:13px">Interns</span></div>
+          <div class="metric"><b>3</b><span style="color:var(--muted);font-size:13px">Departments</span></div>
+          <div class="metric"><b>2025</b><span style="color:var(--muted);font-size:13px">Cohort Year</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="scene">
+          <!-- placeholder graphic -->
+          <img src="img/Al-Dahra-Agriculture-Egypt-53315-1594802755-og-removebg-preview.png" alt="aldahra logo" style="width:500px;opacity:0.8">
+            <rect width="220" height="160" rx="12" fill="white" opacity="0.6"/>
+            <circle cx="60" cy="100" r="26" fill="var(--primary)" opacity="0.95"/>
+            <rect x="140" y="40" width="60" height="40" rx="8" fill="var(--accent)" opacity="0.95"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="team">
+  <h2>The Team</h2>
+  <p>Meet the young talents who contributed to building and shaping this website.</p>
+
+  <div class="team-grid">
+    <div class="member">
+      <div class="m-info">
+        <h5>Omar Ahmed</h5> <h6>SU Tech</h6>
+        <p>Led the front-end development, designed the overall layout, and implemented key security practices for the website.</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/omar-abdelsalam-29276a341" target="_blank">LinkedIn</a>
+          <a href="https://owvr27.github.io/omarabdelsalam/" target="_blank">Portfolio</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="member">
+      <div class="m-info">
+        <h5>Yara Ahmed</h5> <h6>AAST</h6>
+        <p>Developed responsive UI components and ensured the website is mobile-friendly and visually consistent.</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/yara-ahmed-2b04a1316/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="member">
+      <div class="m-info">
+        <h5>Yassin Osama</h5> <h6>SU Tech</h6>
+        <p>Contributed to both front-end and backend features, focusing on creating functional interactions between pages.</p>
+        <div class="socials">
+          <a href="" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="member">
+      <div class="m-info">
+        <h5>Marko Sameh</h5> <h6>SU Tech</h6>
+        <p>Built and integrated backend APIs to support the website’s dynamic content and improve data handling.</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/marco-sameh-b135b3251/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="member">
+      <div class="m-info">
+        <h5>Paula Maged</h5> <h6>SU Tech</h6>
+        <p>Designed and managed the website’s database structure, ensuring smooth data storage and retrieval.</p>
+        <div class="socials">
+          <a href="#" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="member">
+      <div class="m-info">
+        <h5>Moaz Eid</h5> <h6>Sphinx</h6>
+        <p>Enhanced front-end functionality and contributed backend logic to strengthen the website’s performance.</p>
+        <div class="socials">
+          <a href="" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="member">
+      <div class="m-info">
+        <h5>Mohamed Khaled</h5> <h6>Ain Shams</h6>
+        <p>Implemented API integrations that connected different parts of the site and improved overall functionality.</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/mohamed-elazhary-b38314238/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="member">
+      <div class="m-info">
+        <h5>Linah Amr</h5> <h6>AAST</h6>
+        <p>Designed and styled the front-end elements, focusing on clean visuals and an intuitive user experience.</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/linah-amr-zahran-87983537b/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- CTA -->
+    <section class="cta-block" id="contact">
+      <div>
+        <h3 style="margin:0">Want to reach out?</h3>
+        <p style="margin:6px 0 0;color:var(--muted)">We’d love to connect with you for feedback and opportunities.</p>
+      </div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <a class="btn" href="https://aldahra.com/contact/" target="_blank">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <span id="copyright"></span>
+    </footer>
+  </div>
+
+  <script>
+    const year = new Date().getFullYear();
+    document.getElementById("copyright").innerHTML =
+      `© <strong>AlDahra</strong> — Built by Interns ${year} . All rights reserved.`;
+  </script>
+</body>
+</html>
