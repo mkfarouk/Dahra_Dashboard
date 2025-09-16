@@ -1,5 +1,6 @@
 // assets/js/models/DataSource.js
 import { agriculturalData, locationData, weatherQuarterData } from '../mock/mockData.js';
+import { computeLocationTotals } from '../real_data/total_productions.js';
 
 function getData() {
   const data = fetch('./assets/js/model/new_data.json')
@@ -14,6 +15,14 @@ export const DataSource = {
   getLocations() { return locationData; },
   getWeatherQuarters() { return weatherQuarterData; },
   getData,
+  
+  // Real totals per location built from project JSONs
+  async getLocationsRealTotals() {
+    const real = await computeLocationTotals();
+    if (real && typeof real === 'object') return real;
+    // Fallback to mock when real aggregation fails
+    return locationData;
+  },
   
   // Function to load and process Toshka project data specifically for comparison chart
   async getToshkaProjectDataForComparison() {

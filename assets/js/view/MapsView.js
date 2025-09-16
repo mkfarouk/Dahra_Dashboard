@@ -10,7 +10,7 @@ function ensureLeaflet() {
 }
 
 export const MapsView = {
-  renderCrops() {
+  async renderCrops() {
     if (!ensureLeaflet()) return;
     const containerId = 'cropsMapContainer';
     const el = document.getElementById(containerId);
@@ -20,7 +20,7 @@ export const MapsView = {
     cropsMap = window.L.map(containerId).setView([23.5, 30.5], 6);
     window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap contributors' }).addTo(cropsMap);
 
-    const locations = DataSource.getLocations();
+    const locations = await DataSource.getLocationsRealTotals();
     const agri = DataSource.getAgri();
     const markers = [];
     Object.keys(locations).forEach(key => {
@@ -28,8 +28,11 @@ export const MapsView = {
       const m = window.L.circleMarker(loc.coordinates, { radius:12, fillColor: key==='toshka'?'#66bb6a':'#81c784', color:'#ffffff', weight:3, opacity:1, fillOpacity:0.8 }).addTo(cropsMap);
       const items = Object.keys(loc.crops).map(cropKey => {
         const crop = loc.crops[cropKey];
-        const meta = agri[cropKey];
-        return `<div style="background:#f0f0f0;padding:4px;border-radius:4px;border-left:3px solid ${meta.color};"><div style="font-weight:bold;">${meta.icon} ${crop.production>1000?(crop.production/1000).toFixed(1)+'K':crop.production}</div><div style="color:#666;font-size:.7rem;">${meta.name}</div></div>`;
+        const meta = agri[cropKey] || {};
+        const color = meta.color || '#66bb6a';
+        const icon = meta.icon || '';
+        const name = meta.name || cropKey;
+        return `<div style="background:#f0f0f0;padding:4px;border-radius:4px;border-left:3px solid ${color};"><div style="font-weight:bold;">${icon} ${crop.production>1000?(crop.production/1000).toFixed(1)+'K':crop.production}</div><div style="color:#666;font-size:.7rem;">${name}</div></div>`;
       }).join('');
       m.bindPopup(`<div style="text-align:center;font-family:Inter, sans-serif;"><h4 style="margin:0 0 10px 0;color:#2e7d32;">${loc.name}</h4><div style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px;">${items}</div></div>`);
       markers.push(m);
