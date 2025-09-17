@@ -22,7 +22,13 @@ export const WeatherAnalysisView = {
       yaxis: [{ title: { text: 'Temperature (°C)' } }, { opposite: true, title: { text: 'Wind Speed (km/h)' } }],
       tooltip: { shared: true, intersect: false },
       legend: { position: 'top' },
-      grid: { borderColor: 'rgba(102, 187, 106, 0.1)', strokeDashArray: 3 }
+      grid: { borderColor: 'rgba(102, 187, 106, 0.1)', strokeDashArray: 3 },
+      plotOptions: {
+        bar: {
+          borderRadius: 10,
+          columnWidth: '60%'
+        }
+      }
     };
 
     chart = new window.ApexCharts(el, options);
