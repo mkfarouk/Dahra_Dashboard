@@ -19,8 +19,7 @@ export const SidebarView = {
         <div class="metric-icon ${m.color}"><i class="${m.icon}"></i></div>
         <div class="metric-value">${typeof m.value === 'number' ? formatNumber(m.value) : m.value}</div>
         <div class="metric-label">${m.label}</div>
-        <div class="metric-comparison"><span class="metric-current">Now: ${typeof m.current === 'number' ? formatNumber(m.current) : m.current}</span>
-        <span class="metric-previous">Last: ${typeof m.previous === 'number' ? formatNumber(m.previous) : m.previous}</span></div>`;
+        </div>`;
       box.appendChild(el);
     });
   }
