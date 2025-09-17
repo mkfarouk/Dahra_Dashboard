@@ -171,29 +171,93 @@ export const CropModel = (() => {
     });
   }
 
-  function getMetrics() {
-    const agri = DataSource.getAgri();
-
-    if (state.selectedCrop === 'all') {
-      const avgEfficiency = Math.round(Object.values(agri)
-        .reduce((s, c) => s + c.avgEfficiency, 0) / Object.keys(agri).length);
-
-      const totalCurrent = Object.values(agri).reduce((s, c) => s + c.currentProduction, 0);
-      const totalLast = Object.values(agri).reduce((s, c) => s + c.lastYearProduction, 0);
-
+  async function getMetrics() {
+    try {
+      // Fetch real data from projects_summary.json
+      const response = await fetch('./assets/js/real_data/projects_summary.json');
+      const projectsData = await response.json();
+      
+      // Determine which location data to use based on selectedLocation
+      let locationData;
+      let locationName = 'All Locations';
+      
+      if (state.selectedLocation === 'toshka') {
+        locationData = projectsData.Toshka;
+        locationName = 'Toshka';
+      } else if (state.selectedLocation === 'eastowinat') {
+        locationData = projectsData.Oweinat;
+        locationName = 'East Oweinat';
+      } else {
+        // For 'all' locations, combine data from both locations
+        const toshkaData = projectsData.Toshka;
+        const oweinatData = projectsData.Oweinat;
+        
+        locationData = {
+          avg_efficiency: (toshkaData.avg_efficiency + oweinatData.avg_efficiency) / 2,
+          production: toshkaData.production + oweinatData.production
+        };
+      }
+      
+      // Calculate metrics from real data
+      const avgEfficiency = Math.round(locationData.avg_efficiency || 0);
+      const currentProduction = Math.round(locationData.production || 0);
+      // Simulate last year production as 90% of current (since we don't have historical data)
+      const lastYearProduction = Math.round(currentProduction * 0.9);
+      
       return [
-        { icon: 'fas fa-cogs', value: `${avgEfficiency}%`, label: 'Avg Efficiency', color: 'text-success', current: avgEfficiency, previous: avgEfficiency - 2 },
-        { icon: 'fas fa-warehouse', value: totalCurrent, label: 'Current Production', color: 'text-warning', current: totalCurrent, previous: totalLast },
-        { icon: 'fas fa-chart-line', value: totalLast, label: 'Last Year Production', color: 'text-info', current: totalLast, previous: Math.round(totalLast * 0.9) }
+        { 
+          icon: 'fas fa-cogs', 
+          value: `${avgEfficiency}%`, 
+          label: 'AVG Efficiency', 
+          color: 'text-success', 
+          current: avgEfficiency, 
+          previous: Math.max(0, avgEfficiency - 2) 
+        },
+        { 
+          icon: 'fas fa-warehouse', 
+          value: `${currentProduction.toLocaleString()}`, 
+          label: 'Current Production', 
+          color: 'text-warning', 
+          current: currentProduction, 
+          previous: lastYearProduction 
+        },
+        { 
+          icon: 'fas fa-chart-line', 
+          value: `${lastYearProduction.toLocaleString()}`, 
+          label: 'Last Year', 
+          color: 'text-info', 
+          current: lastYearProduction, 
+          previous: Math.round(lastYearProduction * 0.9) 
+        }
+      ];
+      
+    } catch (error) {
+      console.error('Error loading metrics data:', error);
+      
+      // Fallback to mock data if real data fails to load
+      const agri = DataSource.getAgri();
+
+      if (state.selectedCrop === 'all') {
+        const avgEfficiency = Math.round(Object.values(agri)
+          .reduce((s, c) => s + c.avgEfficiency, 0) / Object.keys(agri).length);
+
+        const totalCurrent = Object.values(agri).reduce((s, c) => s + c.currentProduction, 0);
+        const totalLast = Object.values(agri).reduce((s, c) => s + c.lastYearProduction, 0);
+
+        return [
+          { icon: 'fas fa-cogs', value: `${avgEfficiency}%`, label: 'AVG Efficiency', color: 'text-success', current: avgEfficiency, previous: avgEfficiency - 2 },
+          { icon: 'fas fa-warehouse', value: totalCurrent, label: 'Current Production', color: 'text-warning', current: totalCurrent, previous: totalLast },
+          { icon: 'fas fa-chart-line', value: totalLast, label: 'Last Year', color: 'text-info', current: totalLast, previous: Math.round(totalLast * 0.9) }
+        ];
+      }
+
+      const c = agri[state.selectedCrop];
+      return [
+        { icon: 'fas fa-cogs', value: `${c.avgEfficiency}%`, label: 'AVG Efficiency', color: 'text-success', current: c.avgEfficiency, previous: c.avgEfficiency - 2 },
+        { icon: 'fas fa-warehouse', value: c.currentProduction, label: 'Current Production', color: 'text-warning', current: c.currentProduction, previous: c.lastYearProduction },
+        { icon: 'fas fa-chart-line', value: c.lastYearProduction, label: 'Last Year', color: 'text-info', current: c.lastYearProduction, previous: Math.round(c.lastYearProduction * 0.9) }
       ];
     }
-
-    const c = agri[state.selectedCrop];
-    return [
-      { icon: 'fas fa-cogs', value: `${c.avgEfficiency}%`, label: 'Avg Efficiency', color: 'text-success', current: c.avgEfficiency, previous: c.avgEfficiency - 2 },
-      { icon: 'fas fa-warehouse', value: c.currentProduction, label: 'Current Production', color: 'text-warning', current: c.currentProduction, previous: c.lastYearProduction },
-      { icon: 'fas fa-chart-line', value: c.lastYearProduction, label: 'Last Year Production', color: 'text-info', current: c.lastYearProduction, previous: Math.round(c.lastYearProduction * 0.9) }
-    ];
   }
 
   async function getWeather() {
