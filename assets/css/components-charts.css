@@ -11,7 +11,7 @@
   border-radius: 6px; cursor: pointer; font-weight: 500; transition: var(--transition); font-size: 0.8rem;
 }
 .chart-btn.active, .chart-btn:hover { border-color: var(--primary-green); background: var(--primary-green); color: var(--white); }
-#productionChart { height: 400px; }
+#productionChart { height: 400px;;}
 
 /* Comparison section */
 .comparison-section {
@@ -26,5 +26,5 @@
 }
 .location-tab.active, .location-tab:hover { border-color: var(--primary-green); background: var(--primary-green); color: var(--white); }
 .location-tab.toshka.active { border-color: var(--toshka-color); background: var(--toshka-color); }
-.location-tab.eastowinat.active { border-color: var(--eastowinat-color); background: var(--eastowinat-color); }
-#comparisonChart { height: 400px; }
+.location-tab.eastowinat.active { border-color: var(--eastowinat-color); background: var(--eastowinat-color);}
+#comparisonChart { height: 400px;  }
