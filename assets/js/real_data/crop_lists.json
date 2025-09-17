@@ -1,0 +1,74 @@
+{
+    "All": [
+        {
+            "AlfaAlfa": {
+                "total_production": 4556.0,
+                "avg_efficiency": 3.2403170684202762
+            }
+        },
+        {
+            "Wheat": {
+                "total_production": 35191.83499999999,
+                "avg_efficiency": 19.89311734726231
+            }
+        },
+        {
+            "Sugar Beet": {
+                "total_production": 256047.74,
+                "avg_efficiency": 512.0847852116779
+            }
+        },
+        {
+            "Bean": {
+                "total_production": 475.74,
+                "avg_efficiency": 0
+            }
+        }
+    ],
+    "Toshka": [
+        {
+            "AlfaAlfa": {
+                "total_production": 4556.0,
+                "total_area": 1406.0352440204704,
+                "avg_efficiency": 11.355420761445128
+            }
+        },
+        {
+            "Wheat": {
+                "total_production": 19451.620000000003,
+                "total_area": 1769.04576521,
+                "avg_efficiency": 10.903833229950497
+            }
+        },
+        {
+            "Sugar Beet": {
+                "total_production": 86476.0,
+                "total_area": 500.0104424,
+                "avg_efficiency": 565.0754385124818
+            }
+        },
+        {
+            "Bean": {
+                "total_production": 475.74,
+                "total_area": 0,
+                "avg_efficiency": 0
+            }
+        }
+    ],
+    "Oweinat": [
+        {
+            "Sugar Beet": {
+                "total_production": 169571.74000000002,
+                "total_area": 0,
+                "avg_efficiency": 0
+            }
+        },
+        {
+            "Wheat": {
+                "total_production": 15740.215,
+                "total_area": 0,
+                "avg_efficiency": 0
+            }
+        }
+    ]
+}

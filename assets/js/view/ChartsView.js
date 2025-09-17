@@ -10,7 +10,7 @@ export const ChartsView = {
     const data = CropModel.getProductionSeries();
     const colors = this._getProductionColors();
 
-    const options = {
+  const options = {
       series: data.series,
       chart: {
         height: 400,
@@ -105,6 +105,12 @@ export const ChartsView = {
         marker: { show: true },
         shared: true,
         intersect: false
+      },
+      plotOptions: {
+        bar: {
+          borderRadius: 10,
+          columnWidth: '60%'
+        }
       }
     };
 
@@ -117,7 +123,7 @@ export const ChartsView = {
     const data = CropModel.getProductionSeries();
     const colors = this._getProductionColors();
     productionChart.updateSeries(data.series);
-    productionChart.updateOptions({
+  productionChart.updateOptions({
       colors,
       xaxis: {
         categories: data.labels,
@@ -173,6 +179,12 @@ export const ChartsView = {
         marker: { show: true },
         shared: true,
         intersect: false
+      },
+      plotOptions: {
+        bar: {
+          borderRadius: 10,
+          columnWidth: '60%'
+        }
       }
     });
   },
@@ -184,7 +196,7 @@ export const ChartsView = {
     document.getElementById('comparisonChart').appendChild(ctx);
 
     const config = {
-      type: 'line',
+      type: 'bar',
       data: { labels: [], datasets: [] },
       options: {
         responsive: true,
@@ -208,8 +220,18 @@ export const ChartsView = {
     
     // Load data asynchronously and update chart
     CropModel.getComparisonDataset().then(({ labels, datasets }) => {
+      // Set custom colors and borderRadius for curved bars
+      const updatedDatasets = datasets.map(ds => {
+        let backgroundColor = ds.backgroundColor;
+        if (ds.label && ds.label.toLowerCase().includes('toshka')) {
+          backgroundColor = '#BD9B60';
+        } else if (ds.label && ds.label.toLowerCase().includes('east oweinat')) {
+          backgroundColor = '#998542';
+        }
+        return { ...ds, backgroundColor, borderRadius: 10 };
+      });
       comparisonChart.data.labels = labels;
-      comparisonChart.data.datasets = datasets;
+      comparisonChart.data.datasets = updatedDatasets;
       comparisonChart.update();
     }).catch(error => {
       console.error('Error updating comparison chart:', error);
@@ -218,7 +240,7 @@ export const ChartsView = {
 
   _getProductionColors() {
     const state = CropModel.get();
-    if (state.selectedCrop === 'all') return ['#6FAB4D', '#92A35B'];
+    if (state.selectedCrop === 'all') return ['#BD9B60', '#998542'];
     const agri = DataSource.getAgri();
     const color = agri[state.selectedCrop].color;
     return [color, `${color}80`];

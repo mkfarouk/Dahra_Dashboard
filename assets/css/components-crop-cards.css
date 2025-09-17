@@ -53,5 +53,5 @@
 .crop-card.wheat .stat-value { color: var(--wheat-color); }
 .crop-card.alfalfa .stat-value { color: var(--alfalfa-color); }
 .stat-label {
-  font-size: 0.65rem; color: var(--medium-gray); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 0.25rem;
+  font-size: 0.65rem; color: var(--medium-gray);  letter-spacing: 0.5px; margin-top: 0.25rem;
 }

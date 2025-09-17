@@ -1,0 +1,9 @@
+/* Glow effect for ApexCharts bars/lines on hover */
+#productionChart .apexcharts-series path,
+#productionChart .apexcharts-bar-area {
+  transition: filter 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+#productionChart .apexcharts-series path:hover,
+#productionChart .apexcharts-bar-area:hover {
+  filter: drop-shadow(0 0 16px #BD9B60) brightness(1.15);
+}
