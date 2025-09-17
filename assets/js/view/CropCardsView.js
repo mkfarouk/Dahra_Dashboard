@@ -137,7 +137,7 @@ export const CropCardsView = {
         </div>
         <div class="crop-stats">
           <div class="stat-item"><div class="stat-value">${cropData.total_production.toFixed(1)} tons</div><div class="stat-label">Production</div></div>
-          <div class="stat-item"><div class="stat-value">${cropData.avg_efficiency.toFixed(2)}</div><div class="stat-label">Yield t/f</div></div>
+          <div class="stat-item"><div class="stat-value">${cropData.avg_efficiency.toFixed(2)}</div><div class="stat-label">Yield t/ha</div></div>
         </div>
       `;
       card.addEventListener('click', async () => {
