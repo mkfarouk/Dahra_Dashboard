@@ -8,7 +8,7 @@ import { ChartsView } from '../view/ChartsView.js';
 import { WeatherAnalysisView } from '../view/WeatherAnalysisView.js';
 
 export const AppController = {
-  init() {
+  async init() {
     this.showLoading();
 
     // Controls
@@ -21,21 +21,28 @@ export const AppController = {
     MapsView.renderCrops();
     WeatherAnalysisView.init();
 
-    CropCardsView.render(document.getElementById('cropCards'), (key) => {
+    CropCardsView.render(document.getElementById('cropCards'), async (key) => {
       CropModel.set('selectedCrop', key);
       CropCardsView.highlight(key);
       this.renderVarietiesOrHide(key);
-      this.refresh();
+      await this.refresh();
     });
     SidebarView.updateWeather(CropModel.getWeather());
-    SidebarView.updateMetrics(CropModel.getMetrics());
+    
+    // Await the async getMetrics function
+    const metrics = await CropModel.getMetrics();
+    SidebarView.updateMetrics(metrics);
 
     this.hideLoading();
   },
 
-  refresh() {
+  async refresh() {
     SidebarView.updateWeather(CropModel.getWeather());
-    SidebarView.updateMetrics(CropModel.getMetrics());
+    
+    // Await the async getMetrics function
+    const metrics = await CropModel.getMetrics();
+    SidebarView.updateMetrics(metrics);
+    
     ChartsView.updateProduction();
     ChartsView.updateComparison();
   },
@@ -86,17 +93,17 @@ export const AppController = {
     });
 
     // Crop selector (dropdown)
-    $('#cropSelector').addEventListener('change', e=>{
+    $('#cropSelector').addEventListener('change', async e=>{
       CropModel.set('selectedCrop', e.target.value);
       CropCardsView.highlight(e.target.value);
       this.renderVarietiesOrHide(e.target.value);
-      this.refresh();
+      await this.refresh();
     });
 
     // Location selector (weather + metrics same as before)
-    $('#locationSelector').addEventListener('change', e=>{
+    $('#locationSelector').addEventListener('change', async e=>{
       CropModel.set('selectedLocation', e.target.value);
-      this.refresh();
+      await this.refresh();
     });
 
     // Period buttons
