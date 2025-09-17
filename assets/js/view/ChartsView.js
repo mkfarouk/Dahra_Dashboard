@@ -1,13 +1,18 @@
 // assets/js/view/ChartsView.js
 import { CropModel } from '../model/CropModel.js';
 import { DataSource } from '../model/DataSource.js';
+import { trendAnalysis } from '../lib/TrendAnalysis.js';
 
 let productionChart = null;
 let comparisonChart = null;
 
 export const ChartsView = {
-  initProduction() {
-    const data = CropModel.getProductionSeries();
+  async initProduction() {
+    // Load monthly data first
+    await trendAnalysis.loadMonthlyData();
+    
+    const state = CropModel.get();
+    const data = await this.getProductionSeriesData(state.selectedCrop, state.period);
     const colors = this._getProductionColors();
 
   const options = {
@@ -118,9 +123,11 @@ export const ChartsView = {
     productionChart.render();
   },
 
-  updateProduction() {
+  async updateProduction() {
     if (!productionChart) return;
-    const data = CropModel.getProductionSeries();
+    
+    const state = CropModel.get();
+    const data = await this.getProductionSeriesData(state.selectedCrop, state.period);
     const colors = this._getProductionColors();
     productionChart.updateSeries(data.series);
   productionChart.updateOptions({
@@ -236,6 +243,30 @@ export const ChartsView = {
     }).catch(error => {
       console.error('Error updating comparison chart:', error);
     });
+  },
+
+  async getProductionSeriesData(selectedCrop, period) {
+    try {
+      // Ensure monthly data is loaded
+      if (!trendAnalysis.monthlyData) {
+        await trendAnalysis.loadMonthlyData();
+      }
+      
+      // Get trend data from TrendAnalysis
+      const data = trendAnalysis.getTrendData(selectedCrop, period);
+      
+      return data;
+    } catch (error) {
+      console.error('Error getting production series data:', error);
+      // Fallback to empty data
+      return {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        series: [
+          { name: 'Average Production', type: 'line', data: Array(12).fill(0) },
+          { name: 'Total Amount', type: 'column', data: Array(12).fill(0), yAxisIndex: 1 }
+        ]
+      };
+    }
   },
 
   _getProductionColors() {

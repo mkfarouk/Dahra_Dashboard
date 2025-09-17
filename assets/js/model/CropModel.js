@@ -254,15 +254,15 @@ export const CropModel = (() => {
       let locationName = 'All Locations';
       
       if (state.selectedLocation === 'toshka') {
-        locationData = projectsData.Toshka;
+        locationData = projectsData['Toshka project'];
         locationName = 'Toshka';
       } else if (state.selectedLocation === 'eastowinat') {
-        locationData = projectsData.Oweinat;
+        locationData = projectsData['East Oweinat Project'];
         locationName = 'East Oweinat';
       } else {
         // For 'all' locations, combine data from both locations
-        const toshkaData = projectsData.Toshka;
-        const oweinatData = projectsData.Oweinat;
+        const toshkaData = projectsData['Toshka project'] || { avg_efficiency: 0, production: 0 };
+        const oweinatData = projectsData['East Oweinat Project'] || { avg_efficiency: 0, production: 0 };
         
         locationData = {
           avg_efficiency: (toshkaData.avg_efficiency + oweinatData.avg_efficiency) / 2,
@@ -271,8 +271,8 @@ export const CropModel = (() => {
       }
       
       // Calculate metrics from real data
-      const avgEfficiency = Math.round(locationData.avg_efficiency || 0);
-      const currentProduction = Math.round(locationData.production || 0);
+      const avgEfficiency = Math.round((locationData && locationData.avg_efficiency) || 0);
+      const currentProduction = Math.round((locationData && locationData.production) || 0);
       // Simulate last year production as 90% of current (since we don't have historical data)
       const lastYearProduction = Math.round(currentProduction * 0.9);
       

@@ -21,7 +21,7 @@ export const AppController = {
       this.initDatePicker();
       this.initButtons();
 
-      ChartsView.initProduction();
+      await ChartsView.initProduction();
       ChartsView.initComparison();
       MapsView.renderCrops();
       WeatherAnalysisView.init();
@@ -50,7 +50,7 @@ export const AppController = {
     const metrics = await CropModel.getMetrics();
     SidebarView.updateMetrics(metrics);
     
-    ChartsView.updateProduction();
+    await ChartsView.updateProduction();
     ChartsView.updateComparison();
   },
 
@@ -60,6 +60,10 @@ export const AppController = {
       return;
     }
     const crop = DataSource.getAgri()[key];
+    if (!crop) {
+      console.warn(`Crop not found: ${key}`);
+      return;
+    }
     document.getElementById('selectedCropName').textContent = crop.name;
     const list = document.getElementById('varietiesGrid');
     list.innerHTML = crop.varieties.map(v => `
@@ -99,13 +103,6 @@ export const AppController = {
       else      { body.setAttribute('data-theme','dark'); icon.className='fas fa-sun'; }
     });
 
-    // Crop selector (dropdown)
-    $('#cropSelector').addEventListener('change', async e=>{
-      CropModel.set('selectedCrop', e.target.value);
-      CropCardsView.highlight(e.target.value);
-      this.renderVarietiesOrHide(e.target.value);
-      await this.refresh();
-    });
 
     // Location selector (weather + metrics same as before)
     $('#locationSelector').addEventListener('change', async e=>{
@@ -113,12 +110,17 @@ export const AppController = {
       await this.refresh();
     });
 
-    // Period buttons
+    // Period buttons - optimized
     $$('.chart-btn').forEach(btn=>{
-      btn.addEventListener('click', e=>{
+      btn.addEventListener('click', async e=>{
         setActive(e.currentTarget, '.chart-btn');
         CropModel.set('period', e.currentTarget.dataset.period);
-        ChartsView.updateProduction();
+        
+        // Debounce the chart update
+        clearTimeout(this.chartUpdateTimeout);
+        this.chartUpdateTimeout = setTimeout(async () => {
+          await ChartsView.updateProduction();
+        }, 50);
       });
     });
 

@@ -1,4 +1,7 @@
 export const CropCardsView = {
+  // Add debouncing for crop selection
+  selectionTimeout: null,
+
   async getVarietiesData(cropName, locationKey) {
     try {
       // Fetch only agricultural data
@@ -145,6 +148,15 @@ export const CropCardsView = {
         container.querySelectorAll('.crop-card').forEach(c => c.classList.remove('selected'));
         card.classList.add('selected');
         
+        // Update the crop model with the selected crop
+        const { CropModel } = await import('../model/CropModel.js');
+        // Use the exact crop name as it appears in the data
+        CropModel.set('selectedCrop', cropName);
+        
+        // Refresh the charts and metrics
+        const { AppController } = await import('../controller/AppController.js');
+        await AppController.refresh();
+        
         // Get varieties data for this crop
         const varietiesData = await this.getVarietiesData(cropName, locationKey);
         
@@ -241,6 +253,10 @@ export const CropCardsView = {
       cardsFragment.appendChild(card);
     });
     container.appendChild(cardsFragment);
+    
+    // Add click outside handler to show all crops
+    this.addClickOutsideHandler(container);
+    
     // Details section always below all cards, visually separated and filling blank
     const detailsSection = document.createElement('div');
     detailsSection.id = 'crop-details-section';
@@ -434,6 +450,45 @@ export const CropCardsView = {
       'Bean': '🌱 '
     };
     return icons[cropName] || '🌱';
+  },
+
+  highlight(selectedCrop) {
+    // Remove highlight from all cards
+    document.querySelectorAll('.crop-card').forEach(card => {
+      card.classList.remove('selected');
+    });
+    
+    // Add highlight to selected card if it exists
+    if (selectedCrop && selectedCrop !== 'all') {
+      const selectedCard = document.querySelector(`[data-crop="${selectedCrop}"]`);
+      if (selectedCard) {
+        selectedCard.classList.add('selected');
+      }
+    }
+  },
+
+  async addClickOutsideHandler(container) {
+    // Add click outside handler to show all crops
+    document.addEventListener('click', async (event) => {
+      // Check if click is outside the crop cards container
+      if (!container.contains(event.target)) {
+        // Remove highlight from all cards
+        container.querySelectorAll('.crop-card').forEach(card => {
+          card.classList.remove('selected');
+        });
+        
+        // Clear crop details
+        this.clearCropDetails();
+        
+        // Update the crop model to show all crops
+        const { CropModel } = await import('../model/CropModel.js');
+        CropModel.set('selectedCrop', 'all');
+        
+        // Refresh the charts and metrics
+        const { AppController } = await import('../controller/AppController.js');
+        await AppController.refresh();
+      }
+    });
   }
 };
 

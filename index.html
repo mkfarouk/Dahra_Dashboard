@@ -99,10 +99,6 @@
                         <i class="fas fa-moon"></i>
                     </button>
                     
-                    <select id="cropSelector" class="modern-select">
-                        <option value="all">All Crops</option>
-                        <!-- Crop options will be dynamically generated -->
-                    </select>
                     
                     <select id="locationSelector" class="modern-select">
                         <option value="all">All Locations</option>
@@ -250,74 +246,19 @@
     </main>
 
         <script>
-            // Dynamically populate cropSelector with crop names from data.json
-            async function populateCropSelector() {
-              const selector = document.getElementById('cropSelector');
-              try {
-                const response = await fetch('./assets/js/real_data/data.json');
-                const data = await response.json();
-                // Get selected location
-                const locationSelector = document.getElementById('locationSelector');
-                const selectedLocation = locationSelector ? locationSelector.value : 'all';
-                let filteredData = data;
-                
-                // Filter by location first
-                if (selectedLocation !== 'all') {
-                  filteredData = data.filter(crop => {
-                    if (selectedLocation === 'toshka') {
-                      return crop.group_folder_name && crop.group_folder_name.toLowerCase().includes('toshka');
-                    } else if (selectedLocation === 'eastowinat') {
-                      return crop.group_folder_name && crop.group_folder_name.toLowerCase().includes('east oweinat');
-                    }
-                    return true;
-                  });
-                }
-                
-                // Only crops with harvested_weight from the location-filtered data
-                const cropNames = [...new Set(filteredData.filter(crop => 
-                  crop.crop_name && 
-                  crop.harvested_weight !== null && 
-                  crop.harvested_weight !== undefined && 
-                  crop.harvested_weight !== ''
-                ).map(crop => crop.crop_name).filter(Boolean))];
-                
-                selector.innerHTML = '<option value="all">All Crops</option>';
-                cropNames.forEach(name => {
-                  const option = document.createElement('option');
-                  option.value = name.toLowerCase().replace(/\s+/g, '_');
-                  option.textContent = name;
-                  selector.appendChild(option);
-                });
-              } catch (error) {
-                console.error('Error loading crop names:', error);
-              }
-            }
-            populateCropSelector();
 
             // Initial render: use CropCardsView module
             window.addEventListener('DOMContentLoaded', () => {
               import('./assets/js/view/CropCardsView.js').then(({ CropCardsView }) => {
                 CropCardsView.render(document.getElementById('cropCards'));
               });
-              // Re-populate crop selector based on location
-              populateCropSelector();
             });
             
-            // Listen for crop selector changes
-            document.getElementById('cropSelector').addEventListener('change', function() {
-              import('./assets/js/view/CropCardsView.js').then(({ CropCardsView }) => {
-                CropCardsView.render(document.getElementById('cropCards'));
-              });
-            });
             
-            // Listen for location selector changes to filter crops and crop selector
+            // Listen for location selector changes
             const locationSelectorEl = document.getElementById('locationSelector');
             if (locationSelectorEl) {
               locationSelectorEl.addEventListener('change', function() {
-                // Reset crop selector to "All Crops" when location changes
-                document.getElementById('cropSelector').value = 'all';
-                // Re-populate crop selector based on new location
-                populateCropSelector();
                 // Re-render crop cards for new location using CropCardsView module
                 import('./assets/js/view/CropCardsView.js').then(({ CropCardsView }) => {
                   CropCardsView.render(document.getElementById('cropCards'));
