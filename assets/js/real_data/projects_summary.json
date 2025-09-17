@@ -1,0 +1,995 @@
+{
+    "Oweinat": {
+        "avg_efficiency": 0,
+        "production": 0,
+        "crop_production": {},
+        "crop_avg_efficiency": {},
+        "group_fields": {}
+    },
+    "Toshka": {
+        "avg_efficiency": 19.25,
+        "production": 110959.36000000003,
+        "crop_production": {
+            "AlfaAlfa": 4556.0,
+            "Wheat": 19451.620000000003,
+            "Sugar Beet": 86476.0,
+            "Bean": 475.74
+        },
+        "crop_avg_efficiency": {
+            "AlfaAlfa": 2.87,
+            "Wheat": 7.15,
+            "Sugar Beet": 115.59
+        },
+        "group_fields": {
+            "Pump station 1": {
+                "avg_efficiency": 7.41,
+                "production": 4109.2,
+                "crop_production": {
+                    "AlfaAlfa": 58.0,
+                    "Wheat": 4051.2000000000003
+                },
+                "crop_avg_efficiency": {
+                    "Wheat": 7.41
+                },
+                "crops": {
+                    "AlfaAlfa": [
+                        {
+                            "variety": "SW10",
+                            "total_production": 17.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Pegasis",
+                            "total_production": 11.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Pegasis",
+                            "total_production": 13.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Pegasis",
+                            "total_production": 7.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Pegasis",
+                            "total_production": 10.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        }
+                    ],
+                    "Wheat": [
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 208.52,
+                            "total_area": 27.00182389,
+                            "avg_efficiency": 7.722441300612453
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 358.3,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.165850342648764
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 350.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 6.99985380945316
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 385.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.699839190398476
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 364.44,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.288647778048885
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 358.24,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.164650367710001
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 420.26,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 8.4050244627451
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 380.48,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.609441078344967
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 145.0,
+                            "total_area": 20.0004177,
+                            "avg_efficiency": 7.249848586912262
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 361.12,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.222249164770644
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 362.04,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.24064878049835
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 357.8,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.155850551492403
+                        }
+                    ]
+                }
+            },
+            "Pump station 2": {
+                "avg_efficiency": 2.69,
+                "production": 1093.0,
+                "crop_production": {
+                    "AlfaAlfa": 1093.0
+                },
+                "crop_avg_efficiency": {
+                    "AlfaAlfa": 2.69
+                },
+                "crops": {
+                    "AlfaAlfa": [
+                        {
+                            "variety": "Saltana",
+                            "total_production": 163.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 3.2599319169739003
+                        },
+                        {
+                            "variety": "Saltana",
+                            "total_production": 151.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 3.019936929221221
+                        },
+                        {
+                            "variety": "Saltana",
+                            "total_production": 126.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 2.5199473714031377
+                        },
+                        {
+                            "variety": "SIRIVER",
+                            "total_production": 122.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 2.4399490421522447
+                        },
+                        {
+                            "variety": "Saltana\t",
+                            "total_production": 129.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 2.579946118341308
+                        },
+                        {
+                            "variety": "Saltana",
+                            "total_production": 157.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 3.1399344230975608
+                        },
+                        {
+                            "variety": "Saltana",
+                            "total_production": 108.0,
+                            "total_area": 27.00182389,
+                            "avg_efficiency": 3.9997298123256515
+                        },
+                        {
+                            "variety": "SIRIVER",
+                            "total_production": 81.0,
+                            "total_area": 38.00163362,
+                            "avg_efficiency": 2.1314873147287607
+                        },
+                        {
+                            "variety": "SIRIVER",
+                            "total_production": 56.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 1.1199766095125057
+                        }
+                    ]
+                }
+            },
+            "Pump station 3": {
+                "avg_efficiency": 32.29,
+                "production": 36351.159999999996,
+                "crop_production": {
+                    "Sugar Beet": 30429.16,
+                    "Wheat": 5922.0
+                },
+                "crop_avg_efficiency": {
+                    "Sugar Beet": 121.71,
+                    "Wheat": 7.45
+                },
+                "crops": {
+                    "Sugar Beet": [
+                        {
+                            "variety": "Salama",
+                            "total_production": 2098.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 41.95912369209351
+                        },
+                        {
+                            "variety": "Salama",
+                            "total_production": 7750.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 154.9967629236057
+                        },
+                        {
+                            "variety": "salama",
+                            "total_production": 6032.26,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 120.64268040174835
+                        },
+                        {
+                            "variety": "Salama",
+                            "total_production": 7369.4,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 147.3849218953832
+                        },
+                        {
+                            "variety": "Salama",
+                            "total_production": 7179.5,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 143.58700121419704
+                        }
+                    ],
+                    "Wheat": [
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 371.4,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.427844870945439
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 387.5,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.749838146180285
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 369.64,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.392645606075046
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 377.52,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.550242314699306
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 208.44,
+                            "total_area": 27.00182389,
+                            "avg_efficiency": 7.719478537788508
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 205.16,
+                            "total_area": 27.00182389,
+                            "avg_efficiency": 7.598005262006765
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 192.86,
+                            "total_area": 27.00182389,
+                            "avg_efficiency": 7.1424804778252335
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 381.1,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.621840819378856
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 396.66,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.933034320164831
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 377.2,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.543842448359235
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 363.14,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.262648321042344
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 333.6,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 6.671860659524499
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 367.78,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.355446382973381
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 355.52,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.110251503819393
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 372.18,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.443444545149363
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 373.52,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.470243985448413
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 216.22,
+                            "total_area": 27.00182389,
+                            "avg_efficiency": 8.007607222417152
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 272.56,
+                            "total_area": 38.00163362,
+                            "avg_efficiency": 7.172323240771248
+                        }
+                    ]
+                }
+            },
+            "Pump station 4": {
+                "avg_efficiency": 2.95,
+                "production": 2958.42,
+                "crop_production": {
+                    "AlfaAlfa": 2860.0,
+                    "Wheat": 98.42
+                },
+                "crop_avg_efficiency": {
+                    "AlfaAlfa": 2.95
+                },
+                "crops": {
+                    "AlfaAlfa": [
+                        {
+                            "variety": "Saltana",
+                            "total_production": 171.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 3.419928575475687
+                        },
+                        {
+                            "variety": "Saltana",
+                            "total_production": 90.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 1.7999624081450984
+                        },
+                        {
+                            "variety": "Saltana",
+                            "total_production": 113.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 2.2599528013377346
+                        },
+                        {
+                            "variety": "Saltana",
+                            "total_production": 98.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 1.959959066646885
+                        },
+                        {
+                            "variety": "Catalina",
+                            "total_production": 200.0,
+                            "total_area": 38.00163362,
+                            "avg_efficiency": 5.262931641305582
+                        },
+                        {
+                            "variety": "Catalina\t",
+                            "total_production": 177.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 3.5399260693520267
+                        },
+                        {
+                            "variety": "Saltana",
+                            "total_production": 138.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 2.7599423591558176
+                        },
+                        {
+                            "variety": "Catalina",
+                            "total_production": 187.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 3.73992189247926
+                        },
+                        {
+                            "variety": "Saltana",
+                            "total_production": 242.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 4.839898919679042
+                        },
+                        {
+                            "variety": "Saltana",
+                            "total_production": 46.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 0.9199807863852725
+                        },
+                        {
+                            "variety": "Pegasis",
+                            "total_production": 107.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 2.1399553074613946
+                        },
+                        {
+                            "variety": "Catalina\t",
+                            "total_production": 187.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 3.73992189247926
+                        },
+                        {
+                            "variety": "Pegasis",
+                            "total_production": 134.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 2.679944029904924
+                        },
+                        {
+                            "variety": "Saltana",
+                            "total_production": 61.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 1.2199745210761224
+                        },
+                        {
+                            "variety": "Saltana",
+                            "total_production": 166.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 3.3199306639120705
+                        },
+                        {
+                            "variety": "Saltana",
+                            "total_production": 177.0,
+                            "total_area": 38.00163362,
+                            "avg_efficiency": 4.65769450255544
+                        },
+                        {
+                            "variety": "Pegasis",
+                            "total_production": 76.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 1.519968255766972
+                        },
+                        {
+                            "variety": "Pegasis",
+                            "total_production": 104.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 2.079956560523225
+                        },
+                        {
+                            "variety": "Pegasis",
+                            "total_production": 181.0,
+                            "total_area": 50.001044240470456,
+                            "avg_efficiency": 3.6199243985688603
+                        },
+                        {
+                            "variety": "Pegasis",
+                            "total_production": 109.0,
+                            "total_area": 38.00163362,
+                            "avg_efficiency": 2.8682977445115423
+                        },
+                        {
+                            "variety": "Pegasis",
+                            "total_production": 96.0,
+                            "total_area": 27.00182389,
+                            "avg_efficiency": 3.5553153887339124
+                        }
+                    ],
+                    "Wheat": [
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 98.42,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        }
+                    ]
+                }
+            },
+            "Pump station 6": {
+                "avg_efficiency": 43.07,
+                "production": 36059.78,
+                "crop_production": {
+                    "Wheat": 2626.18,
+                    "Sugar Beet": 33209.66,
+                    "Bean": 223.94
+                },
+                "crop_avg_efficiency": {
+                    "Wheat": 6.18,
+                    "Sugar Beet": 109.47
+                },
+                "crops": {
+                    "Wheat": [
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 297.4,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 5.947875779803914
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 310.84,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 6.216670166086915
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 241.26,
+                            "total_area": 38.00163362,
+                            "avg_efficiency": 6.348674438906924
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 278.14,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 5.562683824460863
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 304.74,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 6.094672713979303
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 262.68,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 5.253490281906161
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 366.94,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 7.338646733830694
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 317.96,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 6.359067192153505
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 246.22,
+                            "total_area": 38.00163362,
+                            "avg_efficiency": 6.479195143611302
+                        }
+                    ],
+                    "Sugar Beet": [
+                        {
+                            "variety": "Elmo",
+                            "total_production": 4858.5,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 97.16797066636623
+                        },
+                        {
+                            "variety": "Elmo",
+                            "total_production": 5210.36,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 104.20502369892105
+                        },
+                        {
+                            "variety": "Gustav",
+                            "total_production": 5648.0,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 112.95764090226129
+                        },
+                        {
+                            "variety": "Gustav",
+                            "total_production": 5840.7,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 116.81156041392306
+                        },
+                        {
+                            "variety": "Gustav",
+                            "total_production": 5811.1,
+                            "total_area": 50.00104424,
+                            "avg_efficiency": 116.21957277746647
+                        },
+                        {
+                            "variety": "Elmo",
+                            "total_production": 5841.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        }
+                    ],
+                    "Bean": [
+                        {
+                            "variety": "Soya been",
+                            "total_production": 116.38,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Cowpea",
+                            "total_production": 107.56,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        }
+                    ]
+                }
+            },
+            "Pump station 7": {
+                "avg_efficiency": 0,
+                "production": 24285.500000000004,
+                "crop_production": {
+                    "Sugar Beet": 22837.18,
+                    "Wheat": 1448.3199999999997
+                },
+                "crop_avg_efficiency": {},
+                "crops": {
+                    "Sugar Beet": [
+                        {
+                            "variety": "Elmo",
+                            "total_production": 6525.5,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Elmo",
+                            "total_production": 5276.26,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Elmo",
+                            "total_production": 5092.24,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Smart Djerba",
+                            "total_production": 5943.18,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        }
+                    ],
+                    "Wheat": [
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 316.9,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 309.46,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 239.3,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 338.08,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 244.58,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        }
+                    ]
+                }
+            },
+            "Pump station 8": {
+                "avg_efficiency": 0,
+                "production": 3924.2600000000007,
+                "crop_production": {
+                    "Wheat": 3924.2600000000007
+                },
+                "crop_avg_efficiency": {},
+                "crops": {
+                    "Wheat": [
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 213.44,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 186.46,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 284.42,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 264.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 177.44,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 336.24,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 285.88,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 287.08,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 138.04,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 259.32,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 286.9,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 328.92,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 129.54,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 181.54,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 229.52,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Dkc6919",
+                            "total_production": 162.24,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 173.28,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        }
+                    ]
+                }
+            },
+            "Pump station 9": {
+                "avg_efficiency": 0,
+                "production": 1633.04,
+                "crop_production": {
+                    "Bean": 251.8,
+                    "Wheat": 1381.2400000000002
+                },
+                "crop_avg_efficiency": {},
+                "crops": {
+                    "Bean": [
+                        {
+                            "variety": "Cowpea",
+                            "total_production": 251.8,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        }
+                    ],
+                    "Wheat": [
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 333.04,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 332.88,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 298.22,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 171.22,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Misr 1",
+                            "total_production": 245.88,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        }
+                    ]
+                }
+            },
+            "Pump station 5": {
+                "avg_efficiency": 0,
+                "production": 545.0,
+                "crop_production": {
+                    "AlfaAlfa": 545.0
+                },
+                "crop_avg_efficiency": {},
+                "crops": {
+                    "AlfaAlfa": [
+                        {
+                            "variety": "AFX 1060\t",
+                            "total_production": 26.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Alfa master 10",
+                            "total_production": 48.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "SW10",
+                            "total_production": 25.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Alfa master 10\t",
+                            "total_production": 17.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Alfa master 10",
+                            "total_production": 6.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Alfa master 10",
+                            "total_production": 9.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Alfa master 10",
+                            "total_production": 18.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "AFX 1060",
+                            "total_production": 78.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "AFX 1060",
+                            "total_production": 102.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Alfa master 10",
+                            "total_production": 36.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Alfa master 10",
+                            "total_production": 16.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "SW10",
+                            "total_production": 44.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Alfa master 10",
+                            "total_production": 37.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "AFX 1060",
+                            "total_production": 7.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "Alfa master 10",
+                            "total_production": 26.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "SW10",
+                            "total_production": 37.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "SW10",
+                            "total_production": 9.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        },
+                        {
+                            "variety": "SW10",
+                            "total_production": 4.0,
+                            "total_area": 0,
+                            "avg_efficiency": 0
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
