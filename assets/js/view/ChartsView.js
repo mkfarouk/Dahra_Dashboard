@@ -242,7 +242,10 @@ export const ChartsView = {
     const state = CropModel.get();
     if (state.selectedCrop === 'all') return ['#BD9B60', '#998542'];
     const agri = DataSource.getAgri();
-    const color = agri[state.selectedCrop].color;
-    return [color, `${color}80`];
+    const key = state.selectedCrop || '';
+    const direct = agri[key];
+    const fallback = key ? agri[key.replace(/_/g, '')] : undefined;
+    const cropColor = (direct || fallback)?.color || '#BD9B60';
+    return [cropColor, `${cropColor}80`];
   }
 };

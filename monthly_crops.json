@@ -1,0 +1,316 @@
+{
+    "Toshka project": {
+        "Pump station 1": {
+            "AlfaAlfa": {
+                "Mar": {
+                    "production": 58.0,
+                    "avg_efficiency": 0.21
+                }
+            },
+            "All": {
+                "Mar": {
+                    "production": 58.0,
+                    "avg_efficiency": 0.21
+                },
+                "Apr": {
+                    "production": 4051.2,
+                    "avg_efficiency": 3.11
+                }
+            },
+            "Wheat": {
+                "Apr": {
+                    "production": 4051.2,
+                    "avg_efficiency": 3.11
+                }
+            }
+        },
+        "Pump station 2": {
+            "AlfaAlfa": {
+                "Mar": {
+                    "production": 1093.0,
+                    "avg_efficiency": 0.9
+                }
+            },
+            "All": {
+                "Mar": {
+                    "production": 1093.0,
+                    "avg_efficiency": 0.9
+                }
+            }
+        },
+        "Pump station 3": {
+            "Sugar Beet": {
+                "null": {
+                    "production": 2098.0,
+                    "avg_efficiency": 17.62
+                },
+                "Jun": {
+                    "production": 21151.66,
+                    "avg_efficiency": 59.22
+                },
+                "May": {
+                    "production": 7179.5,
+                    "avg_efficiency": 60.31
+                }
+            },
+            "All": {
+                "null": {
+                    "production": 2098.0,
+                    "avg_efficiency": 17.62
+                },
+                "Jun": {
+                    "production": 21151.66,
+                    "avg_efficiency": 59.22
+                },
+                "Apr": {
+                    "production": 3841.04,
+                    "avg_efficiency": 3.14
+                },
+                "May": {
+                    "production": 9260.46,
+                    "avg_efficiency": 10.27
+                }
+            },
+            "Wheat": {
+                "Apr": {
+                    "production": 3841.04,
+                    "avg_efficiency": 3.14
+                },
+                "May": {
+                    "production": 2080.96,
+                    "avg_efficiency": 3.12
+                }
+            }
+        },
+        "Pump station 4": {
+            "AlfaAlfa": {
+                "Mar": {
+                    "production": 2860.0,
+                    "avg_efficiency": 0.95
+                }
+            },
+            "All": {
+                "Mar": {
+                    "production": 2860.0,
+                    "avg_efficiency": 0.95
+                },
+                "May": {
+                    "production": 98.42,
+                    "avg_efficiency": 1.46
+                }
+            },
+            "Wheat": {
+                "May": {
+                    "production": 98.42,
+                    "avg_efficiency": 1.46
+                }
+            }
+        },
+        "Pump station 6": {
+            "Wheat": {
+                "May": {
+                    "production": 2259.24,
+                    "avg_efficiency": 2.54
+                },
+                "null": {
+                    "production": 366.94,
+                    "avg_efficiency": 3.08
+                }
+            },
+            "All": {
+                "May": {
+                    "production": 19588.94,
+                    "avg_efficiency": 15.08
+                },
+                "Apr": {
+                    "production": 10068.86,
+                    "avg_efficiency": 42.29
+                },
+                "null": {
+                    "production": 6401.98,
+                    "avg_efficiency": 14.0
+                }
+            },
+            "Sugar Beet": {
+                "Apr": {
+                    "production": 10068.86,
+                    "avg_efficiency": 42.29
+                },
+                "May": {
+                    "production": 17329.7,
+                    "avg_efficiency": 48.52
+                },
+                "null": {
+                    "production": 5811.1,
+                    "avg_efficiency": 48.81
+                }
+            },
+            "Bean": {
+                "null": {
+                    "production": 223.94,
+                    "avg_efficiency": 2.06
+                }
+            }
+        },
+        "Pump station 7": {
+            "Sugar Beet": {
+                "May": {
+                    "production": 6525.5,
+                    "avg_efficiency": 54.81
+                },
+                "Apr": {
+                    "production": 10368.5,
+                    "avg_efficiency": 43.55
+                },
+                "Jun": {
+                    "production": 5943.18,
+                    "avg_efficiency": 49.92
+                }
+            },
+            "All": {
+                "May": {
+                    "production": 7973.82,
+                    "avg_efficiency": 11.27
+                },
+                "Apr": {
+                    "production": 10368.5,
+                    "avg_efficiency": 43.55
+                },
+                "Jun": {
+                    "production": 5943.18,
+                    "avg_efficiency": 49.92
+                }
+            },
+            "Wheat": {
+                "May": {
+                    "production": 1448.32,
+                    "avg_efficiency": 2.56
+                }
+            }
+        },
+        "Pump station 8": {
+            "Wheat": {
+                "May": {
+                    "production": 3924.26,
+                    "avg_efficiency": 2.44
+                }
+            },
+            "All": {
+                "May": {
+                    "production": 3924.26,
+                    "avg_efficiency": 2.44
+                }
+            }
+        },
+        "Pump station 9": {
+            "Bean": {
+                "null": {
+                    "production": 251.8,
+                    "avg_efficiency": 2.12
+                }
+            },
+            "All": {
+                "null": {
+                    "production": 251.8,
+                    "avg_efficiency": 2.12
+                },
+                "May": {
+                    "production": 1381.24,
+                    "avg_efficiency": 2.7
+                }
+            },
+            "Wheat": {
+                "May": {
+                    "production": 1381.24,
+                    "avg_efficiency": 2.7
+                }
+            }
+        },
+        "Pump station 5": {
+            "AlfaAlfa": {
+                "Mar": {
+                    "production": 545.0,
+                    "avg_efficiency": 0.56
+                }
+            },
+            "All": {
+                "Mar": {
+                    "production": 545.0,
+                    "avg_efficiency": 0.56
+                }
+            }
+        }
+    },
+    "East Oweinat Project": {
+        "Unit 3": {
+            "Sugar Beet": {
+                "Apr": {
+                    "production": 25499.09,
+                    "avg_efficiency": 35.67
+                },
+                "Jun": {
+                    "production": 57690.34,
+                    "avg_efficiency": 65.17
+                },
+                "null": {
+                    "production": 8842.06,
+                    "avg_efficiency": 60.27
+                },
+                "May": {
+                    "production": 39081.83,
+                    "avg_efficiency": 51.13
+                },
+                "Jul": {
+                    "production": 38458.42,
+                    "avg_efficiency": 66.32
+                }
+            },
+            "All": {
+                "Apr": {
+                    "production": 31988.82,
+                    "avg_efficiency": 13.6
+                },
+                "Jun": {
+                    "production": 57690.34,
+                    "avg_efficiency": 65.17
+                },
+                "null": {
+                    "production": 8842.06,
+                    "avg_efficiency": 60.27
+                },
+                "May": {
+                    "production": 46302.8,
+                    "avg_efficiency": 15.12
+                },
+                "Jul": {
+                    "production": 38458.42,
+                    "avg_efficiency": 66.32
+                }
+            },
+            "Wheat": {
+                "May": {
+                    "production": 7220.97,
+                    "avg_efficiency": 2.78
+                },
+                "Apr": {
+                    "production": 6489.73,
+                    "avg_efficiency": 3.35
+                }
+            }
+        },
+        "Unit 13": {
+            "Wheat": {
+                "May": {
+                    "production": 2029.52,
+                    "avg_efficiency": 2.24
+                }
+            },
+            "All": {
+                "May": {
+                    "production": 2029.52,
+                    "avg_efficiency": 2.24
+                }
+            }
+        }
+    }
+}

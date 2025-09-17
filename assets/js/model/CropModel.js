@@ -1,4 +1,4 @@
-import { DataSource } from './DataSource.js';
+import { DataSource, MONTH_LABELS } from './DataSource.js';
 import { sliceByPeriod } from '../controller/Helpers.js';
 
 export const CropModel = (() => {
@@ -14,28 +14,100 @@ export const CropModel = (() => {
   function get() { return state; }
 
   function getProductionSeries() {
+    const monthly = DataSource.getMonthlyCrops();
+    const labels = MONTH_LABELS;
+
+    const normalizeKey = (key) => {
+      if (!key || key === 'all') return 'all';
+      return String(key).toLowerCase().replace(/\s+/g, '_');
+    };
+
+    if (monthly) {
+      const targetKey = normalizeKey(state.selectedCrop);
+
+      if (targetKey === 'all') {
+        const totals = Array(labels.length).fill(0);
+        const counts = Array(labels.length).fill(0);
+
+        Object.entries(monthly).forEach(([key, entry]) => {
+          if (key === 'all') return;
+          entry.monthlyProduction.forEach((value, idx) => {
+            const safeValue = Number(value) || 0;
+            totals[idx] += safeValue;
+            if (safeValue > 0) counts[idx] += 1;
+          });
+        });
+
+        const averages = totals.map((sum, idx) => (counts[idx] ? sum / counts[idx] : 0));
+
+        return {
+          labels,
+          series: [
+            { name: 'Average Production', type: 'line', data: sliceByPeriod(averages, state.period) },
+            { name: 'Total Amount', type: 'column', data: sliceByPeriod(totals, state.period), yAxisIndex: 1 }
+          ]
+        };
+      }
+
+      const cropEntry = monthly[targetKey];
+      if (cropEntry) {
+        const monthlyProduction = cropEntry.monthlyProduction.slice(0, labels.length);
+        const cumulative = monthlyProduction.reduce((acc, value, idx) => {
+          const safeValue = Number(value) || 0;
+          acc[idx] = safeValue + (idx ? acc[idx - 1] : 0);
+          return acc;
+        }, Array(labels.length).fill(0));
+
+        return {
+          labels,
+          series: [
+            { name: 'Production', type: 'line', data: sliceByPeriod(monthlyProduction, state.period) },
+            { name: 'Total Amount', type: 'column', data: sliceByPeriod(cumulative, state.period), yAxisIndex: 1 }
+          ]
+        };
+      }
+    }
+
     const agri = DataSource.getAgri();
+    const fallbackLabels = labels.length ? labels : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
     if (state.selectedCrop === 'all') {
-      // Average production line + total amount column (same as your inline code)
-      const avgData = Object.values(agri).map(c =>
-        c.productionData.reduce((s, v) => s + v, 0) / c.productionData.length
-      );
-      const amountData = Object.values(agri).map(c =>
-        c.amountData.reduce((s, v) => s + v, 0)
-      );
+      const sums = Array(fallbackLabels.length).fill(0);
+      const counts = Array(fallbackLabels.length).fill(0);
+
+      Object.values(agri).forEach(crop => {
+        (crop.productionData || []).forEach((value, idx) => {
+          const safeValue = Number(value) || 0;
+          sums[idx] += safeValue;
+          if (safeValue > 0) counts[idx] += 1;
+        });
+      });
+
+      const averages = sums.map((sum, idx) => (counts[idx] ? sum / counts[idx] : 0));
+
       return {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        labels: fallbackLabels,
         series: [
-          { name: 'Average Production', type: 'line', data: sliceByPeriod(avgData, state.period) },
-          { name: 'Total Amount', type: 'column', data: sliceByPeriod(amountData, state.period), yAxisIndex: 1 }
+          { name: 'Average Production', type: 'line', data: sliceByPeriod(averages, state.period) },
+          { name: 'Total Amount', type: 'column', data: sliceByPeriod(sums, state.period), yAxisIndex: 1 }
         ]
       };
     }
 
     const crop = agri[state.selectedCrop];
+    if (!crop) {
+      const zeros = Array(fallbackLabels.length).fill(0);
+      return {
+        labels: fallbackLabels,
+        series: [
+          { name: 'Production', type: 'line', data: sliceByPeriod(zeros, state.period) },
+          { name: 'Amount', type: 'column', data: sliceByPeriod(zeros, state.period), yAxisIndex: 1 }
+        ]
+      };
+    }
+
     return {
-      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      labels: fallbackLabels,
       series: [
         { name: 'Production', type: 'line', data: sliceByPeriod(crop.productionData, state.period) },
         { name: 'Amount', type: 'column', data: sliceByPeriod(crop.amountData, state.period), yAxisIndex: 1 }
@@ -300,3 +372,4 @@ export const CropModel = (() => {
 
   return { set, get, getProductionSeries, getComparisonDataset, getMetrics, getWeather };
 })();
+

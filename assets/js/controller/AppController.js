@@ -11,29 +11,36 @@ export const AppController = {
   async init() {
     this.showLoading();
 
-    // Controls
-    this.initDatePicker();
-    this.initButtons();
+    try {
+      await DataSource.loadMonthlyCrops();
+    } catch (error) {
+      console.warn('Monthly crops data unavailable, falling back to mock series.', error);
+    }
 
-    // UI pieces (init heavy components first, then cards to avoid any flicker)
-    ChartsView.initProduction();
-    ChartsView.initComparison();
-    MapsView.renderCrops();
-    WeatherAnalysisView.init();
+    try {
+      this.initDatePicker();
+      this.initButtons();
 
-    CropCardsView.render(document.getElementById('cropCards'), async (key) => {
-      CropModel.set('selectedCrop', key);
-      CropCardsView.highlight(key);
-      this.renderVarietiesOrHide(key);
-      await this.refresh();
-    });
-    SidebarView.updateWeather(CropModel.getWeather());
-    
-    // Await the async getMetrics function
-    const metrics = await CropModel.getMetrics();
-    SidebarView.updateMetrics(metrics);
+      ChartsView.initProduction();
+      ChartsView.initComparison();
+      MapsView.renderCrops();
+      WeatherAnalysisView.init();
 
-    this.hideLoading();
+      CropCardsView.render(document.getElementById('cropCards'), async (key) => {
+        CropModel.set('selectedCrop', key);
+        CropCardsView.highlight(key);
+        this.renderVarietiesOrHide(key);
+        await this.refresh();
+      });
+
+      SidebarView.updateWeather(CropModel.getWeather());
+      const metrics = await CropModel.getMetrics();
+      SidebarView.updateMetrics(metrics);
+    } catch (error) {
+      console.error('App init failed:', error);
+    } finally {
+      this.hideLoading();
+    }
   },
 
   async refresh() {
