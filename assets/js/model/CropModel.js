@@ -6,7 +6,7 @@ export const CropModel = (() => {
     selectedCrop: 'all',
     selectedLocation: 'all',
     comparisonLocation: 'both',
-    period: '6m', // '6m' | '1y' | '2y'
+    period: '1y', // fixed to 1y; use chart zoom for shorter views
     dateRange: { start: new Date('2025-01-01'), end: new Date('2025-12-31') }
   };
 

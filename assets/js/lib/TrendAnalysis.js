@@ -182,42 +182,18 @@ export class TrendAnalysis {
    * Apply period filter to data
    */
   applyPeriodFilter(data, period) {
+    // Always show the full year; use chart zoom for shorter windows
     const monthlyProduction = [...data.monthlyProduction];
     const monthlyEfficiency = [...data.monthlyEfficiency];
-
-    switch (period) {
-      case '6m':
-        return {
-          monthlyProduction: monthlyProduction.slice(-6),
-          monthlyEfficiency: monthlyEfficiency.slice(-6)
-        };
-      case '2y':
-        // For 2 years, we'll show all 12 months (assuming data represents 1 year)
-        return {
-          monthlyProduction,
-          monthlyEfficiency
-        };
-      case '1y':
-      default:
-        return {
-          monthlyProduction,
-          monthlyEfficiency
-        };
-    }
+    return { monthlyProduction, monthlyEfficiency };
   }
 
   /**
    * Get filtered month labels based on period
    */
   getFilteredMonthLabels(period) {
-    switch (period) {
-      case '6m':
-        return this.monthLabels.slice(-6);
-      case '2y':
-      case '1y':
-      default:
-        return [...this.monthLabels];
-    }
+    // Always return 12-month labels; rely on chart zoom for 6M views
+    return [...this.monthLabels];
   }
 
   /**
