@@ -210,9 +210,23 @@ export const ChartsView = {
         maintainAspectRatio: false,
         interaction: { mode: 'index', intersect: false },
         plugins: {
-          legend: { position: 'top' }
+          legend: {
+            position: 'top',
+            labels: {
+              color: (document.body.getAttribute('data-theme') === 'dark') ? '#e8f5e8' : '#1b5e20'
+            }
+          }
         },
-        scales: { x: { grid: { color: 'rgba(102,187,106,0.1)', drawBorder: false } }, y: { grid: { color: 'rgba(102,187,106,0.1)', drawBorder: false } } }
+        scales: {
+          x: {
+            ticks: { color: (document.body.getAttribute('data-theme') === 'dark') ? '#e8f5e8' : '#1b5e20' },
+            grid: { color: (document.body.getAttribute('data-theme') === 'dark') ? 'rgba(150,180,160,0.15)' : 'rgba(102,187,106,0.1)', drawBorder: false }
+          },
+          y: {
+            ticks: { color: (document.body.getAttribute('data-theme') === 'dark') ? '#e8f5e8' : '#1b5e20' },
+            grid: { color: (document.body.getAttribute('data-theme') === 'dark') ? 'rgba(150,180,160,0.15)' : 'rgba(102,187,106,0.1)', drawBorder: false }
+          }
+        }
       }
     };
 
@@ -228,17 +242,27 @@ export const ChartsView = {
     // Load data asynchronously and update chart
     CropModel.getComparisonDataset().then(({ labels, datasets }) => {
       // Set custom colors and borderRadius for curved bars
+      const isDark = document.body.getAttribute('data-theme') === 'dark';
       const updatedDatasets = datasets.map(ds => {
         let backgroundColor = ds.backgroundColor;
-        if (ds.label && ds.label.toLowerCase().includes('toshka')) {
-          backgroundColor = '#BD9B60';
-        } else if (ds.label && ds.label.toLowerCase().includes('east oweinat')) {
-          backgroundColor = '#998542';
+        if (isDark) {
+          // In dark mode use light bars for contrast
+          if (ds.label && ds.label.toLowerCase().includes('toshka')) backgroundColor = '#f0e4c3';
+          else if (ds.label && ds.label.toLowerCase().includes('east oweinat')) backgroundColor = '#e6d69a';
+        } else {
+          if (ds.label && ds.label.toLowerCase().includes('toshka')) backgroundColor = '#BD9B60';
+          else if (ds.label && ds.label.toLowerCase().includes('east oweinat')) backgroundColor = '#998542';
         }
         return { ...ds, backgroundColor, borderRadius: 10 };
       });
       comparisonChart.data.labels = labels;
       comparisonChart.data.datasets = updatedDatasets;
+      // Also update axis/legend colors when theme changes
+      comparisonChart.options.plugins.legend.labels.color = isDark ? '#e8f5e8' : '#1b5e20';
+      comparisonChart.options.scales.x.ticks.color = isDark ? '#e8f5e8' : '#1b5e20';
+      comparisonChart.options.scales.y.ticks.color = isDark ? '#e8f5e8' : '#1b5e20';
+      comparisonChart.options.scales.x.grid.color = isDark ? 'rgba(150,180,160,0.15)' : 'rgba(102,187,106,0.1)';
+      comparisonChart.options.scales.y.grid.color = isDark ? 'rgba(150,180,160,0.15)' : 'rgba(102,187,106,0.1)';
       comparisonChart.update();
     }).catch(error => {
       console.error('Error updating comparison chart:', error);

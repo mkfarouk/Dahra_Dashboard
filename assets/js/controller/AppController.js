@@ -170,7 +170,7 @@ export const AppController = {
     } else {
       // Show field group filter for specific locations
       if (!fieldGroupContainer) {
-        this.createFieldGroupContainer();
+        this.createFieldGroupContainer(location);
       }
       
       const fieldGroupSelector = document.getElementById('fieldGroupSelector');
@@ -191,16 +191,18 @@ export const AppController = {
         fieldGroupFiltering.setSelectedFieldGroup('all');
       }
       
-      fieldGroupContainer.style.display = 'block';
+      // Ensure container is visible after first creation/update
+      const containerEl = document.getElementById('fieldGroupContainer');
+      if (containerEl) containerEl.style.display = 'block';
     }
   },
 
-  createFieldGroupContainer() {
+  createFieldGroupContainer(location = 'toshka') {
     const controlButtons = document.querySelector('.control-buttons');
     const fieldGroupContainer = document.createElement('div');
     fieldGroupContainer.id = 'fieldGroupContainer';
     fieldGroupContainer.style.display = 'none';
-    fieldGroupContainer.innerHTML = fieldGroupFiltering.createFieldGroupSelector('toshka');
+    fieldGroupContainer.innerHTML = fieldGroupFiltering.createFieldGroupSelector(location);
     
     // Insert after the dark mode toggle but before the location selector
     const darkModeToggle = controlButtons.querySelector('.dark-mode-toggle');

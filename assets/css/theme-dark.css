@@ -1,16 +1,21 @@
 /* Dark mode variable overrides (activated by [data-theme="dark"] on body) */
 [data-theme="dark"] {
-  --primary-green: #81c784;
-  --secondary-green: #66bb6a;
-  --light-green: #1b3e1f;
+  /* Neutral dark theme with green accents */
+  --primary-green: #9ccc65;        /* accents */
+  --secondary-green: #7cb342;      /* hover accents */
+  --light-green: #0e1512;          /* page gradient end */
 
-  --dark-gray: #e8f5e8;
-  --medium-gray: #aed581;
-  --light-gray: #2e3e2e;
-  --white: #1a2e1a;
+  --dark-gray: #e8f5e8;            /* primary text */
+  --medium-gray: #b7d7bf;          /* muted text */
+  --light-gray: #0a0f0e;           /* page gradient start */
+  --white: #101513;                /* surface bg (near-black) */
 
-  --shadow-light: 0 2px 10px rgba(129, 199, 132, 0.08);
-  --shadow-medium: 0 4px 20px rgba(129, 199, 132, 0.12);
+  --card-bg: #121816;              /* cards */
+  --card-border: #1e2a25;          /* card border */
+  --panel-bg: #101614;             /* large panels */
+
+  --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.25);
+  --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 
 /* Dark mode field group filter */
@@ -24,3 +29,73 @@
   border-color: var(--primary-green);
   box-shadow: 0 0 0 3px rgba(129, 199, 132, 0.1);
 }
+
+/* Improve header and sections in dark mode */
+[data-theme="dark"] .header {
+  background: var(--white);
+  border-bottom-color: var(--primary-green);
+}
+
+[data-theme="dark"] .section-title { color: var(--dark-gray); }
+
+/* Cards, metric and crop cards */
+[data-theme="dark"] .metric-card,
+[data-theme="dark"] .crop-card,
+[data-theme="dark"] .sidebar-section,
+[data-theme="dark"] .chart-container,
+[data-theme="dark"] .comparison-section,
+[data-theme="dark"] .crops-map-section,
+[data-theme="dark"] .weather-analysis-section,
+[data-theme="dark"] #crop-details-section > div {
+  background: var(--card-bg) !important;
+  color: var(--dark-gray);
+  box-shadow: var(--shadow-light);
+  border: 1px solid var(--card-border);
+}
+
+/* Selected crop highlight */
+[data-theme="dark"] .crop-card.selected {
+  outline: 2px solid var(--primary-green);
+  background: #162a1e;
+}
+
+/* Selects & inputs */
+[data-theme="dark"] .modern-select,
+[data-theme="dark"] .date-input {
+  background: var(--white);
+  color: var(--dark-gray);
+  border-color: var(--medium-gray);
+}
+
+/* ApexCharts text & grid colors in dark mode */
+[data-theme="dark"] .apexcharts-xaxis text,
+[data-theme="dark"] .apexcharts-yaxis text,
+[data-theme="dark"] .apexcharts-legend-text {
+  fill: var(--dark-gray) !important;
+  color: var(--dark-gray) !important;
+}
+[data-theme="dark"] .apexcharts-tooltip {
+  background: #0f1413 !important;
+  color: var(--dark-gray) !important;
+}
+[data-theme="dark"] .apexcharts-gridline {
+  stroke: rgba(150, 180, 160, 0.18) !important;
+}
+
+/* Leaflet popup panel in dark mode */
+[data-theme="dark"] .leaflet-popup-content-wrapper,
+[data-theme="dark"] .leaflet-popup-tip {
+  background: var(--card-bg);
+  color: var(--dark-gray);
+  box-shadow: var(--shadow-light);
+}
+
+/* Custom popup content styles for readability */
+[data-theme="dark"] .popup-wrapper .popup-title { color: var(--primary-green); }
+[data-theme="dark"] .popup-item {
+  background: #0f1413;
+  padding: 6px;
+  border-radius: 8px;
+}
+[data-theme="dark"] .popup-item-value { color: var(--dark-gray); font-weight: 700; }
+[data-theme="dark"] .popup-item-label { color: var(--medium-gray); font-size: .75rem; }
