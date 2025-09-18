@@ -1,0 +1,132 @@
+{
+  "AlfaAlfa": [
+    {
+      "variety": "SW10",
+      "total_production": 136.0,
+      "total_area": 0,
+      "avg_efficiency": 0.55
+    },
+    {
+      "variety": "Pegasis",
+      "total_production": 848.0,
+      "total_area": 0,
+      "avg_efficiency": 0.6
+    },
+    {
+      "variety": "Saltana",
+      "total_production": 2136.0,
+      "total_area": 0,
+      "avg_efficiency": 0.92
+    },
+    {
+      "variety": "SIRIVER",
+      "total_production": 259.0,
+      "total_area": 0,
+      "avg_efficiency": 0.78
+    },
+    {
+      "variety": "Catalina",
+      "total_production": 751.0,
+      "total_area": 0,
+      "avg_efficiency": 1.27
+    },
+    {
+      "variety": "AFX 1060\t",
+      "total_production": 213.0,
+      "total_area": 0,
+      "avg_efficiency": 0.71
+    },
+    {
+      "variety": "Alfa master 10",
+      "total_production": 213.0,
+      "total_area": 0,
+      "avg_efficiency": 0.48
+    }
+  ],
+  "Wheat": [
+    {
+      "variety": "Misr 1",
+      "total_production": 23032.38,
+      "total_area": 0,
+      "avg_efficiency": 8.74
+    },
+    {
+      "variety": "Dkc6919",
+      "total_production": 162.24,
+      "total_area": 0,
+      "avg_efficiency": 2.52
+    }
+  ],
+  "Corn": [
+    {
+      "variety": "P3444",
+      "total_production": 671.62,
+      "total_area": 0,
+      "avg_efficiency": 6.27
+    },
+    {
+      "variety": "Pioneer 30N11",
+      "total_production": 373.32,
+      "total_area": 0,
+      "avg_efficiency": 19.22
+    },
+    {
+      "variety": "Dkc6919",
+      "total_production": 156.4,
+      "total_area": 0,
+      "avg_efficiency": 0.12
+    },
+    {
+      "variety": "32D99 & P2105",
+      "total_production": 239.58,
+      "total_area": 0,
+      "avg_efficiency": 20.63
+    },
+    {
+      "variety": "32D99",
+      "total_production": 207.5,
+      "total_area": 0,
+      "avg_efficiency": 40.36
+    }
+  ],
+  "Sugar Beet": [
+    {
+      "variety": "Salama",
+      "total_production": 30429.16,
+      "total_area": 0,
+      "avg_efficiency": 51.12
+    },
+    {
+      "variety": "Elmo",
+      "total_production": 32803.86,
+      "total_area": 0,
+      "avg_efficiency": 45.92
+    },
+    {
+      "variety": "Gustav",
+      "total_production": 17299.8,
+      "total_area": 0,
+      "avg_efficiency": 48.44
+    },
+    {
+      "variety": "Smart Djerba",
+      "total_production": 5943.18,
+      "total_area": 0,
+      "avg_efficiency": 49.92
+    }
+  ],
+  "Bean": [
+    {
+      "variety": "Soya been",
+      "total_production": 116.38,
+      "total_area": 0,
+      "avg_efficiency": 2.52
+    },
+    {
+      "variety": "Cowpea",
+      "total_production": 359.36,
+      "total_area": 0,
+      "avg_efficiency": 1.86
+    }
+  ]
+}

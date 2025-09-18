@@ -1,6 +1,6 @@
 // assets/js/models/DataSource.js
 import { agriculturalData, locationData, weatherQuarterData } from '../mock/mockData.js';
-import { computeLocationTotals } from '../real_data/total_productions.js';
+import { computeLocationTotals } from '../total_productions.js';
 
 const MONTH_LABELS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const MONTH_INDEX = MONTH_LABELS.reduce((acc, month, idx) => {

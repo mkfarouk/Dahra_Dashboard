@@ -1,0 +1,163 @@
+{
+    "Pump station 1": {
+        "avg_efficiency": 38.4,
+        "current_production": 4109.2,
+        "last_year_production": 0,
+        "crops": {
+            "AlfaAlfa": {
+                "production": 10.0,
+                "avg_efficiency": 4.483409956675804
+            },
+            "Wheat": {
+                "production": 357.8,
+                "avg_efficiency": 71.66666666666666
+            }
+        }
+    },
+    "Pump station 2": {
+        "avg_efficiency": 18.28,
+        "current_production": 1473.06,
+        "last_year_production": 0,
+        "crops": {
+            "AlfaAlfa": {
+                "production": 56.0,
+                "avg_efficiency": 13.450229870027412
+            },
+            "Corn": {
+                "production": 380.06,
+                "avg_efficiency": 242.55247865616101
+            }
+        }
+    },
+    "Pump station 3": {
+        "avg_efficiency": 311.94,
+        "current_production": 36351.159999999996,
+        "last_year_production": 0,
+        "crops": {
+            "Sugar Beet": {
+                "production": 7179.5,
+                "avg_efficiency": 1435.952380952381
+            },
+            "Wheat": {
+                "production": 272.56,
+                "avg_efficiency": 71.66666666666666
+            }
+        }
+    },
+    "Pump station 4": {
+        "avg_efficiency": 21.33,
+        "current_production": 2958.42,
+        "last_year_production": 0,
+        "crops": {
+            "AlfaAlfa": {
+                "production": 96.0,
+                "avg_efficiency": 26.900459740054824
+            },
+            "Wheat": {
+                "production": 98.42,
+                "avg_efficiency": 34.76190476190476
+            }
+        }
+    },
+    "Pump station 6": {
+        "avg_efficiency": 408.35,
+        "current_production": 37328.14,
+        "last_year_production": 0,
+        "crops": {
+            "Wheat": {
+                "production": 246.22,
+                "avg_efficiency": 64.76190476190476
+            },
+            "Sugar Beet": {
+                "production": 5841.0,
+                "avg_efficiency": 1168.095238095238
+            },
+            "Corn": {
+                "production": 207.5,
+                "avg_efficiency": 961.0189242134585
+            },
+            "Bean": {
+                "production": 107.56,
+                "avg_efficiency": 38.095238095238095
+            }
+        }
+    },
+    "Pump station 7": {
+        "avg_efficiency": 249.33,
+        "current_production": 24576.040000000005,
+        "last_year_production": 0,
+        "crops": {
+            "Sugar Beet": {
+                "production": 5943.18,
+                "avg_efficiency": 1188.5714285714284
+            },
+            "Wheat": {
+                "production": 244.58,
+                "avg_efficiency": 64.28571428571429
+            }
+        }
+    },
+    "Pump station 8": {
+        "avg_efficiency": 41.54,
+        "current_production": 3924.2600000000007,
+        "last_year_production": 0,
+        "crops": {
+            "Wheat": {
+                "production": 173.28,
+                "avg_efficiency": 64.28571428571429
+            }
+        }
+    },
+    "Pump station 9": {
+        "avg_efficiency": 494.81,
+        "current_production": 5085.5,
+        "last_year_production": 0,
+        "crops": {
+            "Wheat": {
+                "production": 137.34,
+                "avg_efficiency": 632.8333153847898
+            },
+            "Bean": {
+                "production": 251.8,
+                "avg_efficiency": 50.476190476190474
+            }
+        }
+    },
+    "Unit 3": {
+        "avg_efficiency": 2895.34,
+        "current_production": 183282.43999999997,
+        "last_year_production": 0,
+        "crops": {
+            "Sugar Beet": {
+                "production": 3390.85,
+                "avg_efficiency": 1614.690476190476
+            },
+            "Wheat": {
+                "production": 155.9,
+                "avg_efficiency": 70.0
+            }
+        }
+    },
+    "Unit 13": {
+        "avg_efficiency": 24.6,
+        "current_production": 2029.515,
+        "last_year_production": 0,
+        "crops": {
+            "Wheat": {
+                "production": 90.0,
+                "avg_efficiency": 47.61904761904761
+            }
+        }
+    },
+    "Pump station 5": {
+        "avg_efficiency": 10.17,
+        "current_production": 545.0,
+        "last_year_production": 0,
+        "crops": {
+            "AlfaAlfa": {
+                "production": 4.0,
+                "avg_efficiency": 6.725114935013706
+            }
+        }
+    }
+}

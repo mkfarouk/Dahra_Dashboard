@@ -27,7 +27,7 @@ export const CropCardsView = {
       }
       
       // Fallback to agricultural data
-      const agriculturalModule = await import('../real_data/agriculturalData.js');
+      const agriculturalModule = await import('../processed_data/agriculturalData.js');
       const agriculturalData = agriculturalModule.agriculturalData;
       
       // Function to normalize variety names (remove tabs, trim, case-insensitive)
@@ -128,7 +128,7 @@ export const CropCardsView = {
     
     // Fallback to crop_lists.json if no field group data
     if (Object.keys(cropData).length === 0) {
-      const cropListsResponse = await fetch('./assets/js/real_data/crop_lists.json');
+      const cropListsResponse = await fetch('./assets/js/processed_data/crop_lists.json');
       const cropLists = await cropListsResponse.json();
       
       // Map location values to crop_lists keys

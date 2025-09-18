@@ -294,7 +294,7 @@ export const CropModel = (() => {
       }
 
       // Fallback to original logic for all locations or when field group is 'all'
-      const response = await fetch('./assets/js/real_data/projects_summary.json');
+      const response = await fetch('./assets/js/processed_data/projects_summary.json');
       const projectsData = await response.json();
       
       // Compute metrics from real data with correct average across underlying entries

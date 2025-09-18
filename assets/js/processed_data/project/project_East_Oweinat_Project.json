@@ -4,55 +4,55 @@
       "variety": "Gustav",
       "total_production": 52122.0,
       "total_area": 0,
-      "avg_efficiency": 0
+      "avg_efficiency": 52.3
     },
     {
       "variety": "Salama",
       "total_production": 71372.15,
       "total_area": 0,
-      "avg_efficiency": 0
+      "avg_efficiency": 56.85
     },
     {
       "variety": "Smart Djerba",
       "total_production": 12931.17,
       "total_area": 0,
-      "avg_efficiency": 0
+      "avg_efficiency": 38.31
     },
     {
       "variety": "Elmo",
       "total_production": 13575.39,
       "total_area": 0,
-      "avg_efficiency": 0
+      "avg_efficiency": 56.68
     },
     {
       "variety": "Concretia ",
       "total_production": 3243.07,
       "total_area": 0,
-      "avg_efficiency": 0
+      "avg_efficiency": 61.19
     },
     {
       "variety": "Scotta",
       "total_production": 3131.92,
       "total_area": 0,
-      "avg_efficiency": 0
+      "avg_efficiency": 59.09
     },
     {
       "variety": "Amelie",
       "total_production": 3536.62,
       "total_area": 0,
-      "avg_efficiency": 0
+      "avg_efficiency": 66.73
     },
     {
       "variety": "Allanya",
       "total_production": 6637.31,
       "total_area": 0,
-      "avg_efficiency": 0
+      "avg_efficiency": 62.62
     },
     {
       "variety": "Jocko",
       "total_production": 3022.11,
       "total_area": 0,
-      "avg_efficiency": 0
+      "avg_efficiency": 57.02
     }
   ],
   "Wheat": [
@@ -60,31 +60,31 @@
       "variety": "Misr 1",
       "total_production": 13079.075,
       "total_area": 0,
-      "avg_efficiency": 0
+      "avg_efficiency": 3.02
     },
     {
       "variety": "wheat 🌾 Trail",
       "total_production": 267.4,
       "total_area": 0,
-      "avg_efficiency": 0
+      "avg_efficiency": 2.59
     },
     {
       "variety": "Wheat 🌾 Trial ",
       "total_production": 292.17,
       "total_area": 0,
-      "avg_efficiency": 0
+      "avg_efficiency": 2.86
     },
     {
       "variety": "MIWOK",
       "total_production": 1535.47,
       "total_area": 0,
-      "avg_efficiency": 0
+      "avg_efficiency": 2.24
     },
     {
       "variety": "Misr1",
       "total_production": 566.1,
       "total_area": 0,
-      "avg_efficiency": 0
+      "avg_efficiency": 3.48
     }
   ]
 }

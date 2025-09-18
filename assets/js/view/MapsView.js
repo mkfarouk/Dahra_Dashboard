@@ -80,7 +80,7 @@ export const MapsView = {
   },
 
   async renderCropsMap(mapContainerId) {
-    const response = await fetch('./assets/js/real_data/data.json');
+    const response = await fetch('./assets/js/processed_data/data.json');
     const data = await response.json();
     const crops = data.filter(crop => crop.lat && crop.long);
     const mapDiv = document.getElementById(mapContainerId);

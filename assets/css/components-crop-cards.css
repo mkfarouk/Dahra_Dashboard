@@ -1,62 +1,190 @@
 /* Crop cards grid */
 .crop-cards-container {
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  gap: 1rem; margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .crop-card {
-  background: var(--white); border-radius: var(--border-radius); padding: 1rem;
-  box-shadow: var(--shadow-light); cursor: pointer; transition: var(--transition);
-  border: 3px solid transparent; position: relative; overflow: hidden; min-height: 140px;
-  display: flex; flex-direction: column; justify-content: space-between;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-shadow: var(--shadow-light);
+  cursor: pointer;
+  transition: var(--transition);
+  border: 3px solid transparent;
+  position: relative;
+  overflow: hidden;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.crop-card::before {
-  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; transform: scaleX(0); transition: var(--transition);
-}
-/* Top accent bars */
-.crop-card.barley::before { background: linear-gradient(90deg, var(--barley-color), #aed581); }
-.crop-card.bean::before { background: linear-gradient(90deg, var(--bean-color), #81c784); }
-.crop-card.corn::before { background: linear-gradient(90deg, var(--corn-color), #8bc34a); }
-.crop-card.potatoes::before { background: linear-gradient(90deg, var(--potatoes-color), #66bb6a); }
-.crop-card.soybean::before { background: linear-gradient(90deg, var(--soybean-color), #4caf50); }
-.crop-card.sugarbeet::before { background: linear-gradient(90deg, var(--sugarbeet-color), #81c784); }
-.crop-card.wheat::before { background: linear-gradient(90deg, var(--wheat-color), #66bb6a); }
-.crop-card.alfalfa::before { background: linear-gradient(90deg, var(--alfalfa-color), #4caf50); }
 
-.crop-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-medium); }
-.crop-card:hover::before { transform: scaleX(1); }
-.crop-card.selected { 
-  transform: translateY(-3px); 
-  box-shadow: var(--shadow-medium); 
+.crop-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  transform: scaleX(0);
+  transition: var(--transition);
+}
+
+/* Top accent bars */
+.crop-card.barley::before {
+  background: linear-gradient(90deg, var(--barley-color), #aed581);
+}
+
+.crop-card.bean::before {
+  background: linear-gradient(90deg, var(--bean-color), #81c784);
+}
+
+.crop-card.corn::before {
+  background: linear-gradient(90deg, var(--corn-color), #8bc34a);
+}
+
+.crop-card.potatoes::before {
+  background: linear-gradient(90deg, var(--potatoes-color), #66bb6a);
+}
+
+.crop-card.soybean::before {
+  background: linear-gradient(90deg, var(--soybean-color), #4caf50);
+}
+
+.crop-card.sugarbeet::before {
+  background: linear-gradient(90deg, var(--sugarbeet-color), #81c784);
+}
+
+.crop-card.wheat::before {
+  background: linear-gradient(90deg, var(--wheat-color), #66bb6a);
+}
+
+.crop-card.alfalfa::before {
+  background: linear-gradient(90deg, var(--alfalfa-color), #4caf50);
+}
+
+.crop-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-medium);
+}
+
+.crop-card:hover::before {
+  transform: scaleX(1);
+}
+
+.crop-card.selected {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-medium);
   border: 3px solid #4caf50 !important;
   background: linear-gradient(135deg, #f1f8e9 0%, #e8f5e8 100%);
 }
-.crop-card.selected::before { transform: scaleX(1); }
 
-.crop-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
-.crop-name { font-size: 0.9rem; font-weight: 600; color: var(--dark-gray); }
-.crop-icon { font-size: 1.2rem; }
+.crop-card.selected::before {
+  transform: scaleX(1);
+}
 
-.crop-card.barley .crop-icon { color: var(--barley-color); }
-.crop-card.bean .crop-icon { color: var(--bean-color); }
-.crop-card.corn .crop-icon { color: var(--corn-color); }
-.crop-card.potatoes .crop-icon { color: var(--potatoes-color); }
-.crop-card.soybean .crop-icon { color: var(--soybean-color); }
-.crop-card.sugarbeet .crop-icon { color: var(--sugarbeet-color); }
-.crop-card.wheat .crop-icon { color: var(--wheat-color); }
-.crop-card.alfalfa .crop-icon { color: var(--alfalfa-color); }
+.crop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
 
-.crop-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
-.stat-item { text-align: center; }
-.stat-value { font-size: 0.9rem; font-weight: 700; }
-.crop-card.barley .stat-value { color: var(--barley-color); }
-.crop-card.bean .stat-value { color: var(--bean-color); }
-.crop-card.corn .stat-value { color: var(--corn-color); }
-.crop-card.potatoes .stat-value { color: var(--potatoes-color); }
-.crop-card.soybean .stat-value { color: var(--soybean-color); }
-.crop-card.sugarbeet .stat-value { color: var(--sugarbeet-color); }
-.crop-card.wheat .stat-value { color: var(--wheat-color); }
-.crop-card.alfalfa .stat-value { color: var(--alfalfa-color); }
+.crop-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+}
+
+.crop-icon {
+  font-size: 1.2rem;
+}
+
+.crop-card.barley .crop-icon {
+  color: var(--barley-color);
+}
+
+.crop-card.bean .crop-icon {
+  color: var(--bean-color);
+}
+
+.crop-card.corn .crop-icon {
+  color: var(--corn-color);
+}
+
+.crop-card.potatoes .crop-icon {
+  color: var(--potatoes-color);
+}
+
+.crop-card.soybean .crop-icon {
+  color: var(--soybean-color);
+}
+
+.crop-card.sugarbeet .crop-icon {
+  color: var(--sugarbeet-color);
+}
+
+.crop-card.wheat .crop-icon {
+  color: var(--wheat-color);
+}
+
+.crop-card.alfalfa .crop-icon {
+  color: var(--alfalfa-color);
+}
+
+.crop-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.crop-card.barley .stat-value {
+  color: var(--barley-color);
+}
+
+.crop-card.bean .stat-value {
+  color: var(--bean-color);
+}
+
+.crop-card.corn .stat-value {
+  color: var(--corn-color);
+}
+
+.crop-card.potatoes .stat-value {
+  color: var(--potatoes-color);
+}
+
+.crop-card.soybean .stat-value {
+  color: var(--soybean-color);
+}
+
+.crop-card.sugarbeet .stat-value {
+  color: var(--sugarbeet-color);
+}
+
+.crop-card.wheat .stat-value {
+  color: var(--wheat-color);
+}
+
+.crop-card.alfalfa .stat-value {
+  color: var(--alfalfa-color);
+}
+
 .stat-label {
-  font-size: 0.65rem; color: var(--medium-gray);  letter-spacing: 0.5px; margin-top: 0.25rem;
+  font-size: 0.65rem;
+  color: var(--medium-gray);
+  letter-spacing: 0.5px;
+  margin-top: 0.25rem;
 }
