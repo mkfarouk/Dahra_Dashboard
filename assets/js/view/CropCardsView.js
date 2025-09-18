@@ -199,17 +199,29 @@ export const CropCardsView = {
         </div>
       `;
       card.addEventListener('click', async () => {
+        // Toggle behavior: if already selected, unselect and show all
+        const alreadySelected = card.classList.contains('selected');
         // Remove highlight from all cards
         container.querySelectorAll('.crop-card').forEach(c => c.classList.remove('selected'));
+        
+        const { CropModel } = await import('../model/CropModel.js');
+        const { AppController } = await import('../controller/AppController.js');
+        
+        if (alreadySelected) {
+          // Deselect and reset to all crops
+          CropModel.set('selectedCrop', 'all');
+          this.clearCropDetails();
+          await AppController.refresh();
+          return;
+        }
+        
+        // Select this card
         card.classList.add('selected');
         
-        // Update the crop model with the selected crop
-        const { CropModel } = await import('../model/CropModel.js');
         // Use the exact crop name as it appears in the data
         CropModel.set('selectedCrop', cropName);
         
         // Refresh the charts and metrics
-        const { AppController } = await import('../controller/AppController.js');
         await AppController.refresh();
         
         // Get varieties data for this crop
@@ -309,8 +321,7 @@ export const CropCardsView = {
     });
     container.appendChild(cardsFragment);
     
-    // Add click outside handler to show all crops
-    this.addClickOutsideHandler(container);
+    // Removed global click-outside handler to avoid accidental unfiltering
     
     // Details section always below all cards, visually separated and filling blank
     const detailsSection = document.createElement('div');
