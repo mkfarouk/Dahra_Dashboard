@@ -1,5 +1,6 @@
 import { DataSource, MONTH_LABELS } from './DataSource.js';
 import { sliceByPeriod } from '../controller/Helpers.js';
+import { fieldGroupFiltering } from '../lib/FieldGroupFiltering.js';
 
 export const CropModel = (() => {
   const state = {
@@ -245,7 +246,50 @@ export const CropModel = (() => {
 
   async function getMetrics() {
     try {
-      // Fetch real data from projects_summary.json
+      // Check if field group filtering is active
+      const selectedFieldGroup = fieldGroupFiltering.getSelectedFieldGroup();
+      const selectedLocation = state.selectedLocation;
+      
+      if (selectedFieldGroup !== 'all' && selectedLocation !== 'all') {
+        // Get field group specific data
+        const fieldGroupData = fieldGroupFiltering.getProductionDataForFieldGroup(selectedFieldGroup, selectedLocation);
+        
+        if (fieldGroupData) {
+          // Calculate metrics from field group data
+          const totalProduction = Object.values(fieldGroupData).reduce((sum, crop) => sum + crop.totalProduction, 0);
+          const avgEfficiency = Object.values(fieldGroupData).reduce((sum, crop) => sum + crop.avgYield, 0) / Object.keys(fieldGroupData).length;
+          const lastYearProduction = Math.round(totalProduction * 0.9);
+          
+          return [
+            { 
+              icon: 'fas fa-cogs', 
+              value: `${Math.round(avgEfficiency * 100) / 100}%`, 
+              label: 'AVG Efficiency', 
+              color: 'text-success', 
+              current: avgEfficiency, 
+              previous: Math.max(0, avgEfficiency - 2) 
+            },
+            { 
+              icon: 'fas fa-warehouse', 
+              value: `${Math.round(totalProduction).toLocaleString()}`, 
+              label: 'Current Production', 
+              color: 'text-warning', 
+              current: totalProduction, 
+              previous: lastYearProduction 
+            },
+            { 
+              icon: 'fas fa-chart-line', 
+              value: `${lastYearProduction.toLocaleString()}`, 
+              label: 'Last Year', 
+              color: 'text-info', 
+              current: lastYearProduction, 
+              previous: Math.round(lastYearProduction * 0.9) 
+            }
+          ];
+        }
+      }
+
+      // Fallback to original logic for all locations or when field group is 'all'
       const response = await fetch('./assets/js/real_data/projects_summary.json');
       const projectsData = await response.json();
       

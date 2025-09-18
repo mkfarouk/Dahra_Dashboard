@@ -6,8 +6,11 @@ import { SidebarView } from '../view/SidebarView.js';
 import { MapsView } from '../view/MapsView.js';
 import { ChartsView } from '../view/ChartsView.js';
 import { WeatherAnalysisView } from '../view/WeatherAnalysisView.js';
+import { fieldGroupFiltering } from '../lib/FieldGroupFiltering.js';
 
 export const AppController = {
+  isRefreshing: false, // Add flag to prevent infinite loops
+  
   async init() {
     this.showLoading();
 
@@ -15,6 +18,12 @@ export const AppController = {
       await DataSource.loadMonthlyCrops();
     } catch (error) {
       console.warn('Monthly crops data unavailable, falling back to mock series.', error);
+    }
+
+    try {
+      await fieldGroupFiltering.loadFieldData();
+    } catch (error) {
+      console.warn('Field group data unavailable:', error);
     }
 
     try {
@@ -44,14 +53,24 @@ export const AppController = {
   },
 
   async refresh() {
-    SidebarView.updateWeather(CropModel.getWeather());
+    if (this.isRefreshing) {
+      return; // Prevent infinite loops
+    }
     
-    // Await the async getMetrics function
-    const metrics = await CropModel.getMetrics();
-    SidebarView.updateMetrics(metrics);
+    this.isRefreshing = true;
     
-    await ChartsView.updateProduction();
-    ChartsView.updateComparison();
+    try {
+      SidebarView.updateWeather(CropModel.getWeather());
+      
+      // Await the async getMetrics function
+      const metrics = await CropModel.getMetrics();
+      SidebarView.updateMetrics(metrics);
+      
+      await ChartsView.updateProduction();
+      ChartsView.updateComparison();
+    } finally {
+      this.isRefreshing = false;
+    }
   },
 
   renderVarietiesOrHide(key) {
@@ -106,7 +125,12 @@ export const AppController = {
 
     // Location selector (weather + metrics same as before)
     $('#locationSelector').addEventListener('change', async e=>{
-      CropModel.set('selectedLocation', e.target.value);
+      const selectedLocation = e.target.value;
+      CropModel.set('selectedLocation', selectedLocation);
+      
+      // Show/hide field group filter based on location
+      this.updateFieldGroupFilter(selectedLocation);
+      
       await this.refresh();
     });
 
@@ -132,6 +156,79 @@ export const AppController = {
         ChartsView.updateComparison();
       });
     });
+  },
+
+  updateFieldGroupFilter(location) {
+    const fieldGroupContainer = document.getElementById('fieldGroupContainer');
+    
+    if (location === 'all') {
+      // Hide field group filter for 'all' locations
+      if (fieldGroupContainer) {
+        fieldGroupContainer.style.display = 'none';
+      }
+      fieldGroupFiltering.setSelectedFieldGroup('all');
+    } else {
+      // Show field group filter for specific locations
+      if (!fieldGroupContainer) {
+        this.createFieldGroupContainer();
+      }
+      
+      const fieldGroupSelector = document.getElementById('fieldGroupSelector');
+      if (fieldGroupSelector) {
+        // Update options based on location
+        const fieldGroups = fieldGroupFiltering.getFieldGroupsForLocation(location);
+        fieldGroupSelector.innerHTML = '<option value="all">All Field Groups</option>';
+        
+        fieldGroups.forEach(group => {
+          const option = document.createElement('option');
+          option.value = group.id;
+          option.textContent = group.name;
+          fieldGroupSelector.appendChild(option);
+        });
+        
+        // Reset to 'all' when location changes
+        fieldGroupSelector.value = 'all';
+        fieldGroupFiltering.setSelectedFieldGroup('all');
+      }
+      
+      fieldGroupContainer.style.display = 'block';
+    }
+  },
+
+  createFieldGroupContainer() {
+    const controlButtons = document.querySelector('.control-buttons');
+    const fieldGroupContainer = document.createElement('div');
+    fieldGroupContainer.id = 'fieldGroupContainer';
+    fieldGroupContainer.style.display = 'none';
+    fieldGroupContainer.innerHTML = fieldGroupFiltering.createFieldGroupSelector('toshka');
+    
+    // Insert after the dark mode toggle but before the location selector
+    const darkModeToggle = controlButtons.querySelector('.dark-mode-toggle');
+    const locationSelector = controlButtons.querySelector('#locationSelector');
+    
+    if (darkModeToggle && locationSelector) {
+      controlButtons.insertBefore(fieldGroupContainer, locationSelector);
+    } else {
+      // Fallback: insert at the beginning of control buttons
+      controlButtons.insertBefore(fieldGroupContainer, controlButtons.firstChild);
+    }
+    
+    // Add event listener for field group selector
+    const fieldGroupSelector = document.getElementById('fieldGroupSelector');
+    if (fieldGroupSelector) {
+      fieldGroupSelector.addEventListener('change', async (e) => {
+        fieldGroupFiltering.setSelectedFieldGroup(e.target.value);
+        
+        // Re-render crop cards with new field group data
+        const { CropCardsView } = await import('../view/CropCardsView.js');
+        await CropCardsView.render(document.getElementById('cropCards'));
+        
+        // Only refresh metrics and charts, not the full refresh
+        const metrics = await CropModel.getMetrics();
+        SidebarView.updateMetrics(metrics);
+        await ChartsView.updateProduction();
+      });
+    }
   },
 
   showLoading(){ document.getElementById('loadingOverlay').classList.add('active'); },

@@ -117,10 +117,18 @@ export class TrendAnalysis {
   /**
    * Get trend data for a specific crop or all crops
    */
-  getTrendData(cropName = 'all', period = '1y') {
+  async getTrendData(cropName = 'all', period = '1y') {
     if (!this.monthlyData) {
       console.warn('Monthly data not loaded');
       return this.getEmptyTrendData();
+    }
+
+    // Check if field group filtering is active
+    const selectedFieldGroup = this.getSelectedFieldGroup();
+    const selectedLocation = this.getSelectedLocation();
+    
+    if (selectedFieldGroup !== 'all' && selectedLocation !== 'all') {
+      return await this.getFieldGroupTrendData(cropName, period, selectedFieldGroup, selectedLocation);
     }
 
     let data;
@@ -258,6 +266,98 @@ export class TrendAnalysis {
 
     const efficiencies = cropData.monthlyEfficiency.filter(e => e > 0);
     return efficiencies.length > 0 ? efficiencies.reduce((sum, val) => sum + val, 0) / efficiencies.length : 0;
+  }
+
+  /**
+   * Get selected field group from field group filtering
+   */
+  getSelectedFieldGroup() {
+    try {
+      // Try to get from field group filtering module
+      const fieldGroupElement = document.getElementById('fieldGroupSelector');
+      return fieldGroupElement ? fieldGroupElement.value : 'all';
+    } catch (error) {
+      return 'all';
+    }
+  }
+
+  /**
+   * Get selected location from location selector
+   */
+  getSelectedLocation() {
+    try {
+      const locationElement = document.getElementById('locationSelector');
+      return locationElement ? locationElement.value : 'all';
+    } catch (error) {
+      return 'all';
+    }
+  }
+
+  /**
+   * Get field group trend data
+   */
+  async getFieldGroupTrendData(cropName, period, fieldGroupId, location) {
+    try {
+      // Import field group filtering module
+      const { fieldGroupFiltering } = await import('../lib/FieldGroupFiltering.js');
+      
+      // Get monthly production data for the field group
+      const monthlyData = fieldGroupFiltering.getMonthlyProductionForFieldGroup(fieldGroupId, location);
+      
+      if (!monthlyData) {
+        return this.getEmptyTrendData();
+      }
+
+      // Initialize monthly arrays
+      const monthlyProduction = Array(12).fill(0);
+      const monthlyEfficiency = Array(12).fill(0);
+      const monthlyCounts = Array(12).fill(0);
+
+      // Process monthly data
+      Object.entries(monthlyData).forEach(([monthIndex, crops]) => {
+        const month = parseInt(monthIndex);
+        if (month >= 0 && month < 12) {
+          if (cropName === 'all' || cropName === 'All Crops') {
+            // Sum all crops for this month
+            Object.values(crops).forEach(production => {
+              monthlyProduction[month] += production;
+            });
+          } else {
+            // Get specific crop data
+            const normalizedCropName = this.normalizeCropName(cropName);
+            if (crops[normalizedCropName]) {
+              monthlyProduction[month] = crops[normalizedCropName];
+            }
+          }
+        }
+      });
+
+      // Apply period filtering
+      const filteredData = this.applyPeriodFilter({
+        monthlyProduction,
+        monthlyEfficiency: monthlyProduction // Use production as efficiency for field groups
+      }, period);
+
+      return {
+        labels: this.getFilteredMonthLabels(period),
+        series: [
+          {
+            name: 'Production',
+            type: 'line',
+            data: filteredData.monthlyEfficiency
+          },
+          {
+            name: 'Total Amount',
+            type: 'column',
+            data: filteredData.monthlyProduction,
+            yAxisIndex: 1
+          }
+        ]
+      };
+    } catch (error) {
+      console.error('Error getting field group trend data:', error);
+      return this.getEmptyTrendData();
+    }
   }
 }
 

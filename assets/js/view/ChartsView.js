@@ -252,8 +252,8 @@ export const ChartsView = {
         await trendAnalysis.loadMonthlyData();
       }
       
-      // Get trend data from TrendAnalysis
-      const data = trendAnalysis.getTrendData(selectedCrop, period);
+      // Get trend data from TrendAnalysis (now async)
+      const data = await trendAnalysis.getTrendData(selectedCrop, period);
       
       return data;
     } catch (error) {

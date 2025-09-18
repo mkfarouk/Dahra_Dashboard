@@ -12,3 +12,15 @@
   --shadow-light: 0 2px 10px rgba(129, 199, 132, 0.08);
   --shadow-medium: 0 4px 20px rgba(129, 199, 132, 0.12);
 }
+
+/* Dark mode field group filter */
+[data-theme="dark"] .field-group-select {
+  background: var(--white);
+  color: var(--dark-gray);
+  border-color: var(--medium-gray);
+}
+
+[data-theme="dark"] .field-group-select:focus {
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(129, 199, 132, 0.1);
+}
