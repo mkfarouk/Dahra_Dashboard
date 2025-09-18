@@ -12,7 +12,7 @@ export class TrendAnalysis {
    */
   async loadMonthlyData() {
     try {
-      const response = await fetch('./monthly_crops.json');
+      const response = await fetch('../processed_data/monthly_crops.json');
       if (!response.ok) {
         throw new Error(`Failed to load monthly_crops.json (${response.status})`);
       }
