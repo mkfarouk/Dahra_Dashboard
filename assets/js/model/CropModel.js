@@ -256,14 +256,18 @@ export const CropModel = (() => {
         
         if (fieldGroupData) {
           // Calculate metrics from field group data
-          const totalProduction = Object.values(fieldGroupData).reduce((sum, crop) => sum + crop.totalProduction, 0);
-          const avgEfficiency = Object.values(fieldGroupData).reduce((sum, crop) => sum + crop.avgYield, 0) / Object.keys(fieldGroupData).length;
+          const totals = Object.values(fieldGroupData);
+          const totalProduction = totals.reduce((sum, crop) => sum + (Number(crop.totalProduction) || 0), 0);
+          // Correct average: sum all underlying yields, divide by total count of records
+          const yieldSum = totals.reduce((sum, crop) => sum + (Number(crop.totalYield) || 0), 0);
+          const yieldCount = totals.reduce((sum, crop) => sum + (Number(crop.count) || 0), 0);
+          const avgEfficiency = yieldCount > 0 ? (yieldSum / yieldCount) : 0;
           const lastYearProduction = Math.round(totalProduction * 0.9);
           
           return [
             { 
               icon: 'fas fa-cogs', 
-              value: `${Math.round(avgEfficiency * 100) / 100}%`, 
+              value: Math.round(avgEfficiency * 100) / 100, 
               label: 'AVG Efficiency', 
               color: 'text-success', 
               current: avgEfficiency, 
@@ -293,37 +297,59 @@ export const CropModel = (() => {
       const response = await fetch('./assets/js/real_data/projects_summary.json');
       const projectsData = await response.json();
       
-      // Determine which location data to use based on selectedLocation
-      let locationData;
-      let locationName = 'All Locations';
-      
+      // Compute metrics from real data with correct average across underlying entries
+      const accumulateLocation = (locObj) => {
+        if (!locObj || !locObj.group_fields) return { prod: Number(locObj?.production) || 0, effSum: 0, effCount: 0 };
+        let effSum = 0;
+        let effCount = 0;
+        // Walk through all varieties across crops and pump stations
+        Object.values(locObj.group_fields).forEach(ps => {
+          if (!ps || !ps.crops) return;
+          Object.values(ps.crops).forEach(crop => {
+            const vars = Array.isArray(crop?.varieties) ? crop.varieties : [];
+            vars.forEach(v => {
+              const e = Number(v.avg_efficiency);
+              if (!Number.isNaN(e) && e > 0) {
+                effSum += e;
+                effCount += 1;
+              }
+            });
+          });
+        });
+        return { prod: Number(locObj.production) || 0, effSum, effCount };
+      };
+
+      let totalProductionAll = 0;
+      let totalEffSum = 0;
+      let totalEffCount = 0;
+
       if (state.selectedLocation === 'toshka') {
-        locationData = projectsData['Toshka project'];
-        locationName = 'Toshka';
+        const acc = accumulateLocation(projectsData['Toshka project']);
+        totalProductionAll += acc.prod;
+        totalEffSum += acc.effSum;
+        totalEffCount += acc.effCount;
       } else if (state.selectedLocation === 'eastowinat') {
-        locationData = projectsData['East Oweinat Project'];
-        locationName = 'East Oweinat';
+        const acc = accumulateLocation(projectsData['East Oweinat Project']);
+        totalProductionAll += acc.prod;
+        totalEffSum += acc.effSum;
+        totalEffCount += acc.effCount;
       } else {
-        // For 'all' locations, combine data from both locations
-        const toshkaData = projectsData['Toshka project'] || { avg_efficiency: 0, production: 0 };
-        const oweinatData = projectsData['East Oweinat Project'] || { avg_efficiency: 0, production: 0 };
-        
-        locationData = {
-          avg_efficiency: (toshkaData.avg_efficiency + oweinatData.avg_efficiency) / 2,
-          production: toshkaData.production + oweinatData.production
-        };
+        const acc1 = accumulateLocation(projectsData['Toshka project']);
+        const acc2 = accumulateLocation(projectsData['East Oweinat Project']);
+        totalProductionAll = acc1.prod + acc2.prod;
+        totalEffSum = acc1.effSum + acc2.effSum;
+        totalEffCount = acc1.effCount + acc2.effCount;
       }
-      
-      // Calculate metrics from real data
-      const avgEfficiency = Math.round((locationData && locationData.avg_efficiency) || 0);
-      const currentProduction = Math.round((locationData && locationData.production) || 0);
+
+      const avgEfficiency = totalEffCount > 0 ? (totalEffSum / totalEffCount) : 0;
+      const currentProduction = Math.round(totalProductionAll);
       // Simulate last year production as 90% of current (since we don't have historical data)
       const lastYearProduction = Math.round(currentProduction * 0.9);
       
       return [
         { 
           icon: 'fas fa-cogs', 
-          value: `${avgEfficiency}%`, 
+          value: Math.round(avgEfficiency * 100) / 100, 
           label: 'AVG Efficiency', 
           color: 'text-success', 
           current: avgEfficiency, 
@@ -354,14 +380,14 @@ export const CropModel = (() => {
       const agri = DataSource.getAgri();
 
       if (state.selectedCrop === 'all') {
-        const avgEfficiency = Math.round(Object.values(agri)
-          .reduce((s, c) => s + c.avgEfficiency, 0) / Object.keys(agri).length);
+        const avgEfficiency = Object.values(agri)
+          .reduce((s, c) => s + (Number(c.avgEfficiency) || 0), 0) / Math.max(1, Object.keys(agri).length);
 
         const totalCurrent = Object.values(agri).reduce((s, c) => s + c.currentProduction, 0);
         const totalLast = Object.values(agri).reduce((s, c) => s + c.lastYearProduction, 0);
 
         return [
-          { icon: 'fas fa-cogs', value: `${avgEfficiency}%`, label: 'AVG Efficiency', color: 'text-success', current: avgEfficiency, previous: avgEfficiency - 2 },
+          { icon: 'fas fa-cogs', value: Math.round(avgEfficiency * 100) / 100, label: 'AVG Efficiency', color: 'text-success', current: avgEfficiency, previous: avgEfficiency - 2 },
           { icon: 'fas fa-warehouse', value: totalCurrent, label: 'Current Production', color: 'text-warning', current: totalCurrent, previous: totalLast },
           { icon: 'fas fa-chart-line', value: totalLast, label: 'Last Year', color: 'text-info', current: totalLast, previous: Math.round(totalLast * 0.9) }
         ];
@@ -369,7 +395,7 @@ export const CropModel = (() => {
 
       const c = agri[state.selectedCrop];
       return [
-        { icon: 'fas fa-cogs', value: `${c.avgEfficiency}%`, label: 'AVG Efficiency', color: 'text-success', current: c.avgEfficiency, previous: c.avgEfficiency - 2 },
+        { icon: 'fas fa-cogs', value: Math.round((Number(c.avgEfficiency) || 0) * 100) / 100, label: 'AVG Efficiency', color: 'text-success', current: c.avgEfficiency, previous: c.avgEfficiency - 2 },
         { icon: 'fas fa-warehouse', value: c.currentProduction, label: 'Current Production', color: 'text-warning', current: c.currentProduction, previous: c.lastYearProduction },
         { icon: 'fas fa-chart-line', value: c.lastYearProduction, label: 'Last Year', color: 'text-info', current: c.lastYearProduction, previous: Math.round(c.lastYearProduction * 0.9) }
       ];
