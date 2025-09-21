@@ -1,12 +1,8 @@
 export const agriculturalData = {
     "AlfaAlfa": {
         "name": "AlfaAlfa",
-        "avgEfficiency": 3.2403170684202762,
+        "avgEfficiency": 0.74,
         "productionPerTon": 4556.0,
-        "productionData": [],
-        "amountData": [],
-        "currentProduction": null,
-        "lastYearProduction": null,
         "varieties": [
             {
                 "name": "SW10",
@@ -14,8 +10,8 @@ export const agriculturalData = {
                     22.656756288677936,
                     31.331170638748894
                 ],
-                "total": 17.0,
-                "avg": 0
+                "production": 17.0,
+                "avg": 6.725114935013706
             },
             {
                 "name": "Pegasis",
@@ -23,8 +19,8 @@ export const agriculturalData = {
                     22.66132917258706,
                     31.334797028334403
                 ],
-                "total": 11.0,
-                "avg": 0
+                "production": 11.0,
+                "avg": 4.483409956675804
             },
             {
                 "name": "Pegasis",
@@ -32,8 +28,8 @@ export const agriculturalData = {
                     22.665939531279243,
                     31.338432227437238
                 ],
-                "total": 13.0,
-                "avg": 0
+                "production": 13.0,
+                "avg": 4.483409956675804
             },
             {
                 "name": "Pegasis",
@@ -41,8 +37,8 @@ export const agriculturalData = {
                     22.673875527781817,
                     31.343755470006634
                 ],
-                "total": 7.0,
-                "avg": 0
+                "production": 7.0,
+                "avg": 4.483409956675804
             },
             {
                 "name": "Pegasis",
@@ -50,8 +46,8 @@ export const agriculturalData = {
                     22.678581804292833,
                     31.34482007496181
                 ],
-                "total": 10.0,
-                "avg": 0
+                "production": 10.0,
+                "avg": 4.483409956675804
             },
             {
                 "name": "Saltana",
@@ -59,8 +55,8 @@ export const agriculturalData = {
                     22.676013492299994,
                     31.317016165723523
                 ],
-                "total": 163.0,
-                "avg": 3.2599319169739003
+                "production": 163.0,
+                "avg": 24.658754761716924
             },
             {
                 "name": "Saltana",
@@ -68,8 +64,8 @@ export const agriculturalData = {
                     22.681952383649993,
                     31.321699999957005
                 ],
-                "total": 151.0,
-                "avg": 3.019936929221221
+                "production": 151.0,
+                "avg": 22.41704978337902
             },
             {
                 "name": "Saltana",
@@ -77,8 +73,8 @@ export const agriculturalData = {
                     22.68810948675,
                     31.326557030804373
                 ],
-                "total": 126.0,
-                "avg": 2.5199473714031377
+                "production": 126.0,
+                "avg": 17.933639826703217
             },
             {
                 "name": "SIRIVER",
@@ -86,8 +82,8 @@ export const agriculturalData = {
                     22.6930916066969,
                     31.34040142069798
                 ],
-                "total": 122.0,
-                "avg": 2.4399490421522447
+                "production": 122.0,
+                "avg": 17.933639826703217
             },
             {
                 "name": "Saltana\t",
@@ -95,8 +91,8 @@ export const agriculturalData = {
                     22.668584801599998,
                     31.30121265564307
                 ],
-                "total": 129.0,
-                "avg": 2.579946118341308
+                "production": 129.0,
+                "avg": 20.175344805041117
             },
             {
                 "name": "Saltana",
@@ -104,8 +100,8 @@ export const agriculturalData = {
                     22.673004994099998,
                     31.294833384903086
                 ],
-                "total": 157.0,
-                "avg": 3.1399344230975608
+                "production": 157.0,
+                "avg": 22.41704978337902
             },
             {
                 "name": "Saltana",
@@ -113,8 +109,8 @@ export const agriculturalData = {
                     22.676355381749996,
                     31.288577431011355
                 ],
-                "total": 108.0,
-                "avg": 3.9997298123256515
+                "production": 108.0,
+                "avg": 29.142164718392728
             },
             {
                 "name": "SIRIVER",
@@ -122,8 +118,8 @@ export const agriculturalData = {
                     22.7065235611,
                     31.308380479513772
                 ],
-                "total": 81.0,
-                "avg": 2.1314873147287607
+                "production": 81.0,
+                "avg": 24.658754761716924
             },
             {
                 "name": "SIRIVER",
@@ -131,8 +127,8 @@ export const agriculturalData = {
                     22.707034450699993,
                     31.317287309590565
                 ],
-                "total": 56.0,
-                "avg": 1.1199766095125057
+                "production": 56.0,
+                "avg": 13.450229870027412
             },
             {
                 "name": "Saltana",
@@ -140,8 +136,8 @@ export const agriculturalData = {
                     22.641387074649995,
                     31.28759899370045
                 ],
-                "total": 171.0,
-                "avg": 3.419928575475687
+                "production": 171.0,
+                "avg": 24.658754761716924
             },
             {
                 "name": "Saltana",
@@ -149,8 +145,8 @@ export const agriculturalData = {
                     22.645732119099996,
                     31.28119961663034
                 ],
-                "total": 90.0,
-                "avg": 1.7999624081450984
+                "production": 90.0,
+                "avg": 13.450229870027412
             },
             {
                 "name": "Saltana",
@@ -158,8 +154,8 @@ export const agriculturalData = {
                     22.650076909899994,
                     31.274799835595722
                 ],
-                "total": 113.0,
-                "avg": 2.2599528013377346
+                "production": 113.0,
+                "avg": 17.933639826703217
             },
             {
                 "name": "Saltana",
@@ -167,8 +163,8 @@ export const agriculturalData = {
                     22.654474747799995,
                     31.268321115699766
                 ],
-                "total": 98.0,
-                "avg": 1.959959066646885
+                "production": 98.0,
+                "avg": 15.691934848365314
             },
             {
                 "name": "Catalina",
@@ -176,8 +172,8 @@ export const agriculturalData = {
                     22.65888414405,
                     31.26262778818731
                 ],
-                "total": 200.0,
-                "avg": 5.262931641305582
+                "production": 200.0,
+                "avg": 40.350689610082235
             },
             {
                 "name": "Catalina\t",
@@ -185,8 +181,8 @@ export const agriculturalData = {
                     22.66678402835,
                     31.23897100755201
                 ],
-                "total": 177.0,
-                "avg": 3.5399260693520267
+                "production": 177.0,
+                "avg": 26.900459740054824
             },
             {
                 "name": "Saltana",
@@ -194,8 +190,8 @@ export const agriculturalData = {
                     22.674280729449993,
                     31.239433327302734
                 ],
-                "total": 138.0,
-                "avg": 2.7599423591558176
+                "production": 138.0,
+                "avg": 20.175344805041117
             },
             {
                 "name": "Catalina",
@@ -203,8 +199,8 @@ export const agriculturalData = {
                     22.648461321199996,
                     31.263583133310895
                 ],
-                "total": 187.0,
-                "avg": 3.73992189247926
+                "production": 187.0,
+                "avg": 26.900459740054824
             },
             {
                 "name": "Saltana",
@@ -212,8 +208,8 @@ export const agriculturalData = {
                     22.644063668699992,
                     31.270061723071393
                 ],
-                "total": 242.0,
-                "avg": 4.839898919679042
+                "production": 242.0,
+                "avg": 35.867279653406435
             },
             {
                 "name": "Saltana",
@@ -221,8 +217,8 @@ export const agriculturalData = {
                     22.639719065349993,
                     31.27646137784174
                 ],
-                "total": 46.0,
-                "avg": 0.9199807863852725
+                "production": 46.0,
+                "avg": 11.20852489168951
             },
             {
                 "name": "Pegasis",
@@ -230,8 +226,8 @@ export const agriculturalData = {
                     22.635374207999995,
                     31.282860629827127
                 ],
-                "total": 107.0,
-                "avg": 2.1399553074613946
+                "production": 107.0,
+                "avg": 15.691934848365314
             },
             {
                 "name": "Catalina\t",
@@ -239,8 +235,8 @@ export const agriculturalData = {
                     22.669162716849996,
                     31.246531758617323
                 ],
-                "total": 187.0,
-                "avg": 3.73992189247926
+                "production": 187.0,
+                "avg": 26.900459740054824
             },
             {
                 "name": "Pegasis",
@@ -248,8 +244,8 @@ export const agriculturalData = {
                     22.628561532249996,
                     31.279300390284114
                 ],
-                "total": 134.0,
-                "avg": 2.679944029904924
+                "production": 134.0,
+                "avg": 20.175344805041117
             },
             {
                 "name": "Saltana",
@@ -257,8 +253,8 @@ export const agriculturalData = {
                     22.63290624925,
                     31.272901337662738
                 ],
-                "total": 61.0,
-                "avg": 1.2199745210761224
+                "production": 61.0,
+                "avg": 13.450229870027412
             },
             {
                 "name": "Saltana",
@@ -266,8 +262,8 @@ export const agriculturalData = {
                     22.637250712449998,
                     31.266501881392628
                 ],
-                "total": 166.0,
-                "avg": 3.3199306639120705
+                "production": 166.0,
+                "avg": 24.658754761716924
             },
             {
                 "name": "Saltana",
@@ -275,8 +271,8 @@ export const agriculturalData = {
                     22.6419260517,
                     31.26113013848643
                 ],
-                "total": 177.0,
-                "avg": 4.65769450255544
+                "production": 177.0,
+                "avg": 35.867279653406435
             },
             {
                 "name": "Pegasis",
@@ -284,8 +280,8 @@ export const agriculturalData = {
                     22.629220776649994,
                     31.251651992423064
                 ],
-                "total": 76.0,
-                "avg": 1.519968255766972
+                "production": 76.0,
+                "avg": 11.20852489168951
             },
             {
                 "name": "Pegasis",
@@ -293,8 +289,8 @@ export const agriculturalData = {
                     22.629099296799993,
                     31.265081607524486
                 ],
-                "total": 104.0,
-                "avg": 2.079956560523225
+                "production": 104.0,
+                "avg": 15.691934848365314
             },
             {
                 "name": "Pegasis",
@@ -302,8 +298,8 @@ export const agriculturalData = {
                     22.624806753764723,
                     31.271577997532145
                 ],
-                "total": 181.0,
-                "avg": 3.6199243985688603
+                "production": 181.0,
+                "avg": 26.900459740054824
             },
             {
                 "name": "Pegasis",
@@ -311,8 +307,8 @@ export const agriculturalData = {
                     22.618046389849994,
                     31.268529223340146
                 ],
-                "total": 109.0,
-                "avg": 2.8682977445115423
+                "production": 109.0,
+                "avg": 22.41704978337902
             },
             {
                 "name": "Pegasis",
@@ -320,8 +316,8 @@ export const agriculturalData = {
                     22.623078322649995,
                     31.261941341800764
                 ],
-                "total": 96.0,
-                "avg": 3.5553153887339124
+                "production": 96.0,
+                "avg": 26.900459740054824
             },
             {
                 "name": "AFX 1060\t",
@@ -329,8 +325,8 @@ export const agriculturalData = {
                     22.59731475800004,
                     31.250950030581315
                 ],
-                "total": 26.0,
-                "avg": 0
+                "production": 26.0,
+                "avg": 17.933639826703217
             },
             {
                 "name": "Alfa master 10",
@@ -338,8 +334,8 @@ export const agriculturalData = {
                     22.593172949000063,
                     31.254630676403213
                 ],
-                "total": 48.0,
-                "avg": 0
+                "production": 48.0,
+                "avg": 20.175344805041117
             },
             {
                 "name": "SW10",
@@ -347,8 +343,8 @@ export const agriculturalData = {
                     22.58641294900005,
                     31.24997355057888
                 ],
-                "total": 25.0,
-                "avg": 0
+                "production": 25.0,
+                "avg": 15.691934848365314
             },
             {
                 "name": "Alfa master 10\t",
@@ -356,8 +352,8 @@ export const agriculturalData = {
                     22.58841741200004,
                     31.256051675080272
                 ],
-                "total": 17.0,
-                "avg": 0
+                "production": 17.0,
+                "avg": 11.20852489168951
             },
             {
                 "name": "Alfa master 10",
@@ -365,8 +361,8 @@ export const agriculturalData = {
                     22.582976971500045,
                     31.266016588762955
                 ],
-                "total": 6.0,
-                "avg": 0
+                "production": 6.0,
+                "avg": 6.725114935013706
             },
             {
                 "name": "Alfa master 10",
@@ -374,8 +370,8 @@ export const agriculturalData = {
                     22.57887212250003,
                     31.26417223626516
                 ],
-                "total": 9.0,
-                "avg": 0
+                "production": 9.0,
+                "avg": 11.20852489168951
             },
             {
                 "name": "Alfa master 10",
@@ -383,8 +379,8 @@ export const agriculturalData = {
                     22.599745549709652,
                     31.26303468217023
                 ],
-                "total": 18.0,
-                "avg": 0
+                "production": 18.0,
+                "avg": 11.20852489168951
             },
             {
                 "name": "AFX 1060",
@@ -392,8 +388,8 @@ export const agriculturalData = {
                     22.605328188500067,
                     31.26512458437231
                 ],
-                "total": 78.0,
-                "avg": 0
+                "production": 78.0,
+                "avg": 17.933639826703217
             },
             {
                 "name": "AFX 1060",
@@ -401,8 +397,8 @@ export const agriculturalData = {
                     22.609481639500075,
                     31.271763555378804
                 ],
-                "total": 102.0,
-                "avg": 0
+                "production": 102.0,
+                "avg": 22.41704978337902
             },
             {
                 "name": "Alfa master 10",
@@ -410,8 +406,8 @@ export const agriculturalData = {
                     22.609647593000062,
                     31.279426263175775
                 ],
-                "total": 36.0,
-                "avg": 0
+                "production": 36.0,
+                "avg": 11.20852489168951
             },
             {
                 "name": "Alfa master 10",
@@ -419,8 +415,8 @@ export const agriculturalData = {
                     22.60383066050005,
                     31.274763812409834
                 ],
-                "total": 16.0,
-                "avg": 0
+                "production": 16.0,
+                "avg": 6.725114935013706
             },
             {
                 "name": "SW10",
@@ -428,8 +424,8 @@ export const agriculturalData = {
                     22.615498516500026,
                     31.295061937893657
                 ],
-                "total": 44.0,
-                "avg": 0
+                "production": 44.0,
+                "avg": 31.383869696730628
             },
             {
                 "name": "Alfa master 10",
@@ -437,8 +433,8 @@ export const agriculturalData = {
                     22.626472771000067,
                     31.304817631629327
                 ],
-                "total": 37.0,
-                "avg": 0
+                "production": 37.0,
+                "avg": 6.725114935013706
             },
             {
                 "name": "AFX 1060",
@@ -446,8 +442,8 @@ export const agriculturalData = {
                     22.629879108521344,
                     31.30942809333303
                 ],
-                "total": 7.0,
-                "avg": 0
+                "production": 7.0,
+                "avg": 8.966819913351609
             },
             {
                 "name": "Alfa master 10",
@@ -455,8 +451,8 @@ export const agriculturalData = {
                     22.62748868250003,
                     31.298994748652923
                 ],
-                "total": 26.0,
-                "avg": 0
+                "production": 26.0,
+                "avg": 17.933639826703217
             },
             {
                 "name": "SW10",
@@ -464,8 +460,8 @@ export const agriculturalData = {
                     22.625557671000053,
                     31.29355110662594
                 ],
-                "total": 37.0,
-                "avg": 0
+                "production": 37.0,
+                "avg": 11.20852489168951
             },
             {
                 "name": "SW10",
@@ -473,8 +469,8 @@ export const agriculturalData = {
                     22.622231202613406,
                     31.286021621392848
                 ],
-                "total": 9.0,
-                "avg": 0
+                "production": 9.0,
+                "avg": 6.725114935013706
             },
             {
                 "name": "SW10",
@@ -482,19 +478,15 @@ export const agriculturalData = {
                     22.618036602017597,
                     31.289396717394453
                 ],
-                "total": 4.0,
-                "avg": 0
+                "production": 4.0,
+                "avg": 6.725114935013706
             }
         ]
     },
     "Wheat": {
         "name": "Wheat",
-        "avgEfficiency": 19.89311734726231,
-        "productionPerTon": 35191.83499999999,
-        "productionData": [],
-        "amountData": [],
-        "currentProduction": null,
-        "lastYearProduction": null,
+        "avgEfficiency": 5.93,
+        "productionPerTon": 38934.83500000001,
         "varieties": [
             {
                 "name": "Misr 1",
@@ -502,8 +494,8 @@ export const agriculturalData = {
                     22.678845791099995,
                     31.338007331580386
                 ],
-                "total": 208.52,
-                "avg": 7.722441300612453
+                "production": 208.52,
+                "avg": 77.14285714285714
             },
             {
                 "name": "Misr 1",
@@ -511,8 +503,8 @@ export const agriculturalData = {
                     22.6731429317,
                     31.33464884100413
                 ],
-                "total": 358.3,
-                "avg": 7.165850342648764
+                "production": 358.3,
+                "avg": 71.66666666666666
             },
             {
                 "name": "Misr 1",
@@ -520,8 +512,8 @@ export const agriculturalData = {
                     22.66722469769878,
                     31.33006789300299
                 ],
-                "total": 350.0,
-                "avg": 6.99985380945316
+                "production": 350.0,
+                "avg": 70.23809523809524
             },
             {
                 "name": "Misr 1",
@@ -529,8 +521,8 @@ export const agriculturalData = {
                     22.6612657534,
                     31.325281081336975
                 ],
-                "total": 385.0,
-                "avg": 7.699839190398476
+                "production": 385.0,
+                "avg": 77.14285714285714
             },
             {
                 "name": "Misr 1",
@@ -538,8 +530,8 @@ export const agriculturalData = {
                     22.655286609492553,
                     31.320412276029778
                 ],
-                "total": 364.44,
-                "avg": 7.288647778048885
+                "production": 364.44,
+                "avg": 72.85714285714285
             },
             {
                 "name": "Misr 1",
@@ -547,8 +539,8 @@ export const agriculturalData = {
                     22.64936143865,
                     31.315954282938577
                 ],
-                "total": 358.24,
-                "avg": 7.164650367710001
+                "production": 358.24,
+                "avg": 71.66666666666666
             },
             {
                 "name": "Misr 1",
@@ -556,8 +548,8 @@ export const agriculturalData = {
                     22.648895953599997,
                     31.30288522890318
                 ],
-                "total": 420.26,
-                "avg": 8.4050244627451
+                "production": 420.26,
+                "avg": 84.04761904761904
             },
             {
                 "name": "Misr 1",
@@ -565,8 +557,8 @@ export const agriculturalData = {
                     22.653681175574356,
                     31.308886309840776
                 ],
-                "total": 380.48,
-                "avg": 7.609441078344967
+                "production": 380.48,
+                "avg": 76.19047619047619
             },
             {
                 "name": "Misr 1",
@@ -574,8 +566,8 @@ export const agriculturalData = {
                     22.666178713499995,
                     31.320622021761828
                 ],
-                "total": 145.0,
-                "avg": 7.249848586912262
+                "production": 145.0,
+                "avg": 72.38095238095238
             },
             {
                 "name": "Misr 1",
@@ -583,8 +575,8 @@ export const agriculturalData = {
                     22.6716045156,
                     31.32348706703781
                 ],
-                "total": 361.12,
-                "avg": 7.222249164770644
+                "production": 361.12,
+                "avg": 72.14285714285714
             },
             {
                 "name": "Misr 1",
@@ -592,8 +584,8 @@ export const agriculturalData = {
                     22.67754321935,
                     31.328171025071555
                 ],
-                "total": 362.04,
-                "avg": 7.24064878049835
+                "production": 362.04,
+                "avg": 72.38095238095238
             },
             {
                 "name": "Misr 1",
@@ -601,8 +593,8 @@ export const agriculturalData = {
                     22.68359095255,
                     31.33294178611375
                 ],
-                "total": 357.8,
-                "avg": 7.155850551492403
+                "production": 357.8,
+                "avg": 71.66666666666666
             },
             {
                 "name": "Misr 1",
@@ -610,8 +602,8 @@ export const agriculturalData = {
                     22.666784294249997,
                     31.290133786022352
                 ],
-                "total": 371.4,
-                "avg": 7.427844870945439
+                "production": 371.4,
+                "avg": 74.28571428571428
             },
             {
                 "name": "Misr 1",
@@ -619,8 +611,8 @@ export const agriculturalData = {
                     22.671491662499996,
                     31.28391192760046
                 ],
-                "total": 387.5,
-                "avg": 7.749838146180285
+                "production": 387.5,
+                "avg": 77.38095238095238
             },
             {
                 "name": "Misr 1",
@@ -628,8 +620,8 @@ export const agriculturalData = {
                     22.675836299699995,
                     31.27751141531885
                 ],
-                "total": 369.64,
-                "avg": 7.392645606075046
+                "production": 369.64,
+                "avg": 73.80952380952381
             },
             {
                 "name": "Misr 1",
@@ -637,8 +629,8 @@ export const agriculturalData = {
                     22.680180682749995,
                     31.271110498502257
                 ],
-                "total": 377.52,
-                "avg": 7.550242314699306
+                "production": 377.52,
+                "avg": 75.47619047619047
             },
             {
                 "name": "Misr 1",
@@ -646,8 +638,8 @@ export const agriculturalData = {
                     22.6850529404,
                     31.262223023851185
                 ],
-                "total": 208.44,
-                "avg": 7.719478537788508
+                "production": 208.44,
+                "avg": 77.14285714285714
             },
             {
                 "name": "Misr 1",
@@ -655,8 +647,8 @@ export const agriculturalData = {
                     22.688330776749996,
                     31.257392239299328
                 ],
-                "total": 205.16,
-                "avg": 7.598005262006765
+                "production": 205.16,
+                "avg": 75.95238095238095
             },
             {
                 "name": "Misr 1",
@@ -664,8 +656,8 @@ export const agriculturalData = {
                     22.682957296949994,
                     31.25500736499834
                 ],
-                "total": 192.86,
-                "avg": 7.1424804778252335
+                "production": 192.86,
+                "avg": 71.42857142857143
             },
             {
                 "name": "Misr 1",
@@ -673,8 +665,8 @@ export const agriculturalData = {
                     22.678457616399996,
                     31.260049420041554
                 ],
-                "total": 381.1,
-                "avg": 7.621840819378856
+                "production": 381.1,
+                "avg": 76.19047619047619
             },
             {
                 "name": "Misr 1",
@@ -682,8 +674,8 @@ export const agriculturalData = {
                     22.67411341925,
                     31.26645098324243
                 ],
-                "total": 396.66,
-                "avg": 7.933034320164831
+                "production": 396.66,
+                "avg": 79.28571428571428
             },
             {
                 "name": "Misr 1",
@@ -691,8 +683,8 @@ export const agriculturalData = {
                     22.669768967749995,
                     31.272852141923845
                 ],
-                "total": 377.2,
-                "avg": 7.543842448359235
+                "production": 377.2,
+                "avg": 75.47619047619047
             },
             {
                 "name": "Misr 1",
@@ -700,8 +692,8 @@ export const agriculturalData = {
                     22.665424262049996,
                     31.279252896026577
                 ],
-                "total": 363.14,
-                "avg": 7.262648321042344
+                "production": 363.14,
+                "avg": 72.6190476190476
             },
             {
                 "name": "Misr 1",
@@ -709,8 +701,8 @@ export const agriculturalData = {
                     22.653545596099995,
                     31.29595570012036
                 ],
-                "total": 333.6,
-                "avg": 6.671860659524499
+                "production": 333.6,
+                "avg": 66.66666666666666
             },
             {
                 "name": "Misr 1",
@@ -718,8 +710,8 @@ export const agriculturalData = {
                     22.646314940449997,
                     31.29396833991812
                 ],
-                "total": 367.78,
-                "avg": 7.355446382973381
+                "production": 367.78,
+                "avg": 73.57142857142857
             },
             {
                 "name": "Misr 1",
@@ -727,8 +719,8 @@ export const agriculturalData = {
                     22.66382857275,
                     31.26817087241926
                 ],
-                "total": 355.52,
-                "avg": 7.110251503819393
+                "production": 355.52,
+                "avg": 71.19047619047619
             },
             {
                 "name": "Misr 1",
@@ -736,8 +728,8 @@ export const agriculturalData = {
                     22.668172839149996,
                     31.26176983778785
                 ],
-                "total": 372.18,
-                "avg": 7.443444545149363
+                "production": 372.18,
+                "avg": 74.52380952380952
             },
             {
                 "name": "Misr 1",
@@ -745,8 +737,8 @@ export const agriculturalData = {
                     22.67251685265,
                     31.25536839663668
                 ],
-                "total": 373.52,
-                "avg": 7.470243985448413
+                "production": 373.52,
+                "avg": 74.76190476190476
             },
             {
                 "name": "Misr 1",
@@ -754,8 +746,8 @@ export const agriculturalData = {
                     22.675558716949997,
                     31.24917795079611
                 ],
-                "total": 216.22,
-                "avg": 8.007607222417152
+                "production": 216.22,
+                "avg": 79.99999999999999
             },
             {
                 "name": "Misr 1",
@@ -763,8 +755,8 @@ export const agriculturalData = {
                     22.63727554364999,
                     31.293799629905585
                 ],
-                "total": 272.56,
-                "avg": 7.172323240771248
+                "production": 272.56,
+                "avg": 71.66666666666666
             },
             {
                 "name": "Misr 1",
@@ -772,8 +764,8 @@ export const agriculturalData = {
                     22.612957056149995,
                     31.25045407359204
                 ],
-                "total": 297.4,
-                "avg": 5.947875779803914
+                "production": 297.4,
+                "avg": 59.52380952380952
             },
             {
                 "name": "Misr 1",
@@ -781,8 +773,8 @@ export const agriculturalData = {
                     22.623270084949993,
                     31.229426087169813
                 ],
-                "total": 310.84,
-                "avg": 6.216670166086915
+                "production": 310.84,
+                "avg": 62.14285714285714
             },
             {
                 "name": "Misr 1",
@@ -790,8 +782,8 @@ export const agriculturalData = {
                     22.636275130649995,
                     31.211542057159036
                 ],
-                "total": 241.26,
-                "avg": 6.348674438906924
+                "production": 241.26,
+                "avg": 63.80952380952381
             },
             {
                 "name": "Misr 1",
@@ -799,8 +791,8 @@ export const agriculturalData = {
                     22.636773837649997,
                     31.219067273984194
                 ],
-                "total": 278.14,
-                "avg": 5.562683824460863
+                "production": 278.14,
+                "avg": 55.71428571428571
             },
             {
                 "name": "Misr 1",
@@ -808,8 +800,8 @@ export const agriculturalData = {
                     22.633336916699996,
                     31.226077896821675
                 ],
-                "total": 304.74,
-                "avg": 6.094672713979303
+                "production": 304.74,
+                "avg": 60.95238095238095
             },
             {
                 "name": "Misr 1",
@@ -817,8 +809,8 @@ export const agriculturalData = {
                     22.620393239049996,
                     31.25248600285114
                 ],
-                "total": 262.68,
-                "avg": 5.253490281906161
+                "production": 262.68,
+                "avg": 52.61904761904761
             },
             {
                 "name": "Misr 1",
@@ -826,8 +818,8 @@ export const agriculturalData = {
                     22.65420568845,
                     31.214077343067057
                 ],
-                "total": 366.94,
-                "avg": 7.338646733830694
+                "production": 366.94,
+                "avg": 73.33333333333333
             },
             {
                 "name": "Misr 1",
@@ -835,8 +827,8 @@ export const agriculturalData = {
                     22.654094304499996,
                     31.23361162648977
                 ],
-                "total": 317.96,
-                "avg": 6.359067192153505
+                "production": 317.96,
+                "avg": 63.57142857142856
             },
             {
                 "name": "Misr 1",
@@ -844,8 +836,17 @@ export const agriculturalData = {
                     22.658031154899994,
                     31.220905402967084
                 ],
-                "total": 246.22,
-                "avg": 6.479195143611302
+                "production": 246.22,
+                "avg": 64.76190476190476
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.62415957215,
+                    31.21063557040685
+                ],
+                "production": 290.54,
+                "avg": 1064.3615237148358
             },
             {
                 "name": "Misr 1",
@@ -853,8 +854,8 @@ export const agriculturalData = {
                     22.617523242049995,
                     31.20688319669155
                 ],
-                "total": 316.9,
-                "avg": 0
+                "production": 316.9,
+                "avg": 63.333333333333336
             },
             {
                 "name": "Misr 1",
@@ -862,8 +863,8 @@ export const agriculturalData = {
                     22.600386558329905,
                     31.24212249450997
                 ],
-                "total": 309.46,
-                "avg": 0
+                "production": 309.46,
+                "avg": 61.904761904761905
             },
             {
                 "name": "Misr 1",
@@ -871,8 +872,8 @@ export const agriculturalData = {
                     22.5938707535,
                     31.238249928508896
                 ],
-                "total": 239.3,
-                "avg": 0
+                "production": 239.3,
+                "avg": 47.85714285714285
             },
             {
                 "name": "Misr 1",
@@ -880,8 +881,8 @@ export const agriculturalData = {
                     22.610655077700002,
                     31.203132523710355
                 ],
-                "total": 338.08,
-                "avg": 0
+                "production": 338.08,
+                "avg": 67.6190476190476
             },
             {
                 "name": "Misr 1",
@@ -889,8 +890,8 @@ export const agriculturalData = {
                     22.604144558349994,
                     31.200013157554366
                 ],
-                "total": 244.58,
-                "avg": 0
+                "production": 244.58,
+                "avg": 64.28571428571429
             },
             {
                 "name": "Misr 1",
@@ -898,8 +899,8 @@ export const agriculturalData = {
                     22.574916885549996,
                     31.22709052971679
                 ],
-                "total": 213.44,
-                "avg": 0
+                "production": 213.44,
+                "avg": 56.19047619047618
             },
             {
                 "name": "Misr 1",
@@ -907,8 +908,8 @@ export const agriculturalData = {
                     22.5672996555,
                     31.224380129386155
                 ],
-                "total": 186.46,
-                "avg": 0
+                "production": 186.46,
+                "avg": 69.04761904761904
             },
             {
                 "name": "Misr 1",
@@ -916,8 +917,8 @@ export const agriculturalData = {
                     22.55542189575,
                     31.2167921836701
                 ],
-                "total": 284.42,
-                "avg": 0
+                "production": 284.42,
+                "avg": 56.904761904761905
             },
             {
                 "name": "Misr 1",
@@ -925,8 +926,8 @@ export const agriculturalData = {
                     22.54854532275,
                     31.222088136935355
                 ],
-                "total": 264.0,
-                "avg": 0
+                "production": 264.0,
+                "avg": 52.85714285714286
             },
             {
                 "name": "Misr 1",
@@ -934,8 +935,8 @@ export const agriculturalData = {
                     22.56699884615,
                     31.231082498788734
                 ],
-                "total": 177.44,
-                "avg": 0
+                "production": 177.44,
+                "avg": 65.71428571428571
             },
             {
                 "name": "Misr 1",
@@ -943,8 +944,8 @@ export const agriculturalData = {
                     22.578068745750002,
                     31.23868314680064
                 ],
-                "total": 336.24,
-                "avg": 0
+                "production": 336.24,
+                "avg": 67.14285714285714
             },
             {
                 "name": "Misr 1",
@@ -952,8 +953,8 @@ export const agriculturalData = {
                     22.564739802749997,
                     31.24425420115533
                 ],
-                "total": 285.88,
-                "avg": 0
+                "production": 285.88,
+                "avg": 57.14285714285714
             },
             {
                 "name": "Misr 1",
@@ -961,8 +962,8 @@ export const agriculturalData = {
                     22.556283094850002,
                     31.23613622465738
                 ],
-                "total": 287.08,
-                "avg": 0
+                "production": 287.08,
+                "avg": 57.38095238095238
             },
             {
                 "name": "Misr 1",
@@ -970,8 +971,8 @@ export const agriculturalData = {
                     22.5417633422,
                     31.223445604435707
                 ],
-                "total": 138.04,
-                "avg": 0
+                "production": 138.04,
+                "avg": 51.19047619047618
             },
             {
                 "name": "Misr 1",
@@ -979,8 +980,8 @@ export const agriculturalData = {
                     22.5405802555,
                     31.236238038759016
                 ],
-                "total": 259.32,
-                "avg": 0
+                "production": 259.32,
+                "avg": 51.904761904761905
             },
             {
                 "name": "Misr 1",
@@ -988,8 +989,8 @@ export const agriculturalData = {
                     22.547108288700002,
                     31.240000742459316
                 ],
-                "total": 286.9,
-                "avg": 0
+                "production": 286.9,
+                "avg": 57.38095238095238
             },
             {
                 "name": "Misr 1",
@@ -997,8 +998,8 @@ export const agriculturalData = {
                     22.55359642135,
                     31.2437408557444
                 ],
-                "total": 328.92,
-                "avg": 0
+                "production": 328.92,
+                "avg": 65.71428571428571
             },
             {
                 "name": "Misr 1",
@@ -1006,8 +1007,8 @@ export const agriculturalData = {
                     22.5590028504,
                     31.24782691239513
                 ],
-                "total": 129.54,
-                "avg": 0
+                "production": 129.54,
+                "avg": 47.85714285714285
             },
             {
                 "name": "Misr 1",
@@ -1015,8 +1016,8 @@ export const agriculturalData = {
                     22.5703556128,
                     31.25335784203023
                 ],
-                "total": 181.54,
-                "avg": 0
+                "production": 181.54,
+                "avg": 47.85714285714285
             },
             {
                 "name": "Misr 1",
@@ -1024,8 +1025,8 @@ export const agriculturalData = {
                     22.5754211814,
                     31.257743332584283
                 ],
-                "total": 229.52,
-                "avg": 0
+                "production": 229.52,
+                "avg": 60.476190476190474
             },
             {
                 "name": "Dkc6919",
@@ -1033,8 +1034,8 @@ export const agriculturalData = {
                     22.58021955825,
                     31.250631175046287
                 ],
-                "total": 162.24,
-                "avg": 0
+                "production": 162.24,
+                "avg": 60.0
             },
             {
                 "name": "Misr 1",
@@ -1042,8 +1043,125 @@ export const agriculturalData = {
                     22.589770130699996,
                     31.244305294443897
                 ],
-                "total": 173.28,
-                "avg": 0
+                "production": 173.28,
+                "avg": 64.28571428571429
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.548193435850003,
+                    31.25102186568421
+                ],
+                "production": 246.46,
+                "avg": 933.2217824820686
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.54178317785,
+                    31.247130842578464
+                ],
+                "production": 293.22,
+                "avg": 935.0151464647389
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.5351885583,
+                    31.243613496857428
+                ],
+                "production": 273.64,
+                "avg": 984.5568264860066
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.5321146806,
+                    31.24974808674571
+                ],
+                "production": 162.7,
+                "avg": 551.0110836754562
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.5372438426,
+                    31.25310928413166
+                ],
+                "production": 192.58,
+                "avg": 766.6631025915625
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.5437518027,
+                    31.257582310700613
+                ],
+                "production": 302.34,
+                "avg": 970.6582556203115
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.5409881465,
+                    31.26551595519839
+                ],
+                "production": 182.98,
+                "avg": 503.4869381346928
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.5468671574,
+                    31.26419809148748
+                ],
+                "production": 190.38,
+                "avg": 716.8972520724611
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.57202060035,
+                    31.265453254882715
+                ],
+                "production": 303.48,
+                "avg": 961.0189242134585
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.5657389301,
+                    31.26222834163665
+                ],
+                "production": 260.12,
+                "avg": 730.5716524403224
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.561341287749997,
+                    31.257138299132123
+                ],
+                "production": 238.22,
+                "avg": 738.8659608601725
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.55930934335,
+                    31.267009943666764
+                ],
+                "production": 335.58,
+                "avg": 977.3833705553253
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.566995723599998,
+                    31.271668688014163
+                ],
+                "production": 333.42,
+                "avg": 1007.646387762887
             },
             {
                 "name": "Misr 1",
@@ -1051,8 +1169,8 @@ export const agriculturalData = {
                     22.6041420805,
                     31.284387774844102
                 ],
-                "total": 333.04,
-                "avg": 0
+                "production": 333.04,
+                "avg": 66.66666666666666
             },
             {
                 "name": "Misr 1",
@@ -1060,8 +1178,8 @@ export const agriculturalData = {
                     22.60954806665,
                     31.28974136640789
                 ],
-                "total": 332.88,
-                "avg": 0
+                "production": 332.88,
+                "avg": 66.66666666666666
             },
             {
                 "name": "Misr 1",
@@ -1069,8 +1187,8 @@ export const agriculturalData = {
                     22.616680443099995,
                     31.281170301139845
                 ],
-                "total": 298.22,
-                "avg": 0
+                "production": 298.22,
+                "avg": 59.52380952380952
             },
             {
                 "name": "Misr 1",
@@ -1078,8 +1196,8 @@ export const agriculturalData = {
                     22.5957188177,
                     31.26644392260243
                 ],
-                "total": 171.22,
-                "avg": 0
+                "production": 171.22,
+                "avg": 63.333333333333336
             },
             {
                 "name": "Misr 1",
@@ -1087,8 +1205,8 @@ export const agriculturalData = {
                     22.600687438,
                     31.257107695834137
                 ],
-                "total": 245.88,
-                "avg": 0
+                "production": 245.88,
+                "avg": 64.76190476190476
             },
             {
                 "name": "Misr 1",
@@ -1096,8 +1214,8 @@ export const agriculturalData = {
                     22.520288040817764,
                     28.431073830543397
                 ],
-                "total": 188.67,
-                "avg": 0
+                "production": 188.67,
+                "avg": 56.19047619047618
             },
             {
                 "name": "Misr 1",
@@ -1105,8 +1223,8 @@ export const agriculturalData = {
                     22.284737496448038,
                     28.73773184744974
                 ],
-                "total": 309.69,
-                "avg": 0
+                "production": 309.69,
+                "avg": 69.52380952380952
             },
             {
                 "name": "Misr 1",
@@ -1114,8 +1232,8 @@ export const agriculturalData = {
                     22.26359746547449,
                     28.745039966904102
                 ],
-                "total": 383.25,
-                "avg": 0
+                "production": 383.25,
+                "avg": 86.19047619047619
             },
             {
                 "name": "Misr 1",
@@ -1123,8 +1241,8 @@ export const agriculturalData = {
                     22.513068257975412,
                     28.440972063044313
                 ],
-                "total": 96.005,
-                "avg": 0
+                "production": 96.005,
+                "avg": 50.71428571428571
             },
             {
                 "name": "Misr 1",
@@ -1132,8 +1250,8 @@ export const agriculturalData = {
                     22.235286612016175,
                     28.75481346968661
                 ],
-                "total": 314.09,
-                "avg": 0
+                "production": 314.09,
+                "avg": 70.47619047619047
             },
             {
                 "name": "Misr 1",
@@ -1141,8 +1259,8 @@ export const agriculturalData = {
                     22.49344203034478,
                     28.45099646703099
                 ],
-                "total": 387.94,
-                "avg": 0
+                "production": 387.94,
+                "avg": 91.42857142857142
             },
             {
                 "name": "Misr 1",
@@ -1150,8 +1268,8 @@ export const agriculturalData = {
                     22.226145265907668,
                     28.74958004414501
                 ],
-                "total": 348.71,
-                "avg": 0
+                "production": 348.71,
+                "avg": 78.33333333333333
             },
             {
                 "name": "Misr 1",
@@ -1159,8 +1277,8 @@ export const agriculturalData = {
                     22.511563439859117,
                     28.45068018962013
                 ],
-                "total": 108.605,
-                "avg": 0
+                "production": 108.605,
+                "avg": 25.095238095238095
             },
             {
                 "name": "Misr 1",
@@ -1168,8 +1286,8 @@ export const agriculturalData = {
                     22.240220776406083,
                     28.744753361485294
                 ],
-                "total": 351.42,
-                "avg": 0
+                "production": 351.42,
+                "avg": 79.04761904761904
             },
             {
                 "name": "Misr 1",
@@ -1177,8 +1295,8 @@ export const agriculturalData = {
                     22.233132664014583,
                     28.747179164642713
                 ],
-                "total": 371.86,
-                "avg": 0
+                "production": 371.86,
+                "avg": 83.57142857142856
             },
             {
                 "name": "Misr 1",
@@ -1186,8 +1304,8 @@ export const agriculturalData = {
                     22.49359830639981,
                     28.460806087707113
                 ],
-                "total": 206.74,
-                "avg": 0
+                "production": 206.74,
+                "avg": 51.904761904761905
             },
             {
                 "name": "Misr 1",
@@ -1195,8 +1313,8 @@ export const agriculturalData = {
                     22.556873018296482,
                     28.459677787160274
                 ],
-                "total": 188.94,
-                "avg": 0
+                "production": 188.94,
+                "avg": 46.9047619047619
             },
             {
                 "name": "wheat 🌾 Trail",
@@ -1204,8 +1322,8 @@ export const agriculturalData = {
                     22.27316595514457,
                     28.7250301786886
                 ],
-                "total": 267.4,
-                "avg": 0
+                "production": 267.4,
+                "avg": 61.66666666666666
             },
             {
                 "name": "Misr 1",
@@ -1213,8 +1331,8 @@ export const agriculturalData = {
                     22.511729029869635,
                     28.460416679863215
                 ],
-                "total": 261.625,
-                "avg": 0
+                "production": 261.625,
+                "avg": 65.47619047619047
             },
             {
                 "name": "Misr 1",
@@ -1222,8 +1340,8 @@ export const agriculturalData = {
                     22.23090667409722,
                     28.739606907564273
                 ],
-                "total": 375.71,
-                "avg": 0
+                "production": 375.71,
+                "avg": 84.28571428571428
             },
             {
                 "name": "Misr 1",
@@ -1231,8 +1349,8 @@ export const agriculturalData = {
                     22.28497543434827,
                     28.712647644108976
                 ],
-                "total": 299.6,
-                "avg": 0
+                "production": 299.6,
+                "avg": 75.0
             },
             {
                 "name": "Misr 1",
@@ -1240,8 +1358,8 @@ export const agriculturalData = {
                     22.555061513151017,
                     28.46934782394237
                 ],
-                "total": 107.36,
-                "avg": 0
+                "production": 107.36,
+                "avg": 54.28571428571428
             },
             {
                 "name": "Misr 1",
@@ -1249,8 +1367,8 @@ export const agriculturalData = {
                     22.54798314244993,
                     28.46946688310271
                 ],
-                "total": 200.69,
-                "avg": 0
+                "production": 200.69,
+                "avg": 47.85714285714285
             },
             {
                 "name": "Misr 1",
@@ -1258,8 +1376,8 @@ export const agriculturalData = {
                     22.24977265844303,
                     28.7247409324616
                 ],
-                "total": 335.64,
-                "avg": 0
+                "production": 335.64,
+                "avg": 75.47619047619047
             },
             {
                 "name": "Misr 1",
@@ -1267,8 +1385,8 @@ export const agriculturalData = {
                     22.52087989633811,
                     28.469981196015677
                 ],
-                "total": 192.94,
-                "avg": 0
+                "production": 192.94,
+                "avg": 48.33333333333333
             },
             {
                 "name": "Wheat 🌾 Trial ",
@@ -1276,8 +1394,8 @@ export const agriculturalData = {
                     22.242522445339983,
                     28.724723697824537
                 ],
-                "total": 292.17,
-                "avg": 0
+                "production": 292.17,
+                "avg": 68.09523809523809
             },
             {
                 "name": "Misr 1",
@@ -1285,8 +1403,8 @@ export const agriculturalData = {
                     22.513513708185304,
                     28.470159605500392
                 ],
-                "total": 90.0,
-                "avg": 0
+                "production": 90.0,
+                "avg": 47.61904761904761
             },
             {
                 "name": "Misr 1",
@@ -1294,8 +1412,8 @@ export const agriculturalData = {
                     22.228629199247287,
                     28.732050919984374
                 ],
-                "total": 343.0,
-                "avg": 0
+                "production": 343.0,
+                "avg": 77.14285714285714
             },
             {
                 "name": "Misr 1",
@@ -1303,8 +1421,8 @@ export const agriculturalData = {
                     22.247506705745586,
                     28.717093466375474
                 ],
-                "total": 290.77,
-                "avg": 0
+                "production": 290.77,
+                "avg": 65.23809523809524
             },
             {
                 "name": "MIWOK",
@@ -1312,8 +1430,8 @@ export const agriculturalData = {
                     22.23335712575731,
                     28.721988526151762
                 ],
-                "total": 189.5,
-                "avg": 0
+                "production": 189.5,
+                "avg": 42.57142857142857
             },
             {
                 "name": "Misr1",
@@ -1321,8 +1439,8 @@ export const agriculturalData = {
                     22.25933629888479,
                     28.70462047004395
                 ],
-                "total": 395.33,
-                "avg": 0
+                "production": 395.33,
+                "avg": 88.80952380952381
             },
             {
                 "name": "Misr 1",
@@ -1330,8 +1448,8 @@ export const agriculturalData = {
                     22.245219168326358,
                     28.70955392082641
                 ],
-                "total": 353.47,
-                "avg": 0
+                "production": 353.47,
+                "avg": 79.28571428571428
             },
             {
                 "name": "Misr 1",
@@ -1339,8 +1457,8 @@ export const agriculturalData = {
                     22.271197080146116,
                     28.69227452481548
                 ],
-                "total": 318.0,
-                "avg": 0
+                "production": 318.0,
+                "avg": 71.42857142857143
             },
             {
                 "name": "Misr 1",
@@ -1348,8 +1466,8 @@ export const agriculturalData = {
                     22.264131567170246,
                     28.694663772678464
                 ],
-                "total": 318.0,
-                "avg": 0
+                "production": 318.0,
+                "avg": 71.42857142857143
             },
             {
                 "name": "MIWOK",
@@ -1357,8 +1475,8 @@ export const agriculturalData = {
                     22.24997117911016,
                     28.69956259580522
                 ],
-                "total": 266.47,
-                "avg": 0
+                "production": 266.47,
+                "avg": 59.85714285714285
             },
             {
                 "name": "Misr 1",
@@ -1366,8 +1484,8 @@ export const agriculturalData = {
                     22.27593164540571,
                     28.682229475811795
                 ],
-                "total": 276.67,
-                "avg": 0
+                "production": 276.67,
+                "avg": 73.09523809523809
             },
             {
                 "name": "Misr 1",
@@ -1375,8 +1493,8 @@ export const agriculturalData = {
                     22.21244335876564,
                     28.70412986670197
                 ],
-                "total": 294.45,
-                "avg": 0
+                "production": 294.45,
+                "avg": 66.19047619047618
             },
             {
                 "name": "Misr 1",
@@ -1384,8 +1502,8 @@ export const agriculturalData = {
                     22.25484224844166,
                     28.68950955251609
                 ],
-                "total": 349.8,
-                "avg": 0
+                "production": 349.8,
+                "avg": 78.57142857142857
             },
             {
                 "name": "Misr 1",
@@ -1393,8 +1511,8 @@ export const agriculturalData = {
                     22.240671598061933,
                     28.694411891357017
                 ],
-                "total": 311.41,
-                "avg": 0
+                "production": 311.41,
+                "avg": 70.0
             },
             {
                 "name": "Misr 1",
@@ -1402,8 +1520,17 @@ export const agriculturalData = {
                     22.63240374600006,
                     31.289366040914146
                 ],
-                "total": 98.42,
-                "avg": 0
+                "production": 98.42,
+                "avg": 34.76190476190476
+            },
+            {
+                "name": "Misr 1",
+                "location": [
+                    22.553179523500017,
+                    31.263138844613064
+                ],
+                "production": 137.34,
+                "avg": 632.8333153847898
             },
             {
                 "name": "Misr 1",
@@ -1411,8 +1538,8 @@ export const agriculturalData = {
                     22.278603864143975,
                     28.74795835352729
                 ],
-                "total": 204.82,
-                "avg": 0
+                "production": 204.82,
+                "avg": 97.38095238095237
             },
             {
                 "name": "Misr 1",
@@ -1420,8 +1547,8 @@ export const agriculturalData = {
                     22.22260442088859,
                     28.742023317586387
                 ],
-                "total": 162.78,
-                "avg": 0
+                "production": 162.78,
+                "avg": 73.09523809523809
             },
             {
                 "name": "Misr 1",
@@ -1429,8 +1556,8 @@ export const agriculturalData = {
                     22.2459951287178,
                     28.742334650883862
                 ],
-                "total": 180.2,
-                "avg": 0
+                "production": 180.2,
+                "avg": 80.95238095238095
             },
             {
                 "name": "Misr 1",
@@ -1438,8 +1565,8 @@ export const agriculturalData = {
                     22.252940024754018,
                     28.739885169201415
                 ],
-                "total": 185.5,
-                "avg": 0
+                "production": 185.5,
+                "avg": 83.33333333333333
             },
             {
                 "name": "Misr 1",
@@ -1447,8 +1574,8 @@ export const agriculturalData = {
                     22.26441232558158,
                     28.752659540730008
                 ],
-                "total": 156.09,
-                "avg": 0
+                "production": 156.09,
+                "avg": 74.28571428571428
             },
             {
                 "name": "Misr 1",
@@ -1456,8 +1583,8 @@ export const agriculturalData = {
                     22.236541274220862,
                     28.73720643332127
                 ],
-                "total": 180.26,
-                "avg": 0
+                "production": 180.26,
+                "avg": 80.95238095238095
             },
             {
                 "name": "Misr 1",
@@ -1465,8 +1592,8 @@ export const agriculturalData = {
                     22.25770622340802,
                     28.729888569563684
                 ],
-                "total": 169.0,
-                "avg": 0
+                "production": 169.0,
+                "avg": 75.95238095238095
             },
             {
                 "name": "Misr 1",
@@ -1474,8 +1601,8 @@ export const agriculturalData = {
                     22.27884697849052,
                     28.72257655729885
                 ],
-                "total": 170.93,
-                "avg": 0
+                "production": 170.93,
+                "avg": 76.9047619047619
             },
             {
                 "name": "Misr 1",
@@ -1483,8 +1610,8 @@ export const agriculturalData = {
                     22.28115402724557,
                     28.730164053470332
                 ],
-                "total": 171.19,
-                "avg": 0
+                "production": 171.19,
+                "avg": 76.9047619047619
             },
             {
                 "name": "Misr 1",
@@ -1492,8 +1619,8 @@ export const agriculturalData = {
                     22.274063727952687,
                     28.732611290661396
                 ],
-                "total": 139.12,
-                "avg": 0
+                "production": 139.12,
+                "avg": 62.38095238095238
             },
             {
                 "name": "Misr 1",
@@ -1501,8 +1628,8 @@ export const agriculturalData = {
                     22.2859588584625,
                     28.720161793174526
                 ],
-                "total": 163.06,
-                "avg": 0
+                "production": 163.06,
+                "avg": 73.33333333333333
             },
             {
                 "name": "Misr 1",
@@ -1510,8 +1637,8 @@ export const agriculturalData = {
                     22.28820154008852,
                     28.727718062550363
                 ],
-                "total": 162.98,
-                "avg": 0
+                "production": 162.98,
+                "avg": 73.33333333333333
             },
             {
                 "name": "Misr 1",
@@ -1519,8 +1646,8 @@ export const agriculturalData = {
                     22.27628882777529,
                     28.740174178746656
                 ],
-                "total": 221.46,
-                "avg": 0
+                "production": 221.46,
+                "avg": 99.47619047619047
             },
             {
                 "name": "Misr 1",
@@ -1528,8 +1655,8 @@ export const agriculturalData = {
                     22.220188235489907,
                     28.73447926315049
                 ],
-                "total": 160.89,
-                "avg": 0
+                "production": 160.89,
+                "avg": 72.38095238095238
             },
             {
                 "name": "Misr 1",
@@ -1537,8 +1664,8 @@ export const agriculturalData = {
                     22.26925230499721,
                     28.742597775877954
                 ],
-                "total": 186.31,
-                "avg": 0
+                "production": 186.31,
+                "avg": 83.80952380952381
             },
             {
                 "name": "Misr 1",
@@ -1546,8 +1673,8 @@ export const agriculturalData = {
                     22.271487580836446,
                     28.750222837306666
                 ],
-                "total": 181.89,
-                "avg": 0
+                "production": 181.89,
+                "avg": 86.59523809523809
             },
             {
                 "name": "Misr 1",
@@ -1555,8 +1682,8 @@ export const agriculturalData = {
                     22.255105816597105,
                     28.74753847872529
                 ],
-                "total": 186.12,
-                "avg": 0
+                "production": 186.12,
+                "avg": 83.57142857142856
             },
             {
                 "name": "Misr 1",
@@ -1564,8 +1691,8 @@ export const agriculturalData = {
                     22.27654745635246,
                     28.715025231534042
                 ],
-                "total": 175.19,
-                "avg": 0
+                "production": 175.19,
+                "avg": 78.80952380952381
             },
             {
                 "name": "Misr 1",
@@ -1573,8 +1700,8 @@ export const agriculturalData = {
                     22.290413769597485,
                     28.7353036052599
                 ],
-                "total": 167.62,
-                "avg": 0
+                "production": 167.62,
+                "avg": 75.23809523809524
             },
             {
                 "name": "Misr 1",
@@ -1582,8 +1709,8 @@ export const agriculturalData = {
                     22.27435643959717,
                     28.70742010252846
                 ],
-                "total": 164.3,
-                "avg": 0
+                "production": 164.3,
+                "avg": 73.80952380952381
             },
             {
                 "name": "Misr 1",
@@ -1591,8 +1718,8 @@ export const agriculturalData = {
                     22.253242713343308,
                     28.71480283521325
                 ],
-                "total": 164.28,
-                "avg": 0
+                "production": 164.28,
+                "avg": 73.80952380952381
             },
             {
                 "name": "Misr 1",
@@ -1600,8 +1727,8 @@ export const agriculturalData = {
                     22.260160280537058,
                     28.712249760928614
                 ],
-                "total": 145.52,
-                "avg": 0
+                "production": 145.52,
+                "avg": 65.35714285714286
             },
             {
                 "name": "MIWOK",
@@ -1609,8 +1736,8 @@ export const agriculturalData = {
                     22.23910977970105,
                     28.719578357037676
                 ],
-                "total": 85.0,
-                "avg": 0
+                "production": 85.0,
+                "avg": 38.19047619047619
             },
             {
                 "name": "MIWOK",
@@ -1618,8 +1745,8 @@ export const agriculturalData = {
                     22.217937423186594,
                     28.726861316475635
                 ],
-                "total": 138.8,
-                "avg": 0
+                "production": 138.8,
+                "avg": 62.35714285714286
             },
             {
                 "name": "MIWOK",
@@ -1627,8 +1754,8 @@ export const agriculturalData = {
                     22.229789291420456,
                     28.714408435978612
                 ],
-                "total": 119.0,
-                "avg": 0
+                "production": 119.0,
+                "avg": 53.45238095238095
             },
             {
                 "name": "MIWOK",
@@ -1636,8 +1763,8 @@ export const agriculturalData = {
                     22.250939748519347,
                     28.707137296724937
                 ],
-                "total": 116.3,
-                "avg": 0
+                "production": 116.3,
+                "avg": 52.238095238095234
             },
             {
                 "name": "MIWOK",
@@ -1645,8 +1772,8 @@ export const agriculturalData = {
                     22.26505117924082,
                     28.702280006568543
                 ],
-                "total": 90.1,
-                "avg": 0
+                "production": 90.1,
+                "avg": 40.476190476190474
             },
             {
                 "name": "MIWOK",
@@ -1654,8 +1781,8 @@ export const agriculturalData = {
                     22.25560722569113,
                     28.696987259608644
                 ],
-                "total": 138.0,
-                "avg": 0
+                "production": 138.0,
+                "avg": 62.0
             },
             {
                 "name": "Misr 1",
@@ -1663,8 +1790,8 @@ export const agriculturalData = {
                     22.2464105769336,
                     28.691951277299495
                 ],
-                "total": 179.12,
-                "avg": 0
+                "production": 179.12,
+                "avg": 80.47619047619047
             },
             {
                 "name": "MIWOK",
@@ -1672,8 +1799,8 @@ export const agriculturalData = {
                     22.24151730108224,
                     28.70189398655185
                 ],
-                "total": 122.5,
-                "avg": 0
+                "production": 122.5,
+                "avg": 55.02380952380952
             },
             {
                 "name": "MIWOK",
@@ -1681,8 +1808,8 @@ export const agriculturalData = {
                     22.236894742074796,
                     28.71200186287132
                 ],
-                "total": 137.3,
-                "avg": 0
+                "production": 137.3,
+                "avg": 61.69047619047619
             },
             {
                 "name": "Misr 1",
@@ -1690,8 +1817,8 @@ export const agriculturalData = {
                     22.232358959585838,
                     28.69682494936868
                 ],
-                "total": 171.89,
-                "avg": 0
+                "production": 171.89,
+                "avg": 77.14285714285714
             },
             {
                 "name": "Misr 1",
@@ -1699,8 +1826,8 @@ export const agriculturalData = {
                     22.22517514980141,
                     28.699209218732705
                 ],
-                "total": 164.3,
-                "avg": 0
+                "production": 164.3,
+                "avg": 73.80952380952381
             },
             {
                 "name": "Misr 1",
@@ -1708,8 +1835,8 @@ export const agriculturalData = {
                     22.220420490386815,
                     28.70923084927935
                 ],
-                "total": 168.49,
-                "avg": 0
+                "production": 168.49,
+                "avg": 75.71428571428571
             },
             {
                 "name": "Misr 1",
@@ -1717,8 +1844,8 @@ export const agriculturalData = {
                     22.22737573391139,
                     28.724433661892135
                 ],
-                "total": 163.79,
-                "avg": 0
+                "production": 163.79,
+                "avg": 73.57142857142857
             },
             {
                 "name": "MIWOK",
@@ -1726,8 +1853,8 @@ export const agriculturalData = {
                     22.215647225349215,
                     28.719289980967975
                 ],
-                "total": 132.5,
-                "avg": 0
+                "production": 132.5,
+                "avg": 59.52380952380952
             },
             {
                 "name": "Misr1",
@@ -1735,8 +1862,8 @@ export const agriculturalData = {
                     22.27681370419879,
                     28.68982802982788
                 ],
-                "total": 170.77,
-                "avg": 0
+                "production": 170.77,
+                "avg": 76.66666666666667
             },
             {
                 "name": "Misr 1",
@@ -1744,8 +1871,8 @@ export const agriculturalData = {
                     22.279047018523055,
                     28.697437664991178
                 ],
-                "total": 156.59,
-                "avg": 0
+                "production": 156.59,
+                "avg": 70.23809523809524
             },
             {
                 "name": "Misr 1",
@@ -1753,8 +1880,8 @@ export const agriculturalData = {
                     22.281379406198717,
                     28.704966016192998
                 ],
-                "total": 144.43,
-                "avg": 0
+                "production": 144.43,
+                "avg": 65.0
             },
             {
                 "name": "Misr 1",
@@ -1762,19 +1889,85 @@ export const agriculturalData = {
                     22.21334712171886,
                     28.711657267903153
                 ],
-                "total": 155.9,
-                "avg": 0
+                "production": 155.9,
+                "avg": 70.0
+            }
+        ]
+    },
+    "Corn": {
+        "name": "Corn",
+        "avgEfficiency": 16.01,
+        "productionPerTon": 1648.4199999999998,
+        "varieties": [
+            {
+                "name": "P3444",
+                "location": [
+                    22.705312163949994,
+                    31.301545222208006
+                ],
+                "production": 380.06,
+                "avg": 242.55247865616101
+            },
+            {
+                "name": "Pioneer 30N11",
+                "location": [
+                    22.623831308399993,
+                    31.245476701245927
+                ],
+                "production": 278.3,
+                "avg": 447.44431367624526
+            },
+            {
+                "name": "Pioneer 30N11",
+                "location": [
+                    22.648266888362812,
+                    31.229217457081482
+                ],
+                "production": 95.02,
+                "avg": 467.8438289791202
+            },
+            {
+                "name": "Dkc6919",
+                "location": [
+                    22.651739564049993,
+                    31.22246723261788
+                ],
+                "production": 156.4,
+                "avg": 2.9142164718392727
+            },
+            {
+                "name": "32D99 & P2105",
+                "location": [
+                    22.661511151999996,
+                    31.23238243764741
+                ],
+                "production": 239.58,
+                "avg": 491.15756075383433
+            },
+            {
+                "name": "P3444",
+                "location": [
+                    22.66492626245,
+                    31.219724670140437
+                ],
+                "production": 291.56,
+                "avg": 56.04262445844755
+            },
+            {
+                "name": "32D99",
+                "location": [
+                    22.668395855299995,
+                    31.228335778712104
+                ],
+                "production": 207.5,
+                "avg": 961.0189242134585
             }
         ]
     },
     "Sugar Beet": {
         "name": "Sugar Beet",
-        "avgEfficiency": 512.0847852116779,
+        "avgEfficiency": 52.78,
         "productionPerTon": 256047.74,
-        "productionData": [],
-        "amountData": [],
-        "currentProduction": null,
-        "lastYearProduction": null,
         "varieties": [
             {
                 "name": "Salama",
@@ -1782,8 +1975,8 @@ export const agriculturalData = {
                     22.65811904889999,
                     31.30289515418695
                 ],
-                "total": 2098.0,
-                "avg": 41.95912369209351
+                "production": 2098.0,
+                "avg": 419.5238095238095
             },
             {
                 "name": "Salama",
@@ -1791,8 +1984,8 @@ export const agriculturalData = {
                     22.662454111799995,
                     31.296511263147373
                 ],
-                "total": 7750.0,
-                "avg": 154.9967629236057
+                "production": 7750.0,
+                "avg": 1549.9999999999998
             },
             {
                 "name": "salama",
@@ -1800,8 +1993,8 @@ export const agriculturalData = {
                     22.650713545299997,
                     31.287490412005454
                 ],
-                "total": 6032.26,
-                "avg": 120.64268040174835
+                "production": 6032.26,
+                "avg": 1206.4285714285713
             },
             {
                 "name": "Salama",
@@ -1809,8 +2002,8 @@ export const agriculturalData = {
                     22.655058578249992,
                     31.28109059818605
                 ],
-                "total": 7369.4,
-                "avg": 147.3849218953832
+                "production": 7369.4,
+                "avg": 1473.8095238095236
             },
             {
                 "name": "Salama",
@@ -1818,8 +2011,8 @@ export const agriculturalData = {
                     22.659484053599996,
                     31.27457150048722
                 ],
-                "total": 7179.5,
-                "avg": 143.58700121419704
+                "production": 7179.5,
+                "avg": 1435.952380952381
             },
             {
                 "name": "Elmo",
@@ -1827,8 +2020,8 @@ export const agriculturalData = {
                     22.616395036999997,
                     31.243445095451065
                 ],
-                "total": 4858.5,
-                "avg": 97.16797066636623
+                "production": 4858.5,
+                "avg": 971.6666666666666
             },
             {
                 "name": "Elmo",
@@ -1836,8 +2029,8 @@ export const agriculturalData = {
                     22.619832713349993,
                     31.23643576664564
                 ],
-                "total": 5210.36,
-                "avg": 104.20502369892105
+                "production": 5210.36,
+                "avg": 1042.142857142857
             },
             {
                 "name": "Gustav",
@@ -1845,8 +2038,8 @@ export const agriculturalData = {
                     22.646799065949992,
                     31.215802877913404
                 ],
-                "total": 5648.0,
-                "avg": 112.95764090226129
+                "production": 5648.0,
+                "avg": 1129.5238095238094
             },
             {
                 "name": "Gustav",
@@ -1854,8 +2047,8 @@ export const agriculturalData = {
                     22.643311008299992,
                     31.222949942160557
                 ],
-                "total": 5840.7,
-                "avg": 116.81156041392306
+                "production": 5840.7,
+                "avg": 1168.095238095238
             },
             {
                 "name": "Gustav",
@@ -1863,8 +2056,8 @@ export const agriculturalData = {
                     22.639873832649997,
                     31.229960748183395
                 ],
-                "total": 5811.1,
-                "avg": 116.21957277746647
+                "production": 5811.1,
+                "avg": 1162.142857142857
             },
             {
                 "name": "Elmo",
@@ -1872,8 +2065,8 @@ export const agriculturalData = {
                     22.658826933799997,
                     31.239855019596874
                 ],
-                "total": 5841.0,
-                "avg": 0
+                "production": 5841.0,
+                "avg": 1168.095238095238
             },
             {
                 "name": "Elmo",
@@ -1881,8 +2074,8 @@ export const agriculturalData = {
                     22.620714584049992,
                     31.217662971941092
                 ],
-                "total": 6525.5,
-                "avg": 0
+                "production": 6525.5,
+                "avg": 1305.0
             },
             {
                 "name": "Elmo",
@@ -1890,8 +2083,8 @@ export const agriculturalData = {
                     22.610607984199994,
                     31.22098876943124
                 ],
-                "total": 5276.26,
-                "avg": 0
+                "production": 5276.26,
+                "avg": 1055.2380952380952
             },
             {
                 "name": "Elmo",
@@ -1899,8 +2092,8 @@ export const agriculturalData = {
                     22.607170979249993,
                     31.227998023436214
                 ],
-                "total": 5092.24,
-                "avg": 0
+                "production": 5092.24,
+                "avg": 1018.3333333333334
             },
             {
                 "name": "Smart Djerba",
@@ -1908,8 +2101,8 @@ export const agriculturalData = {
                     22.603733669649998,
                     31.235006927213796
                 ],
-                "total": 5943.18,
-                "avg": 0
+                "production": 5943.18,
+                "avg": 1188.5714285714284
             },
             {
                 "name": "Gustav",
@@ -1917,8 +2110,8 @@ export const agriculturalData = {
                     22.280783736405535,
                     28.747663104394007
                 ],
-                "total": 1518.13,
-                "avg": 0
+                "production": 1518.13,
+                "avg": 722.9285714285713
             },
             {
                 "name": "Gustav",
@@ -1926,8 +2119,8 @@ export const agriculturalData = {
                     22.273794218430133,
                     28.75022141594928
                 ],
-                "total": 3408.66,
-                "avg": 0
+                "production": 3408.66,
+                "avg": 1623.1666666666665
             },
             {
                 "name": "Gustav",
@@ -1935,8 +2128,8 @@ export const agriculturalData = {
                     22.25816958065389,
                     28.755091701231898
                 ],
-                "total": 3696.88,
-                "avg": 0
+                "production": 3696.88,
+                "avg": 880.1904761904763
             },
             {
                 "name": "Salama",
@@ -1944,8 +2137,8 @@ export const agriculturalData = {
                     22.230504409381403,
                     28.764847209804486
                 ],
-                "total": 5276.57,
-                "avg": 0
+                "production": 5276.57,
+                "avg": 1321.4285714285713
             },
             {
                 "name": "Gustav",
@@ -1953,8 +2146,8 @@ export const agriculturalData = {
                     22.29280804438537,
                     28.735290862439484
                 ],
-                "total": 2793.86,
-                "avg": 0
+                "production": 2793.86,
+                "avg": 1478.2380952380952
             },
             {
                 "name": "Gustav",
@@ -1962,8 +2155,8 @@ export const agriculturalData = {
                     22.278714233095208,
                     28.740148089296785
                 ],
-                "total": 1985.58,
-                "avg": 0
+                "production": 1985.58,
+                "avg": 891.9999999999999
             },
             {
                 "name": "Gustav",
@@ -1971,8 +2164,8 @@ export const agriculturalData = {
                     22.271635882018046,
                     28.7426170258808
                 ],
-                "total": 3367.89,
-                "avg": 0
+                "production": 3367.89,
+                "avg": 1512.9761904761904
             },
             {
                 "name": "Gustav",
@@ -1980,8 +2173,8 @@ export const agriculturalData = {
                     22.257730612433292,
                     28.747522083488995
                 ],
-                "total": 2863.15,
-                "avg": 0
+                "production": 2863.15,
+                "avg": 1286.2380952380952
             },
             {
                 "name": "Smart Djerba",
@@ -1989,8 +2182,8 @@ export const agriculturalData = {
                     22.29082515129248,
                     28.72774018680079
                 ],
-                "total": 1347.58,
-                "avg": 0
+                "production": 1347.58,
+                "avg": 713.0
             },
             {
                 "name": "Smart Djerba",
@@ -1998,8 +2191,8 @@ export const agriculturalData = {
                     22.28348224628946,
                     28.730165010830866
                 ],
-                "total": 1853.2,
-                "avg": 0
+                "production": 1853.2,
+                "avg": 832.6190476190476
             },
             {
                 "name": "Gustav",
@@ -2007,8 +2200,8 @@ export const agriculturalData = {
                     22.276431164017133,
                     28.732622088744307
                 ],
-                "total": 3754.86,
-                "avg": 0
+                "production": 3754.86,
+                "avg": 1686.8095238095239
             },
             {
                 "name": "Gustav",
@@ -2016,8 +2209,8 @@ export const agriculturalData = {
                     22.26839477637509,
                     28.735047153470532
                 ],
-                "total": 7377.6,
-                "avg": 0
+                "production": 7377.6,
+                "avg": 1657.1428571428569
             },
             {
                 "name": "Gustav",
@@ -2025,8 +2218,8 @@ export const agriculturalData = {
                     22.255354345297505,
                     28.73990689800564
                 ],
-                "total": 3090.5,
-                "avg": 0
+                "production": 3090.5,
+                "avg": 1388.3571428571427
             },
             {
                 "name": "Gustav",
@@ -2034,8 +2227,8 @@ export const agriculturalData = {
                     22.248247851066814,
                     28.74234960870251
                 ],
-                "total": 3067.39,
-                "avg": 0
+                "production": 3067.39,
+                "avg": 1377.9761904761904
             },
             {
                 "name": "Gustav",
@@ -2043,8 +2236,8 @@ export const agriculturalData = {
                     22.28831360186834,
                     28.720175724503576
                 ],
-                "total": 1373.74,
-                "avg": 0
+                "production": 1373.74,
+                "avg": 726.8571428571428
             },
             {
                 "name": "Salama",
@@ -2052,8 +2245,8 @@ export const agriculturalData = {
                     22.224802704661116,
                     28.74205640723102
                 ],
-                "total": 3657.25,
-                "avg": 0
+                "production": 3657.25,
+                "avg": 1642.9761904761904
             },
             {
                 "name": "Gustav",
@@ -2061,8 +2254,8 @@ export const agriculturalData = {
                     22.281503064288103,
                     28.72259239199689
                 ],
-                "total": 1910.55,
-                "avg": 0
+                "production": 1910.55,
+                "avg": 858.3333333333333
             },
             {
                 "name": "Gustav",
@@ -2070,8 +2263,8 @@ export const agriculturalData = {
                     22.2656038099001,
                     28.72747198029399
                 ],
-                "total": 6772.02,
-                "avg": 0
+                "production": 6772.02,
+                "avg": 1521.1190476190475
             },
             {
                 "name": "Gustav",
@@ -2079,8 +2272,8 @@ export const agriculturalData = {
                     22.2603313731036,
                     28.729880495030372
                 ],
-                "total": 3382.35,
-                "avg": 0
+                "production": 3382.35,
+                "avg": 1519.4761904761904
             },
             {
                 "name": "Gustav",
@@ -2088,8 +2281,8 @@ export const agriculturalData = {
                     22.238967885894553,
                     28.737181105151567
                 ],
-                "total": 1758.84,
-                "avg": 0
+                "production": 1758.84,
+                "avg": 790.1428571428571
             },
             {
                 "name": "Salama",
@@ -2097,8 +2290,8 @@ export const agriculturalData = {
                     22.222648546722382,
                     28.7344812503608
                 ],
-                "total": 2668.83,
-                "avg": 0
+                "production": 2668.83,
+                "avg": 1198.9285714285713
             },
             {
                 "name": "Salama",
@@ -2106,8 +2299,8 @@ export const agriculturalData = {
                     22.279023958142304,
                     28.71500655125366
                 ],
-                "total": 2328.27,
-                "avg": 0
+                "production": 2328.27,
+                "avg": 1045.952380952381
             },
             {
                 "name": "Salama",
@@ -2115,8 +2308,8 @@ export const agriculturalData = {
                     22.263857731886386,
                     28.719871779093012
                 ],
-                "total": 3776.28,
-                "avg": 0
+                "production": 3776.28,
+                "avg": 848.2142857142857
             },
             {
                 "name": "Salama",
@@ -2124,8 +2317,8 @@ export const agriculturalData = {
                     22.283730474669138,
                     28.704998401493558
                 ],
-                "total": 907.95,
-                "avg": 0
+                "production": 907.95,
+                "avg": 540.2380952380952
             },
             {
                 "name": "Salama",
@@ -2133,8 +2326,8 @@ export const agriculturalData = {
                     22.22022006738156,
                     28.726856232247705
                 ],
-                "total": 4322.581,
-                "avg": 0
+                "production": 4322.581,
+                "avg": 1941.857142857143
             },
             {
                 "name": "Salama",
@@ -2142,8 +2335,8 @@ export const agriculturalData = {
                     22.276887130646145,
                     28.70742187709894
                 ],
-                "total": 3449.43,
-                "avg": 0
+                "production": 3449.43,
+                "avg": 1549.595238095238
             },
             {
                 "name": "Salama",
@@ -2151,8 +2344,8 @@ export const agriculturalData = {
                     22.26285191225845,
                     28.712254546277794
                 ],
-                "total": 1889.98,
-                "avg": 0
+                "production": 1889.98,
+                "avg": 849.0476190476189
             },
             {
                 "name": "Salama",
@@ -2160,8 +2353,8 @@ export const agriculturalData = {
                     22.255545281310937,
                     28.71479512348933
                 ],
-                "total": 2657.1,
-                "avg": 0
+                "production": 2657.1,
+                "avg": 1193.6666666666665
             },
             {
                 "name": "Salama",
@@ -2169,8 +2362,8 @@ export const agriculturalData = {
                     22.241392287602338,
                     28.71956092477853
                 ],
-                "total": 4217.51,
-                "avg": 0
+                "production": 4217.51,
+                "avg": 1894.6666666666663
             },
             {
                 "name": "Salama",
@@ -2178,8 +2371,8 @@ export const agriculturalData = {
                     22.225026293016015,
                     28.72442743151771
                 ],
-                "total": 2759.96,
-                "avg": 0
+                "production": 2759.96,
+                "avg": 1239.8809523809523
             },
             {
                 "name": "Smart Djerba",
@@ -2187,8 +2380,8 @@ export const agriculturalData = {
                     22.28143037873412,
                     28.697460247149593
                 ],
-                "total": 1600.65,
-                "avg": 0
+                "production": 1600.65,
+                "avg": 846.9047619047618
             },
             {
                 "name": "Elmo",
@@ -2196,8 +2389,8 @@ export const agriculturalData = {
                     22.218002290903694,
                     28.71930144544163
                 ],
-                "total": 3491.29,
-                "avg": 0
+                "production": 3491.29,
+                "avg": 1568.404761904762
             },
             {
                 "name": "Salama",
@@ -2205,8 +2398,8 @@ export const agriculturalData = {
                     22.27341560056117,
                     28.699817942355878
                 ],
-                "total": 7016.41,
-                "avg": 0
+                "production": 7016.41,
+                "avg": 1595.2380952380952
             },
             {
                 "name": "Salama",
@@ -2214,8 +2407,8 @@ export const agriculturalData = {
                     22.267341723255562,
                     28.702266696198024
                 ],
-                "total": 1976.31,
-                "avg": 0
+                "production": 1976.31,
+                "avg": 887.8333333333333
             },
             {
                 "name": "Salama",
@@ -2223,8 +2416,8 @@ export const agriculturalData = {
                     22.25322120977039,
                     28.707157077046503
                 ],
-                "total": 3746.699,
-                "avg": 0
+                "production": 3746.699,
+                "avg": 1683.1428571428569
             },
             {
                 "name": "Salama",
@@ -2232,8 +2425,8 @@ export const agriculturalData = {
                     22.239142492066495,
                     28.711999550262192
                 ],
-                "total": 2507.94,
-                "avg": 0
+                "production": 2507.94,
+                "avg": 1126.6666666666665
             },
             {
                 "name": "Salama",
@@ -2241,8 +2434,8 @@ export const agriculturalData = {
                     22.23212469703881,
                     28.714420968375403
                 ],
-                "total": 4674.46,
-                "avg": 0
+                "production": 4674.46,
+                "avg": 2099.9285714285716
             },
             {
                 "name": "Salama",
@@ -2250,8 +2443,8 @@ export const agriculturalData = {
                     22.224084435866885,
                     28.71681641086701
                 ],
-                "total": 6412.71,
-                "avg": 0
+                "production": 6412.71,
+                "avg": 1440.4047619047617
             },
             {
                 "name": "Smart Djerba",
@@ -2259,8 +2452,8 @@ export const agriculturalData = {
                     22.279241564141508,
                     28.689856489472724
                 ],
-                "total": 1125.18,
-                "avg": 0
+                "production": 1125.18,
+                "avg": 595.3333333333334
             },
             {
                 "name": "Concretia ",
@@ -2268,8 +2461,8 @@ export const agriculturalData = {
                     22.2157876823293,
                     28.711658282218625
                 ],
-                "total": 3243.07,
-                "avg": 0
+                "production": 3243.07,
+                "avg": 1456.9047619047617
             },
             {
                 "name": "Scotta",
@@ -2277,8 +2470,8 @@ export const agriculturalData = {
                     22.25801879401888,
                     28.69699712522194
                 ],
-                "total": 3131.92,
-                "avg": 0
+                "production": 3131.92,
+                "avg": 1406.9761904761904
             },
             {
                 "name": "Amelie",
@@ -2286,8 +2479,8 @@ export const agriculturalData = {
                     22.24397526188639,
                     28.701898539324247
                 ],
-                "total": 3536.62,
-                "avg": 0
+                "production": 3536.62,
+                "avg": 1588.7857142857142
             },
             {
                 "name": "Smart Djerba",
@@ -2295,8 +2488,8 @@ export const agriculturalData = {
                     22.228831128393384,
                     28.70682048300001
                 ],
-                "total": 7004.56,
-                "avg": 0
+                "production": 7004.56,
+                "avg": 1573.357142857143
             },
             {
                 "name": "Elmo",
@@ -2304,8 +2497,8 @@ export const agriculturalData = {
                     22.222834000498167,
                     28.709237255382646
                 ],
-                "total": 3168.49,
-                "avg": 0
+                "production": 3168.49,
+                "avg": 1423.404761904762
             },
             {
                 "name": "Elmo",
@@ -2313,8 +2506,8 @@ export const agriculturalData = {
                     22.26886009984365,
                     28.68466046491079
                 ],
-                "total": 3524.76,
-                "avg": 0
+                "production": 3524.76,
+                "avg": 791.7142857142858
             },
             {
                 "name": "Salama",
@@ -2322,8 +2515,8 @@ export const agriculturalData = {
                     22.2618075691069,
                     28.687084976386814
                 ],
-                "total": 7125.91,
-                "avg": 0
+                "production": 7125.91,
+                "avg": 1619.047619047619
             },
             {
                 "name": "Allanya",
@@ -2331,8 +2524,8 @@ export const agriculturalData = {
                     22.24876447398082,
                     28.691938156158958
                 ],
-                "total": 3203.51,
-                "avg": 0
+                "production": 3203.51,
+                "avg": 1439.142857142857
             },
             {
                 "name": "Jocko",
@@ -2340,8 +2533,8 @@ export const agriculturalData = {
                     22.23460279945458,
                     28.69683923272018
                 ],
-                "total": 3022.11,
-                "avg": 0
+                "production": 3022.11,
+                "avg": 1357.642857142857
             },
             {
                 "name": "Allanya",
@@ -2349,8 +2542,8 @@ export const agriculturalData = {
                     22.227585096242045,
                     28.699208978680872
                 ],
-                "total": 3433.8,
-                "avg": 0
+                "production": 3433.8,
+                "avg": 1542.595238095238
             },
             {
                 "name": "Elmo",
@@ -2358,19 +2551,15 @@ export const agriculturalData = {
                     22.266885005829693,
                     28.75265722400314
                 ],
-                "total": 3390.85,
-                "avg": 0
+                "production": 3390.85,
+                "avg": 1614.690476190476
             }
         ]
     },
     "Bean": {
         "name": "Bean",
-        "avgEfficiency": 0,
+        "avgEfficiency": 2.08,
         "productionPerTon": 475.74,
-        "productionData": [],
-        "amountData": [],
-        "currentProduction": null,
-        "lastYearProduction": null,
         "varieties": [
             {
                 "name": "Soya been",
@@ -2378,8 +2567,8 @@ export const agriculturalData = {
                     22.613658045238896,
                     31.26319417926758
                 ],
-                "total": 116.38,
-                "avg": 0
+                "production": 116.38,
+                "avg": 60.0
             },
             {
                 "name": "Cowpea",
@@ -2387,8 +2576,8 @@ export const agriculturalData = {
                     22.598301513000003,
                     31.27902508829783
                 ],
-                "total": 251.8,
-                "avg": 0
+                "production": 251.8,
+                "avg": 50.476190476190474
             },
             {
                 "name": "Cowpea",
@@ -2396,8 +2585,8 @@ export const agriculturalData = {
                     22.63008010300004,
                     31.20851592438894
                 ],
-                "total": 107.56,
-                "avg": 0
+                "production": 107.56,
+                "avg": 38.095238095238095
             }
         ]
     }
