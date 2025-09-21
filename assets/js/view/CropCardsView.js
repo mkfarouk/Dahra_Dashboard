@@ -1,7 +1,32 @@
 export const CropCardsView = {
+  // Add debouncing for crop selection
+  selectionTimeout: null,
+
   async getVarietiesData(cropName, locationKey) {
     try {
-      // Fetch only agricultural data
+      // Check if field group filtering is active
+      const { fieldGroupFiltering } = await import('../lib/FieldGroupFiltering.js');
+      const selectedFieldGroup = fieldGroupFiltering.getSelectedFieldGroup();
+      
+      // Get selected location from selector
+      const locationSelector = document.getElementById('locationSelector');
+      let selectedLocation = locationSelector ? locationSelector.value : 'all';
+      
+      // If field group filtering is active, use field group data
+      if (selectedFieldGroup !== 'all' && selectedLocation !== 'all') {
+        const fieldGroupVarieties = fieldGroupFiltering.getVarietiesDataForFieldGroup(
+          selectedFieldGroup, 
+          selectedLocation, 
+          cropName
+        );
+        
+        // If we have field group data, return it
+        if (fieldGroupVarieties && fieldGroupVarieties.length > 0) {
+          return fieldGroupVarieties;
+        }
+      }
+      
+      // Fallback to agricultural data
       const agriculturalModule = await import('../real_data/agriculturalData.js');
       const agriculturalData = agriculturalModule.agriculturalData;
       
@@ -81,14 +106,52 @@ export const CropCardsView = {
   },
 
   async render(container) {
-    // Fetch crop_lists.json
-    const cropListsResponse = await fetch('./assets/js/real_data/crop_lists.json');
-    const cropLists = await cropListsResponse.json();
     container.innerHTML = '';
 
     // Get selected location from selector
     const locationSelector = document.getElementById('locationSelector');
     let selectedLocation = locationSelector ? locationSelector.value : 'all';
+    
+    // Check if field group filtering is active
+    const { fieldGroupFiltering } = await import('../lib/FieldGroupFiltering.js');
+    const selectedFieldGroup = fieldGroupFiltering.getSelectedFieldGroup();
+    
+    let cropData = {};
+    
+    if (selectedFieldGroup !== 'all' && selectedLocation !== 'all') {
+      // Use field group filtered data
+      const fieldGroupData = fieldGroupFiltering.getProductionDataForFieldGroup(selectedFieldGroup, selectedLocation);
+      if (fieldGroupData) {
+        cropData = fieldGroupData;
+      }
+    }
+    
+    // Fallback to crop_lists.json if no field group data
+    if (Object.keys(cropData).length === 0) {
+      const cropListsResponse = await fetch('./assets/js/real_data/crop_lists.json');
+      const cropLists = await cropListsResponse.json();
+      
+      // Map location values to crop_lists keys
+      let locationKey = 'All';
+      if (selectedLocation === 'toshka') {
+        locationKey = 'Toshka';
+      } else if (selectedLocation === 'eastowinat') {
+        locationKey = 'Oweinat';
+      }
+
+      // Get crops for the selected location
+      const locationCrops = cropLists[locationKey] || [];
+      
+      // Convert to cropData format
+      locationCrops.forEach(cropObj => {
+        const cropName = Object.keys(cropObj)[0];
+        const data = cropObj[cropName];
+        cropData[cropName] = {
+          totalProduction: data.total_production,
+          avgYield: data.avg_efficiency
+        };
+      });
+    }
 
     // Add event listener to location selector to clear crop details when changed or same location selected
     if (locationSelector) {
@@ -107,7 +170,7 @@ export const CropCardsView = {
       locationSelector.dataset.previousValue = currentValue;
     }
 
-    // Map location values to crop_lists keys
+    // Map location values to crop_lists keys for varieties data
     let locationKey = 'All';
     if (selectedLocation === 'toshka') {
       locationKey = 'Toshka';
@@ -115,14 +178,9 @@ export const CropCardsView = {
       locationKey = 'Oweinat';
     }
 
-    // Get crops for the selected location
-    const locationCrops = cropLists[locationKey] || [];
-
     const cardsFragment = document.createDocumentFragment();
-    locationCrops.forEach((cropObj, idx) => {
-      // Each crop object has one key (crop name) with production data
-      const cropName = Object.keys(cropObj)[0];
-      const cropData = cropObj[cropName];
+    Object.keys(cropData).forEach((cropName, idx) => {
+      const data = cropData[cropName];
       const cropIcon = this.getCropIcon(cropName);
       
       const key = `crop-${idx}`;
@@ -136,14 +194,35 @@ export const CropCardsView = {
           <span class="crop-icon">${cropIcon}</span>
         </div>
         <div class="crop-stats">
-          <div class="stat-item"><div class="stat-value">${cropData.total_production.toFixed(1)} t,</div><div class="stat-label">Production</div></div>
-          <div class="stat-item"><div class="stat-value">${cropData.avg_efficiency.toFixed(2)}</div><div class="stat-label">Yield t/ha</div></div>
+          <div class="stat-item"><div class="stat-value">${data.totalProduction.toFixed(1)} t,</div><div class="stat-label">Production</div></div>
+          <div class="stat-item"><div class="stat-value">${data.avgYield.toFixed(2)}</div><div class="stat-label">Yield t/ha</div></div>
         </div>
       `;
       card.addEventListener('click', async () => {
+        // Toggle behavior: if already selected, unselect and show all
+        const alreadySelected = card.classList.contains('selected');
         // Remove highlight from all cards
         container.querySelectorAll('.crop-card').forEach(c => c.classList.remove('selected'));
+        
+        const { CropModel } = await import('../model/CropModel.js');
+        const { AppController } = await import('../controller/AppController.js');
+        
+        if (alreadySelected) {
+          // Deselect and reset to all crops
+          CropModel.set('selectedCrop', 'all');
+          this.clearCropDetails();
+          await AppController.refresh();
+          return;
+        }
+        
+        // Select this card
         card.classList.add('selected');
+        
+        // Use the exact crop name as it appears in the data
+        CropModel.set('selectedCrop', cropName);
+        
+        // Refresh the charts and metrics
+        await AppController.refresh();
         
         // Get varieties data for this crop
         const varietiesData = await this.getVarietiesData(cropName, locationKey);
@@ -217,8 +296,8 @@ export const CropCardsView = {
           detailsSection.innerHTML = `
             <div style="background:#f6fff6;border-radius:24px;padding:32px 40px;box-shadow:0 4px 24px rgba(76,175,80,0.10);margin-top:24px;min-height:400px;">
               <div style="font-size:2rem;font-weight:700;color:#388E3C;margin-bottom:8px;">${cropName} Details</div>
-              <div style="font-size:1.15rem;margin-bottom:8px;"><b>Overall AVG Efficiency:</b> <span style='color:#388E3C;'>${cropData.avg_efficiency.toFixed(2)}</span></div>
-              <div style="font-size:1.15rem;margin-bottom:18px;"><b>Overall Production/Ton:</b> <span style='color:#388E3C;'>${cropData.total_production.toFixed(2)}</span></div>
+              <div style="font-size:1.15rem;margin-bottom:8px;"><b>Overall AVG Efficiency:</b> <span style='color:#388E3C;'>${data.avgYield.toFixed(2)}</span></div>
+              <div style="font-size:1.15rem;margin-bottom:18px;"><b>Overall Production/Ton:</b> <span style='color:#388E3C;'>${data.totalProduction.toFixed(2)}</span></div>
               <div style="font-size:1.25rem;font-weight:600;margin-bottom:12px;">Varieties</div>
               <div style="
                 display: grid;
@@ -241,6 +320,9 @@ export const CropCardsView = {
       cardsFragment.appendChild(card);
     });
     container.appendChild(cardsFragment);
+    
+    // Removed global click-outside handler to avoid accidental unfiltering
+    
     // Details section always below all cards, visually separated and filling blank
     const detailsSection = document.createElement('div');
     detailsSection.id = 'crop-details-section';
@@ -434,6 +516,45 @@ export const CropCardsView = {
       'Bean': '🌱 '
     };
     return icons[cropName] || '🌱';
+  },
+
+  highlight(selectedCrop) {
+    // Remove highlight from all cards
+    document.querySelectorAll('.crop-card').forEach(card => {
+      card.classList.remove('selected');
+    });
+    
+    // Add highlight to selected card if it exists
+    if (selectedCrop && selectedCrop !== 'all') {
+      const selectedCard = document.querySelector(`[data-crop="${selectedCrop}"]`);
+      if (selectedCard) {
+        selectedCard.classList.add('selected');
+      }
+    }
+  },
+
+  async addClickOutsideHandler(container) {
+    // Add click outside handler to show all crops
+    document.addEventListener('click', async (event) => {
+      // Check if click is outside the crop cards container
+      if (!container.contains(event.target)) {
+        // Remove highlight from all cards
+        container.querySelectorAll('.crop-card').forEach(card => {
+          card.classList.remove('selected');
+        });
+        
+        // Clear crop details
+        this.clearCropDetails();
+        
+        // Update the crop model to show all crops
+        const { CropModel } = await import('../model/CropModel.js');
+        CropModel.set('selectedCrop', 'all');
+        
+        // Refresh the charts and metrics
+        const { AppController } = await import('../controller/AppController.js');
+        await AppController.refresh();
+      }
+    });
   }
 };
 

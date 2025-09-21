@@ -32,9 +32,10 @@ export const MapsView = {
         const color = meta.color || '#66bb6a';
         const icon = meta.icon || '';
         const name = meta.name || cropKey;
-        return `<div style="background:#f0f0f0;padding:4px;border-radius:4px;border-left:3px solid ${color};"><div style="font-weight:bold;">${icon} ${crop.production>1000?(crop.production/1000).toFixed(1)+'K':crop.production}</div><div style="color:#666;font-size:.7rem;">${name}</div></div>`;
+        const value = crop.production>1000?(crop.production/1000).toFixed(1)+'K':crop.production;
+        return `<div class="popup-item" style="border-left:3px solid ${color};"><div class="popup-item-value">${icon} ${value}</div><div class="popup-item-label">${name}</div></div>`;
       }).join('');
-      m.bindPopup(`<div style="text-align:center;font-family:Inter, sans-serif;"><h4 style="margin:0 0 10px 0;color:#2e7d32;">${loc.name}</h4><div style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px;">${items}</div></div>`);
+      m.bindPopup(`<div class="popup-wrapper" style="text-align:center;font-family:Inter, sans-serif;"><h4 class="popup-title" style="margin:0 0 10px 0;">${loc.name}</h4><div class="popup-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px;">${items}</div></div>`);
       markers.push(m);
     });
     if (markers.length) {
