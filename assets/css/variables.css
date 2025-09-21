@@ -15,6 +15,11 @@
   --light-gray: #f1f8e9;
   --white: #ffffff;
 
+  /* Surfaces */
+  --card-bg: #ffffff;
+  --card-border: #e0f2e9;
+  --panel-bg: #f6fff6;
+
   --shadow-light: 0 2px 10px rgba(46, 125, 50, 0.08);
   --shadow-medium: 0 4px 20px rgba(46, 125, 50, 0.12);
   --border-radius: 12px;
