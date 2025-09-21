@@ -39,31 +39,102 @@ const normalizeCropKey = (name) => {
 function sumTotalsByCrop(projectObj) {
   const totals = {};
   if (!projectObj || typeof projectObj !== 'object') return totals;
+
+  // 1) Top-level arrays per crop (if present)
   Object.keys(projectObj).forEach((cropName) => {
     const key = normalizeCropKey(cropName);
     if (!key) return;
     const arr = Array.isArray(projectObj[cropName]) ? projectObj[cropName] : [];
-    const total = arr.reduce((s, v) => s + (Number(v.total_production) || 0), 0);
-    totals[key] = total;
+    if (arr.length) {
+      const total = arr.reduce((s, v) => s + (Number(v.total_production) || 0), 0);
+      totals[key] = (totals[key] || 0) + total;
+    }
   });
+
+  // 2) Nested group_fields → pump stations → crops → total_production
+  const groupFields = projectObj.group_fields;
+  if (groupFields && typeof groupFields === 'object') {
+    Object.values(groupFields).forEach((ps) => {
+      const crops = ps && ps.crops;
+      if (!crops || typeof crops !== 'object') return;
+      Object.keys(crops).forEach((cropName) => {
+        const key = normalizeCropKey(cropName);
+        if (!key) return;
+        const cropEntry = crops[cropName];
+        const totalFromCrop = Number(cropEntry?.total_production) || 0;
+
+        // If varieties exist but total_production is missing, sum varieties
+        let totalFromVarieties = 0;
+        if (Array.isArray(cropEntry?.varieties)) {
+          totalFromVarieties = cropEntry.varieties.reduce((s, v) => s + (Number(v.total_production) || 0), 0);
+        }
+
+        const add = totalFromCrop || totalFromVarieties;
+        if (add > 0) {
+          totals[key] = (totals[key] || 0) + add;
+        }
+      });
+    });
+  }
+
   return totals;
 }
 
 // Compose the locations object expected by MapsView from real totals
 export async function computeLocationTotals() {
   try {
-    const [toshkaRes, eastRes] = await Promise.all([
+    const [toshkaRes, eastRes, summaryRes] = await Promise.all([
       fetch('./project_Toshka_project.json'),
-      fetch('./project_East_Oweinat_Project.json')
+      fetch('./project_East_Oweinat_Project.json'),
+      // Used to augment totals for crops present only in summary (e.g., Bean)
+      fetch('./assets/js/real_data/projects_summary.json')
     ]);
 
-    const [toshkaJson, eastJson] = await Promise.all([
+    const [toshkaJson, eastJson, summaryJson] = await Promise.all([
       toshkaRes.ok ? toshkaRes.json() : Promise.resolve(null),
-      eastRes.ok ? eastRes.json() : Promise.resolve(null)
+      eastRes.ok ? eastRes.json() : Promise.resolve(null),
+      summaryRes.ok ? summaryRes.json() : Promise.resolve(null)
     ]);
 
     const toshkaTotals = sumTotalsByCrop(toshkaJson);
     const eastTotals = sumTotalsByCrop(eastJson);
+
+    // Augment with projects_summary.json if available (handles crops like Bean in Toshka)
+    const augmentFromSummary = (projectKey, totalsTarget) => {
+      const project = summaryJson && summaryJson[projectKey];
+      const groupFields = project && project.group_fields;
+      if (!groupFields) return;
+
+      // First, build a complete sum per crop across all pump stations from the summary
+      const summarySums = {};
+      Object.values(groupFields).forEach((ps) => {
+        const crops = ps && ps.crops;
+        if (!crops) return;
+        Object.keys(crops).forEach((cropName) => {
+          const key = normalizeCropKey(cropName);
+          if (!key) return;
+          const crop = crops[cropName];
+          const top = Number(crop?.total_production) || 0;
+          const fromVarieties = Array.isArray(crop?.varieties)
+            ? crop.varieties.reduce((s, v) => s + (Number(v.total_production) || 0), 0)
+            : 0;
+          const add = top || fromVarieties;
+          if (add > 0) {
+            summarySums[key] = (summarySums[key] || 0) + add;
+          }
+        });
+      });
+
+      // Then, for crops missing in project totals, fill from the summary sums
+      Object.keys(summarySums).forEach((key) => {
+        if (!Object.prototype.hasOwnProperty.call(totalsTarget, key) || totalsTarget[key] === 0) {
+          totalsTarget[key] = summarySums[key];
+        }
+      });
+    };
+
+    augmentFromSummary('Toshka project', toshkaTotals);
+    augmentFromSummary('East Oweinat Project', eastTotals);
 
     const buildCrops = (totals) => {
       const out = {};

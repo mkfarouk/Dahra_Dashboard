@@ -3,25 +3,31 @@
         {
             "AlfaAlfa": {
                 "total_production": 4556.0,
-                "avg_efficiency": 3.2403170684202762
+                "avg_efficiency": 0.74
             }
         },
         {
             "Wheat": {
-                "total_production": 35191.83499999999,
-                "avg_efficiency": 19.89311734726231
+                "total_production": 38934.83500000001,
+                "avg_efficiency": 5.93
+            }
+        },
+        {
+            "Corn": {
+                "total_production": 1648.4199999999998,
+                "avg_efficiency": 16.01
             }
         },
         {
             "Sugar Beet": {
                 "total_production": 256047.74,
-                "avg_efficiency": 512.0847852116779
+                "avg_efficiency": 52.78
             }
         },
         {
             "Bean": {
                 "total_production": 475.74,
-                "avg_efficiency": 0
+                "avg_efficiency": 2.08
             }
         }
     ],
@@ -29,29 +35,36 @@
         {
             "AlfaAlfa": {
                 "total_production": 4556.0,
-                "total_area": 1406.0352440204704,
-                "avg_efficiency": 11.355420761445128
+                "total_area": 0,
+                "avg_efficiency": 5.309999999999999
             }
         },
         {
             "Wheat": {
-                "total_production": 19451.620000000003,
-                "total_area": 1769.04576521,
-                "avg_efficiency": 10.903833229950497
+                "total_production": 23194.620000000003,
+                "total_area": 0,
+                "avg_efficiency": 11.26
+            }
+        },
+        {
+            "Corn": {
+                "total_production": 1648.42,
+                "total_area": 0,
+                "avg_efficiency": 86.6
             }
         },
         {
             "Sugar Beet": {
                 "total_production": 86476.0,
-                "total_area": 500.0104424,
-                "avg_efficiency": 565.0754385124818
+                "total_area": 0,
+                "avg_efficiency": 195.39999999999998
             }
         },
         {
             "Bean": {
                 "total_production": 475.74,
                 "total_area": 0,
-                "avg_efficiency": 0
+                "avg_efficiency": 4.38
             }
         }
     ],
@@ -60,14 +73,14 @@
             "Sugar Beet": {
                 "total_production": 169571.74000000002,
                 "total_area": 0,
-                "avg_efficiency": 0
+                "avg_efficiency": 510.7900000000001
             }
         },
         {
             "Wheat": {
                 "total_production": 15740.215,
                 "total_area": 0,
-                "avg_efficiency": 0
+                "avg_efficiency": 14.19
             }
         }
     ]
