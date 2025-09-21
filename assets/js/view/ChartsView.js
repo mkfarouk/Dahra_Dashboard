@@ -1,13 +1,18 @@
 // assets/js/view/ChartsView.js
 import { CropModel } from '../model/CropModel.js';
 import { DataSource } from '../model/DataSource.js';
+import { trendAnalysis } from '../lib/TrendAnalysis.js';
 
 let productionChart = null;
 let comparisonChart = null;
 
 export const ChartsView = {
-  initProduction() {
-    const data = CropModel.getProductionSeries();
+  async initProduction() {
+    // Load monthly data first
+    await trendAnalysis.loadMonthlyData();
+    
+    const state = CropModel.get();
+    const data = await this.getProductionSeriesData(state.selectedCrop, state.period);
     const colors = this._getProductionColors();
 
   const options = {
@@ -118,9 +123,11 @@ export const ChartsView = {
     productionChart.render();
   },
 
-  updateProduction() {
+  async updateProduction() {
     if (!productionChart) return;
-    const data = CropModel.getProductionSeries();
+    
+    const state = CropModel.get();
+    const data = await this.getProductionSeriesData(state.selectedCrop, state.period);
     const colors = this._getProductionColors();
     productionChart.updateSeries(data.series);
   productionChart.updateOptions({
@@ -203,9 +210,23 @@ export const ChartsView = {
         maintainAspectRatio: false,
         interaction: { mode: 'index', intersect: false },
         plugins: {
-          legend: { position: 'top' }
+          legend: {
+            position: 'top',
+            labels: {
+              color: (document.body.getAttribute('data-theme') === 'dark') ? '#e8f5e8' : '#1b5e20'
+            }
+          }
         },
-        scales: { x: { grid: { color: 'rgba(102,187,106,0.1)', drawBorder: false } }, y: { grid: { color: 'rgba(102,187,106,0.1)', drawBorder: false } } }
+        scales: {
+          x: {
+            ticks: { color: (document.body.getAttribute('data-theme') === 'dark') ? '#e8f5e8' : '#1b5e20' },
+            grid: { color: (document.body.getAttribute('data-theme') === 'dark') ? 'rgba(150,180,160,0.15)' : 'rgba(102,187,106,0.1)', drawBorder: false }
+          },
+          y: {
+            ticks: { color: (document.body.getAttribute('data-theme') === 'dark') ? '#e8f5e8' : '#1b5e20' },
+            grid: { color: (document.body.getAttribute('data-theme') === 'dark') ? 'rgba(150,180,160,0.15)' : 'rgba(102,187,106,0.1)', drawBorder: false }
+          }
+        }
       }
     };
 
@@ -221,28 +242,65 @@ export const ChartsView = {
     // Load data asynchronously and update chart
     CropModel.getComparisonDataset().then(({ labels, datasets }) => {
       // Set custom colors and borderRadius for curved bars
+      const isDark = document.body.getAttribute('data-theme') === 'dark';
       const updatedDatasets = datasets.map(ds => {
         let backgroundColor = ds.backgroundColor;
-        if (ds.label && ds.label.toLowerCase().includes('toshka')) {
-          backgroundColor = '#BD9B60';
-        } else if (ds.label && ds.label.toLowerCase().includes('east oweinat')) {
-          backgroundColor = '#998542';
+        if (isDark) {
+          // In dark mode use light bars for contrast
+          if (ds.label && ds.label.toLowerCase().includes('toshka')) backgroundColor = '#f0e4c3';
+          else if (ds.label && ds.label.toLowerCase().includes('east oweinat')) backgroundColor = '#e6d69a';
+        } else {
+          if (ds.label && ds.label.toLowerCase().includes('toshka')) backgroundColor = '#BD9B60';
+          else if (ds.label && ds.label.toLowerCase().includes('east oweinat')) backgroundColor = '#998542';
         }
         return { ...ds, backgroundColor, borderRadius: 10 };
       });
       comparisonChart.data.labels = labels;
       comparisonChart.data.datasets = updatedDatasets;
+      // Also update axis/legend colors when theme changes
+      comparisonChart.options.plugins.legend.labels.color = isDark ? '#e8f5e8' : '#1b5e20';
+      comparisonChart.options.scales.x.ticks.color = isDark ? '#e8f5e8' : '#1b5e20';
+      comparisonChart.options.scales.y.ticks.color = isDark ? '#e8f5e8' : '#1b5e20';
+      comparisonChart.options.scales.x.grid.color = isDark ? 'rgba(150,180,160,0.15)' : 'rgba(102,187,106,0.1)';
+      comparisonChart.options.scales.y.grid.color = isDark ? 'rgba(150,180,160,0.15)' : 'rgba(102,187,106,0.1)';
       comparisonChart.update();
     }).catch(error => {
       console.error('Error updating comparison chart:', error);
     });
   },
 
+  async getProductionSeriesData(selectedCrop, period) {
+    try {
+      // Ensure monthly data is loaded
+      if (!trendAnalysis.monthlyData) {
+        await trendAnalysis.loadMonthlyData();
+      }
+      
+      // Get trend data from TrendAnalysis (now async)
+      const data = await trendAnalysis.getTrendData(selectedCrop, period);
+      
+      return data;
+    } catch (error) {
+      console.error('Error getting production series data:', error);
+      // Fallback to empty data
+      return {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        series: [
+          { name: 'Average Production', type: 'line', data: Array(12).fill(0) },
+          { name: 'Total Amount', type: 'column', data: Array(12).fill(0), yAxisIndex: 1 }
+        ]
+      };
+    }
+  },
+
   _getProductionColors() {
     const state = CropModel.get();
     if (state.selectedCrop === 'all') return ['#BD9B60', '#998542'];
     const agri = DataSource.getAgri();
-    const color = agri[state.selectedCrop].color;
-    return [color, `${color}80`];
+    const key = state.selectedCrop || '';
+    const direct = agri[key];
+    const fallback = key ? agri[key.replace(/_/g, '')] : undefined;
+    const cropColor = (direct || fallback)?.color || '#BD9B60';
+    return [cropColor, `${cropColor}80`];
   }
 };
