@@ -86,8 +86,8 @@
                      <div class="logo-section">
                 <!-- Aldahra Logo -->
                <a href="https://aldahra.com/" target="_blank"><img src="assets/img/Al-Dahra-Agriculture-Egypt-53315-1594802755-og-removebg-preview.png" alt="Aldahra Logo" class="company-logo"></a> 
-                <a href="https://sut.edu.eg/" target="_blank"><img src="assets/img/RemoveBackground_134018926083083390.png" alt="" style="width: 20px; height:20px;"></a>
-                <a href="https://aast.edu/en/" target="_blank"><img src="assets/img/AAST.png" alt="" style="width: 20px; height:20px;"></a>
+                <a href="https://sut.edu.eg/" target="_blank"><img src="assets/img/050b6556-52e3-4663-aa36-d8a484bf91e2.png" alt="" style="width: 40px; height:20px;"></a>
+                <a href="https://aast.edu/en/" target="_blank"><img src="assets/img/AAST.png" alt="" style="width: 40px; height:20px;"></a>
                <a href="https://www.asu.edu.eg/ar" target="_blank"><img src="assets/img/OIP-removebg-preview.png" alt=""  style="width: 20px; height:20px;"></a> 
                <a href="https://sphinx.edu.eg/" target="_blank"><img src="assets/img/Sphinx.png" alt=""  style="width: 20px; height:20px;"></a> 
             </div>
@@ -99,10 +99,6 @@
                         <i class="fas fa-moon"></i>
                     </button>
                     
-                    <select id="cropSelector" class="modern-select">
-                        <option value="all">All Crops</option>
-                        <!-- Crop options will be dynamically generated -->
-                    </select>
                     
                     <select id="locationSelector" class="modern-select">
                         <option value="all">All Locations</option>
@@ -155,9 +151,7 @@
                         Production Trends Analysis
                     </h3>
                     <div class="chart-controls">
-                        <button class="chart-btn active" data-period="6m">6M</button>
-                        <button class="chart-btn" data-period="1y">1Y</button>
-                        <button class="chart-btn" data-period="2y">2Y</button>
+                        <button class="chart-btn active" data-period="1y">1Y</button>
                     </div>
                 </div>
                 <div id="productionChart"></div>
@@ -250,74 +244,19 @@
     </main>
 
         <script>
-            // Dynamically populate cropSelector with crop names from data.json
-            async function populateCropSelector() {
-              const selector = document.getElementById('cropSelector');
-              try {
-                const response = await fetch('./assets/js/real_data/data.json');
-                const data = await response.json();
-                // Get selected location
-                const locationSelector = document.getElementById('locationSelector');
-                const selectedLocation = locationSelector ? locationSelector.value : 'all';
-                let filteredData = data;
-                
-                // Filter by location first
-                if (selectedLocation !== 'all') {
-                  filteredData = data.filter(crop => {
-                    if (selectedLocation === 'toshka') {
-                      return crop.group_folder_name && crop.group_folder_name.toLowerCase().includes('toshka');
-                    } else if (selectedLocation === 'eastowinat') {
-                      return crop.group_folder_name && crop.group_folder_name.toLowerCase().includes('east oweinat');
-                    }
-                    return true;
-                  });
-                }
-                
-                // Only crops with harvested_weight from the location-filtered data
-                const cropNames = [...new Set(filteredData.filter(crop => 
-                  crop.crop_name && 
-                  crop.harvested_weight !== null && 
-                  crop.harvested_weight !== undefined && 
-                  crop.harvested_weight !== ''
-                ).map(crop => crop.crop_name).filter(Boolean))];
-                
-                selector.innerHTML = '<option value="all">All Crops</option>';
-                cropNames.forEach(name => {
-                  const option = document.createElement('option');
-                  option.value = name.toLowerCase().replace(/\s+/g, '_');
-                  option.textContent = name;
-                  selector.appendChild(option);
-                });
-              } catch (error) {
-                console.error('Error loading crop names:', error);
-              }
-            }
-            populateCropSelector();
 
             // Initial render: use CropCardsView module
             window.addEventListener('DOMContentLoaded', () => {
               import('./assets/js/view/CropCardsView.js').then(({ CropCardsView }) => {
                 CropCardsView.render(document.getElementById('cropCards'));
               });
-              // Re-populate crop selector based on location
-              populateCropSelector();
             });
             
-            // Listen for crop selector changes
-            document.getElementById('cropSelector').addEventListener('change', function() {
-              import('./assets/js/view/CropCardsView.js').then(({ CropCardsView }) => {
-                CropCardsView.render(document.getElementById('cropCards'));
-              });
-            });
             
-            // Listen for location selector changes to filter crops and crop selector
+            // Listen for location selector changes
             const locationSelectorEl = document.getElementById('locationSelector');
             if (locationSelectorEl) {
               locationSelectorEl.addEventListener('change', function() {
-                // Reset crop selector to "All Crops" when location changes
-                document.getElementById('cropSelector').value = 'all';
-                // Re-populate crop selector based on new location
-                populateCropSelector();
                 // Re-render crop cards for new location using CropCardsView module
                 import('./assets/js/view/CropCardsView.js').then(({ CropCardsView }) => {
                   CropCardsView.render(document.getElementById('cropCards'));
